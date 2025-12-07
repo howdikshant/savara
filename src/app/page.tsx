@@ -5,6 +5,7 @@ import AboutSection from "@/components/AboutSection";
 import Sponsors from "@/components/Sponsors";
 import Timeline from "@/components/Timeline"; // <-- added
 import CountdownTimer from "@/components/CountdownTImer";
+import Logo3D from "@/components/Logo3D";
 
 export default function Home() {
   // Set target date to 3 days from now
@@ -13,7 +14,8 @@ export default function Home() {
 
   return (
     <>
-      <CountdownTimer targetDate={targetDate} />
+      {/* <CountdownTimer targetDate={targetDate} /> */}
+      <Logo3D />
 
       <AboutSection />
 
