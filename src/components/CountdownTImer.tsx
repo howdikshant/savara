@@ -124,78 +124,78 @@ export default function CountdownTimer({ targetDate }: CountdownTimerProps) {
       <div className="flex items-center gap-2 sm:gap-4">
         {/* Days */}
         <div className="flex flex-col items-center">
-          <div className="relative overflow-hidden rounded-lg bg-zinc-100/50 px-4 py-6 backdrop-blur-sm dark:bg-zinc-900/50 sm:px-6 sm:py-8">
+          <div className="relative overflow-hidden rounded-lg bg-zinc-900/50 px-4 py-6 backdrop-blur-sm sm:px-6 sm:py-8">
             <span
               ref={daysRef}
-              className="block font-mono text-4xl font-light tracking-wider text-zinc-900 dark:text-zinc-100 sm:text-6xl md:text-7xl"
+              className="block font-mono text-4xl font-light tracking-wider text-zinc-100 sm:text-6xl md:text-7xl"
             >
               {formatNumber(timeLeft.days)}
             </span>
           </div>
-          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-400">
             Days
           </span>
         </div>
 
         <div className="flex items-center pb-6">
-          <span className="text-3xl font-light text-zinc-300 dark:text-zinc-700 sm:text-5xl md:text-6xl">
+          <span className="text-3xl font-light text-zinc-700 sm:text-5xl md:text-6xl">
             :
           </span>
         </div>
 
         {/* Hours */}
         <div className="flex flex-col items-center">
-          <div className="relative overflow-hidden rounded-lg bg-zinc-100/50 px-4 py-6 backdrop-blur-sm dark:bg-zinc-900/50 sm:px-6 sm:py-8">
+          <div className="relative overflow-hidden rounded-lg bg-zinc-900/50 px-4 py-6 backdrop-blur-sm sm:px-6 sm:py-8">
             <span
               ref={hoursRef}
-              className="block font-mono text-4xl font-light tracking-wider text-zinc-900 dark:text-zinc-100 sm:text-6xl md:text-7xl"
+              className="block font-mono text-4xl font-light tracking-wider text-zinc-100 sm:text-6xl md:text-7xl"
             >
               {formatNumber(timeLeft.hours)}
             </span>
           </div>
-          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-400">
             Hours
           </span>
         </div>
 
         <div className="flex items-center pb-6">
-          <span className="text-3xl font-light text-zinc-300 dark:text-zinc-700 sm:text-5xl md:text-6xl">
+          <span className="text-3xl font-light text-zinc-700 sm:text-5xl md:text-6xl">
             :
           </span>
         </div>
 
         {/* Minutes */}
         <div className="flex flex-col items-center">
-          <div className="relative overflow-hidden rounded-lg bg-zinc-100/50 px-4 py-6 backdrop-blur-sm dark:bg-zinc-900/50 sm:px-6 sm:py-8">
+          <div className="relative overflow-hidden rounded-lg bg-zinc-900/50 px-4 py-6 backdrop-blur-sm sm:px-6 sm:py-8">
             <span
               ref={minutesRef}
-              className="block font-mono text-4xl font-light tracking-wider text-zinc-900 dark:text-zinc-100 sm:text-6xl md:text-7xl"
+              className="block font-mono text-4xl font-light tracking-wider text-zinc-100 sm:text-6xl md:text-7xl"
             >
               {formatNumber(timeLeft.minutes)}
             </span>
           </div>
-          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-400">
             Minutes
           </span>
         </div>
 
         <div className="flex items-center pb-6">
-          <span className="text-3xl font-light text-zinc-300 dark:text-zinc-700 sm:text-5xl md:text-6xl">
+          <span className="text-3xl font-light text-zinc-700 sm:text-5xl md:text-6xl">
             :
           </span>
         </div>
 
         {/* Seconds */}
         <div className="flex flex-col items-center">
-          <div className="relative overflow-hidden rounded-lg bg-zinc-100/50 px-4 py-6 backdrop-blur-sm dark:bg-zinc-900/50 sm:px-6 sm:py-8">
+          <div className="relative overflow-hidden rounded-lg bg-zinc-900/50 px-4 py-6 backdrop-blur-sm sm:px-6 sm:py-8">
             <span
               ref={secondsRef}
-              className="block font-mono text-4xl font-light tracking-wider text-zinc-900 dark:text-zinc-100 sm:text-6xl md:text-7xl"
+              className="block font-mono text-4xl font-light tracking-wider text-zinc-100 sm:text-6xl md:text-7xl"
             >
               {formatNumber(timeLeft.seconds)}
             </span>
           </div>
-          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-500 dark:text-zinc-400">
+          <span className="mt-3 text-xs font-medium uppercase tracking-widest text-zinc-400">
             Seconds
           </span>
         </div>

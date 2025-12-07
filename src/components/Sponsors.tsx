@@ -259,7 +259,7 @@ function SponsorCard({
 
   return (
     <div
-      className={`group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl border border-zinc-800/50 bg-zinc-900/50 backdrop-blur-sm transition-all duration-500 ease-out hover:border-zinc-600/50 hover:scale-105 hover:bg-zinc-800/50 ${
+      className={`group relative aspect-4/3 cursor-pointer overflow-hidden rounded-xl border border-zinc-800/50 bg-zinc-900/50 backdrop-blur-sm transition-all duration-500 ease-out hover:border-zinc-600/50 hover:scale-105 hover:bg-zinc-800/50 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
       style={{ transitionDelay: `${delay}ms` }}
@@ -267,7 +267,7 @@ function SponsorCard({
       {/* Placeholder logo area */}
       <div className="flex h-full w-full flex-col items-center justify-center p-4">
         {/* Placeholder icon */}
-        <div className="mb-3 h-12 w-12 rounded-xl bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-700 flex items-center justify-center opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:from-orange-500/20 group-hover:via-pink-500/20 group-hover:to-purple-500/20">
+        <div className="mb-3 h-12 w-12 rounded-xl bg-linear-to-br from-zinc-700 via-zinc-600 to-zinc-700 flex items-center justify-center opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:from-orange-500/20 group-hover:via-pink-500/20 group-hover:to-purple-500/20">
           <span className="text-xl font-bold text-zinc-300 group-hover:text-white transition-colors">
             {sponsor.name.charAt(0)}
           </span>

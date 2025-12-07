@@ -60,7 +60,7 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
   return (
     <div className="flex flex-row">
       {/* IIITDM Logo */}
-      <div className="fixed left-6 top-6">
+      <div className="fixed z-100 left-6 top-6">
         <Image
           src="/iiitdm_logo.png"
           alt="IIITDM Logo"
@@ -73,7 +73,7 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
       {/* Hamburger Button */}
       <button
         onClick={onMenuToggle}
-        className="fixed right-6 top-6 z-100 flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full bg-zinc-900/80 backdrop-blur-sm transition-colors hover:bg-zinc-800"
+        className="fixed right-6 top-6 z-102 flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full bg-zinc-900/80 backdrop-blur-sm transition-colors hover:bg-zinc-800"
         aria-label="Toggle menu"
       >
         <span

@@ -142,7 +142,7 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
       onClick={handleClick}
       style={{ perspective: "1000px" }}
     >
-      <span className="relative inline-flex text-6xl font-black uppercase tracking-tight text-zinc-50 sm:text-7xl md:text-8xl lg:text-9xl">
+      <span className="relative inline-flex text-4xl font-black uppercase tracking-tight text-zinc-50 sm:text-5xl md:text-6xl lg:text-7xl">
         {label.split("").map((char, i) => (
           <span
             key={i}
@@ -229,17 +229,17 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
   return (
     <>
       {/* Blur Overlay */}
-      <div
+      {/* <div
         ref={overlayRef}
         className="pointer-events-none fixed inset-0 z-40 bg-black/30 opacity-0 backdrop-blur-md"
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
         onClick={onClose}
-      />
+      /> */}
 
       {/* Full Screen Menu */}
       <div
         ref={menuRef}
-        className="fixed inset-0 z-50 flex flex-col items-start justify-center overflow-hidden bg-linear-to-br from-zinc-900 via-zinc-950 to-black px-8 sm:px-16 md:px-24"
+        className="fixed inset-0 z-101 flex flex-col items-start justify-center overflow-hidden bg-linear-to-br from-zinc-900 via-zinc-950 to-black px-8 sm:px-16 md:px-24"
         style={{ clipPath: "circle(0% at calc(100% - 40px) 40px)" }}
       >
         {/* Background decoration */}
