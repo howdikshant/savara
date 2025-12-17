@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const galleryImages = [
-  { id: 1, placeholder: "Event 1" },
-  { id: 2, placeholder: "Event 2" },
-  { id: 3, placeholder: "Event 3" },
-  { id: 4, placeholder: "Event 4" },
-  { id: 5, placeholder: "Event 5" },
+  { id: 1, src: "/gallery/img317.jpg", alt: "Event 1" },
+  { id: 2, src: "/gallery/img360.jpg", alt: "Event 2" },
+  { id: 3, src: "/gallery/img450.jpg", alt: "Event 3" },
+  { id: 4, src: "/gallery/img454.jpg", alt: "Event 4" },
+  { id: 5, src: "/gallery/img458.jpg", alt: "Event 5" },
+  { id: 6, src: "/gallery/img462.jpg", alt: "Event 6" },
 ];
 
 export default function AboutSection() {
@@ -114,8 +116,9 @@ export default function AboutSection() {
                 { top: "0%", left: "10%", rotate: "-6deg", zIndex: 5 },
                 { top: "15%", right: "0%", rotate: "4deg", zIndex: 4 },
                 { top: "35%", left: "5%", rotate: "3deg", zIndex: 3 },
-                { top: "50%", right: "10%", rotate: "-5deg", zIndex: 2 },
-                { top: "65%", left: "20%", rotate: "2deg", zIndex: 1 },
+                { top: "50%", right: "5%", rotate: "-5deg", zIndex: 2 },
+                { top: "65%", left: "0%", rotate: "2deg", zIndex: 1 },
+                { top: "80%", left: "30%", rotate: "10deg", zIndex: 4 },
               ];
 
               const pos = positions[index];
@@ -124,7 +127,7 @@ export default function AboutSection() {
               return (
                 <div
                   key={image.id}
-                  className={`group absolute h-40 w-56 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-zinc-800/50 shadow-2xl backdrop-blur-sm sm:h-48 sm:w-64 md:h-52 md:w-72 transition-all duration-700 ease-out hover:z-50 hover:scale-110 hover:border-orange-500/50 ${
+                  className={`group absolute h-40 w-56 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-zinc-800/50 shadow-2xl backdrop-blur-sm sm:h-48 sm:w-64 md:h-52 md:w-72 transition-all duration-700 ease-out hover:z-50! hover:scale-110 hover:border-orange-500/50 ${
                     isVisible
                       ? "opacity-100 translate-y-0 scale-100"
                       : "opacity-0 translate-y-16 scale-90"
@@ -144,16 +147,15 @@ export default function AboutSection() {
                   {/* Animated gradient overlay on hover */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                  {/* Placeholder content */}
+                  {/* Image content */}
                   <div className="relative flex h-full w-full items-center justify-center">
-                    <div className="text-center">
-                      <div className="mb-2 text-4xl opacity-50 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100">
-                        📸
-                      </div>
-                      <span className="text-sm font-medium text-zinc-400 transition-colors group-hover:text-white">
-                        {image.placeholder}
-                      </span>
-                    </div>
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-xl"
+                    />
                   </div>
 
                   {/* Shine effect on hover */}
