@@ -3,7 +3,7 @@
 import Footer from "@/components/Footer";
 import AboutSection from "@/components/AboutSection";
 import Sponsors from "@/components/Sponsors";
-import Timeline from "@/components/Timeline"; // <-- added
+import Timeline from "@/components/Timeline";
 import CountdownTimer from "@/components/CountdownTImer";
 import Logo3D from "@/components/Logo3D";
 
@@ -20,7 +20,7 @@ export default function Home() {
       <AboutSection />
 
       {/* Timeline Section */}
-      <Timeline />
+      {/* <Timeline /> */}
 
       <Sponsors />
 

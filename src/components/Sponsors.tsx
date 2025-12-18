@@ -1,16 +1,32 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const sponsors = [
-  { id: 1, name: "TechCorp" },
-  { id: 2, name: "InnovateLabs" },
-  { id: 3, name: "DigitalWave" },
-  { id: 4, name: "FutureTech" },
-  { id: 5, name: "CodeCraft" },
-  { id: 6, name: "PixelPro" },
-  { id: 7, name: "DevStudio" },
-  { id: 8, name: "CloudNine" },
+  { id: 1, name: "A2B", logo: "/sponsors/a2b.png" },
+  { id: 2, name: "Bank of Baroda", logo: "/sponsors/bob.png" },
+  { id: 3, name: "Canara Bank", logo: "/sponsors/canara_bank.png" },
+  { id: 4, name: "Cigniti", logo: "/sponsors/cigniti.png" },
+  { id: 5, name: "CodeChef", logo: "/sponsors/codechef.jpg" },
+  { id: 6, name: "Contentstack", logo: "/sponsors/contentstack.jpg" },
+  { id: 7, name: "CSK", logo: "/sponsors/csk.webp" },
+  { id: 8, name: "Cyient", logo: "/sponsors/cyient.png" },
+  { id: 9, name: "Devfolio", logo: "/sponsors/devfolio.webp" },
+  { id: 10, name: "Green Trends", logo: "/sponsors/green_trends.webp" },
+  { id: 11, name: "HDFC Bank", logo: "/sponsors/hdfc.png" },
+  { id: 12, name: "Indian Bank", logo: "/sponsors/indian_bank.jpg" },
+  { id: 13, name: "IOB", logo: "/sponsors/iob.jpg" },
+  { id: 14, name: "Lightcast", logo: "/sponsors/lightcast.png" },
+  { id: 15, name: "MTV", logo: "/sponsors/mtv.webp" },
+  { id: 16, name: "Panasonic", logo: "/sponsors/panasonic.png" },
+  { id: 17, name: "PNB", logo: "/sponsors/pnb.png" },
+  { id: 18, name: "SBI", logo: "/sponsors/sbi.png" },
+  { id: 19, name: "The Souled Store", logo: "/sponsors/souled_store.png" },
+  { id: 20, name: "TNPL", logo: "/sponsors/tnpl.jpg" },
+  { id: 21, name: "Unstop", logo: "/sponsors/unstop.jpg" },
+  { id: 22, name: "VH1", logo: "/sponsors/vh1.png" },
+  { id: 23, name: "Zebronics", logo: "/sponsors/zebronics.webp" },
 ];
 
 // Floating shapes configuration
@@ -167,7 +183,7 @@ export default function Sponsors() {
         </div>
 
         {/* Sponsors Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
           {sponsors.map((sponsor, index) => (
             <SponsorCard
               key={sponsor.id}
@@ -251,34 +267,34 @@ function SponsorCard({
   index,
   isVisible,
 }: {
-  sponsor: { id: number; name: string };
+  sponsor: { id: number; name: string; logo: string };
   index: number;
   isVisible: boolean;
 }) {
-  const delay = 300 + index * 80;
+  const delay = 300 + index * 50;
 
   return (
     <div
-      className={`group relative aspect-4/3 cursor-pointer overflow-hidden rounded-xl border border-zinc-800/50 bg-zinc-900/50 backdrop-blur-sm transition-all duration-500 ease-out hover:border-zinc-600/50 hover:scale-105 hover:bg-zinc-800/50 ${
+      className={`group relative aspect-4/3 cursor-pointer overflow-hidden rounded-xl border border-zinc-800/50 backdrop-blur-sm transition-all duration-500 ease-out hover:border-zinc-600/50 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/10 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      {/* Placeholder logo area */}
+      {/* Logo area */}
       <div className="flex h-full w-full flex-col items-center justify-center p-4">
-        {/* Placeholder icon */}
-        <div className="mb-3 h-12 w-12 rounded-xl bg-linear-to-br from-zinc-700 via-zinc-600 to-zinc-700 flex items-center justify-center opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:scale-110 group-hover:from-orange-500/20 group-hover:via-pink-500/20 group-hover:to-purple-500/20">
-          <span className="text-xl font-bold text-zinc-300 group-hover:text-white transition-colors">
-            {sponsor.name.charAt(0)}
-          </span>
+        <div className="relative h-48 w-full mb-2 flex items-center justify-center">
+          <Image
+            src={sponsor.logo}
+            alt={`${sponsor.name} logo`}
+            fill
+            className="object-contain p-2 transition-transform duration-300 group-hover:scale-110"
+            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
+          />
         </div>
-        <span className="text-xs font-medium text-zinc-500 transition-colors group-hover:text-zinc-300 text-center">
-          {sponsor.name}
-        </span>
       </div>
 
       {/* Hover shine effect */}
-      <div className="absolute inset-0 -translate-x-full skew-x-12 bg-linear-to-r from-transparent via-white/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+      <div className="absolute inset-0 -translate-x-full skew-x-12 bg-linear-to-r from-transparent via-black/5 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
 
       {/* Subtle glow on hover */}
       <div className="absolute inset-0 rounded-xl opacity-0 shadow-[0_0_30px_rgba(249,115,22,0.15)] transition-opacity duration-300 group-hover:opacity-100" />

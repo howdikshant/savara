@@ -38,7 +38,9 @@ export default function AboutSection() {
     return () => observer.disconnect();
   }, []);
 
-  const paragraphText = `Get ready for Fest '26, the second edition of IIITDM Kancheepuram's Techno-Cultural Fest. With a lineup of robotics, hackathons, coding, design, dance, dramatics, music, and more, there's something for everyone. This year, the fest has taken on the theme of vibrant and rapidly growing field of Animation, Visual Effects, Gaming, and Comics, bridging technology and creativity to foster innovation and cultural expression. Fest '26 seeks to kindle a passion for technology and creativity, inviting individuals of the student community to join the journey towards innovative horizons.`;
+  // const paragraphText = `Get ready for Fest '26, the second edition of IIITDM Kancheepuram's Techno-Cultural Fest. With a lineup of robotics, hackathons, coding, design, dance, dramatics, music, and more, there's something for everyone. This year, the fest has taken on the theme of vibrant and rapidly growing field of Animation, Visual Effects, Gaming, and Comics, bridging technology and creativity to foster innovation and cultural expression. Fest '26 seeks to kindle a passion for technology and creativity, inviting individuals of the student community to join the journey towards innovative horizons.`;
+  const paragraphText = `Join us for Samgatha X Vashisht, 2026, the flagship techno-cultural fest of IIITDM Kancheepuram, a five-day celebration of innovation, creativity, and culture. The fest brings together 5,000+ bright minds from top institutions across India, uniting engineers, designers, and creators on one dynamic stage.`
+
 
   return (
     <section
@@ -89,7 +91,10 @@ export default function AboutSection() {
                   : "opacity-0 translate-y-8 blur-sm"
               }`}
             >
-              {paragraphText}
+            Join us for Samgatha X Vashisht, 2026, the flagship techno-cultural fest of IIITDM Kancheepuram, a five-day celebration of innovation, creativity, and culture. 
+            <br />
+            <br />
+            The fest brings together 5,000+ bright minds from top institutions across India, uniting engineers, designers, and creators on one dynamic stage.
             </p>
 
             <div
