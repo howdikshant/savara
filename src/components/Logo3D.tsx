@@ -231,29 +231,17 @@ export default function Logo3D() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
         {/* Main Wordmark: SAVĀRA CHRONOSYNC */}
         <div ref={titleRef} className="opacity-0 mb-4">
-          <div className="relative inline-block wordmark-shimmer-container">
-            <Image
-              src="/color_savara.png"
-              alt="SAVĀRA Chronosync"
-              width={1200}
-              height={500}
-              priority
-              className="h-40 sm:h-52 md:h-64 lg:h-80 xl:h-96 w-auto relative z-[1]"
-              style={{
-                filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",
-              }}
-            />
-            {/* Shimmer overlay */}
-            <div
-              className="absolute inset-0 z-[2] pointer-events-none"
-              style={{
-                background: "linear-gradient(135deg, transparent 0%, rgba(245, 213, 160, 0.25) 20%, transparent 40%, rgba(74, 20, 140, 0.2) 60%, transparent 80%, rgba(230, 81, 0, 0.25) 100%)",
-                backgroundSize: "200% 200%",
-                animation: "wordmark-shimmer 4s linear infinite",
-                mixBlendMode: "color-dodge",
-              }}
-            />
-          </div>
+          <Image
+            src="/color_savara.png"
+            alt="SAVĀRA Chronosync"
+            width={1200}
+            height={500}
+            priority
+            className="h-40 sm:h-52 md:h-64 lg:h-80 xl:h-96 w-auto"
+            style={{
+              filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",
+            }}
+          />
         </div>
       </div>
 

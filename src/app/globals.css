@@ -118,13 +118,17 @@ h6 {
   }
 }
 
-@keyframes wordmark-shimmer {
+@keyframes gleam-sweep {
   0% {
-    background-position: -200% -200%;
+    background-position: 200% center;
+  }
+
+  50% {
+    background-position: -200% center;
   }
 
   100% {
-    background-position: 200% 200%;
+    background-position: -200% center;
   }
 }
 
