@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fest '26",
-  description: "Technocultural Fest of IIITDM Kancheepuram",
+  title: "SAVĀRA — Chronosync | Samgatha x Vashisht 2026",
+  description: "SAVĀRA Chronosync — The flagship techno-cultural fest of IIITDM Kancheepuram. Where the ancient meets the future.",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > 
+      >
         <Analytics />
         <SmoothScroll>
           {children}

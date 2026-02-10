@@ -66,27 +66,48 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
           alt="IIITDM Logo"
           width={1024}
           height={512}
-          className="h-16 lg:h-20 w-auto"
+          className="h-16 lg:h-20 w-auto brightness-0 invert opacity-90"
+        />
+      </div>
+
+      {/* Savara Colored Logo - Right side */}
+      <div className="fixed z-100 right-20 top-5">
+        <Image
+          src="/logo_colored.png"
+          alt="Savara Logo"
+          width={512}
+          height={512}
+          className="h-14 lg:h-16 w-auto"
+          style={{
+            filter: "drop-shadow(0 0 10px rgba(230, 81, 0, 0.3))",
+          }}
         />
       </div>
 
       {/* Hamburger Button */}
       <button
         onClick={onMenuToggle}
-        className="fixed right-6 top-6 z-102 flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full bg-zinc-900/80 backdrop-blur-sm transition-colors hover:bg-zinc-800"
+        className="fixed right-6 top-6 z-102 flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full backdrop-blur-sm transition-colors hover:bg-white/10"
+        style={{
+          background: "rgba(10, 4, 8, 0.7)",
+          border: "1px solid rgba(212, 165, 116, 0.2)",
+        }}
         aria-label="Toggle menu"
       >
         <span
           ref={topLineRef}
-          className="block h-0.5 w-6 origin-center bg-white transition-colors"
+          className="block h-0.5 w-6 origin-center transition-colors"
+          style={{ background: "var(--savara-gold)" }}
         />
         <span
           ref={middleLineRef}
-          className="block h-0.5 w-6 origin-center bg-white transition-colors"
+          className="block h-0.5 w-6 origin-center transition-colors"
+          style={{ background: "var(--savara-gold)" }}
         />
         <span
           ref={bottomLineRef}
-          className="block h-0.5 w-6 origin-center bg-white transition-colors"
+          className="block h-0.5 w-6 origin-center transition-colors"
+          style={{ background: "var(--savara-gold)" }}
         />
       </button>
     </div>

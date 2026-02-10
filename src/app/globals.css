@@ -1,26 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0408;
+  --foreground: #f5e6d3;
+  --savara-orange: #e65100;
+  --savara-red: #c62828;
+  --savara-deep-red: #8b1a1a;
+  --savara-purple: #4a148c;
+  --savara-deep-purple: #1a0033;
+  --savara-gold: #d4a574;
+  --savara-light-gold: #f5d5a0;
+  --savara-cream: #f5e6d3;
+  --savara-warm-black: #0a0408;
+  --savara-stone: #2a1f1a;
+  --savara-stone-light: #3d2e25;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-savara-orange: var(--savara-orange);
+  --color-savara-red: var(--savara-red);
+  --color-savara-deep-red: var(--savara-deep-red);
+  --color-savara-purple: var(--savara-purple);
+  --color-savara-deep-purple: var(--savara-deep-purple);
+  --color-savara-gold: var(--savara-gold);
+  --color-savara-light-gold: var(--savara-light-gold);
+  --color-savara-cream: var(--savara-cream);
+  --color-savara-warm-black: var(--savara-warm-black);
+  --color-savara-stone: var(--savara-stone);
+  --color-savara-stone-light: var(--savara-stone-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rajdhani', 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+/* Cinzel for headings - ancient/ceremonial feel */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--savara-warm-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--savara-orange), var(--savara-purple));
+  border-radius: 3px;
+}
+
+/* Selection colors */
+::selection {
+  background: rgba(230, 81, 0, 0.4);
+  color: var(--savara-cream);
+}
+
+/* Spiral animation for decorative elements */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    filter: blur(60px);
+  }
+
+  50% {
+    opacity: 0.7;
+    filter: blur(80px);
+  }
+}
+
+@keyframes float-gentle {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes wordmark-shimmer {
+  0% {
+    background-position: -200% -200%;
+  }
+
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+/* Wordmark shimmer container glow pulse */
+.wordmark-shimmer-container::after {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(ellipse at center, rgba(230, 81, 0, 0.15) 0%, transparent 70%);
+  z-index: 0;
+  animation: pulse-glow 3s ease-in-out infinite;
+  pointer-events: none;
 }

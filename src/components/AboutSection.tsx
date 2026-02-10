@@ -38,46 +38,59 @@ export default function AboutSection() {
     return () => observer.disconnect();
   }, []);
 
-  // const paragraphText = `Get ready for Fest '26, the second edition of IIITDM Kancheepuram's Techno-Cultural Fest. With a lineup of robotics, hackathons, coding, design, dance, dramatics, music, and more, there's something for everyone. This year, the fest has taken on the theme of vibrant and rapidly growing field of Animation, Visual Effects, Gaming, and Comics, bridging technology and creativity to foster innovation and cultural expression. Fest '26 seeks to kindle a passion for technology and creativity, inviting individuals of the student community to join the journey towards innovative horizons.`;
-  const paragraphText = `Join us for Samgatha X Vashisht, 2026, the flagship techno-cultural fest of IIITDM Kancheepuram, a five-day celebration of innovation, creativity, and culture. The fest brings together 5,000+ bright minds from top institutions across India, uniting engineers, designers, and creators on one dynamic stage.`
-
-
   return (
     <section
       ref={sectionRef}
       id="about"
-      className="relative min-h-screen overflow-hidden bg-linear-to-br from-zinc-950 via-zinc-900 to-black py-20 sm:py-32"
+      className="relative min-h-screen overflow-hidden py-20 sm:py-32"
+      style={{
+        background: "linear-gradient(180deg, var(--savara-warm-black) 0%, #1a0a04 30%, #0d0520 70%, var(--savara-warm-black) 100%)",
+      }}
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-1/4 top-0 h-[500px] w-[500px] rounded-full bg-orange-500/10 blur-[120px]" />
-        <div className="absolute -right-1/4 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-[120px]" />
-        <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-500/5 blur-[100px]" />
+        <div
+          className="absolute -left-1/4 top-0 h-[500px] w-[500px] rounded-full blur-[120px]"
+          style={{ background: "rgba(230, 81, 0, 0.08)" }}
+        />
+        <div
+          className="absolute -right-1/4 bottom-0 h-[500px] w-[500px] rounded-full blur-[120px]"
+          style={{ background: "rgba(74, 20, 140, 0.08)" }}
+        />
+        <div
+          className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[100px]"
+          style={{ background: "rgba(198, 40, 40, 0.05)" }}
+        />
       </div>
 
-      {/* Grid pattern overlay */}
+      {/* Stone texture overlay */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-          backgroundSize: "50px 50px",
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <h2
-          className={`mb-16 text-5xl font-black uppercase tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl transition-all duration-1000 ease-out ${
-            isVisible
+          className={`mb-16 text-5xl font-black uppercase tracking-tight sm:text-6xl md:text-7xl lg:text-8xl transition-all duration-1000 ease-out ${isVisible
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-12"
-          }`}
+            }`}
+          style={{ fontFamily: "'Cinzel', serif" }}
         >
-          <span className="bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+          <span
+            style={{
+              background: "linear-gradient(135deg, #e65100, #c62828, #4a148c)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
             About
           </span>{" "}
-          <span className="text-zinc-100">Fest &apos;26</span>
+          <span style={{ color: "var(--savara-cream)" }}>the Fest</span>
         </h2>
 
         {/* Content Grid */}
@@ -85,28 +98,45 @@ export default function AboutSection() {
           {/* Text Content */}
           <div className="flex flex-col justify-center">
             <p
-              className={`text-lg font-extralight leading-relaxed text-pretty font-mono text-zinc-300 sm:text-xl md:text-2xl transition-all duration-1000 delay-200 ease-out ${
-                isVisible
+              className={`text-lg font-light leading-relaxed text-pretty sm:text-xl md:text-2xl transition-all duration-1000 delay-200 ease-out ${isVisible
                   ? "opacity-100 translate-y-0 blur-0"
                   : "opacity-0 translate-y-8 blur-sm"
-              }`}
+                }`}
+              style={{
+                fontFamily: "'Rajdhani', sans-serif",
+                color: "rgba(245, 230, 211, 0.75)",
+              }}
             >
-            Join us for Samgatha X Vashisht, 2026, the flagship techno-cultural fest of IIITDM Kancheepuram, a five-day celebration of innovation, creativity, and culture. 
-            <br />
-            <br />
-            The fest brings together 5,000+ bright minds from top institutions across India, uniting engineers, designers, and creators on one dynamic stage.
+              Join us for Samgatha X Vashisht, 2026, the flagship techno-cultural fest of IIITDM Kancheepuram, a five-day celebration of innovation, creativity, and culture.
+              <br />
+              <br />
+              The fest brings together 5,000+ bright minds from top institutions across India, uniting engineers, designers, and creators on one dynamic stage.
             </p>
 
             <div
-              className={`mt-10 inline-flex items-center gap-4 transition-all duration-700 delay-500 ease-out ${
-                isVisible
+              className={`mt-10 inline-flex items-center gap-4 transition-all duration-700 delay-500 ease-out ${isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4"
-              }`}
+                }`}
             >
-              <div className="group relative overflow-hidden rounded-full bg-linear-to-r from-orange-500 via-pink-500 to-purple-500 p-0.5">
-                <div className="rounded-full bg-zinc-950 px-6 py-3 transition-all duration-300 group-hover:bg-transparent">
-                  <span className="bg-linear-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-sm font-bold uppercase tracking-widest text-transparent group-hover:text-white">
+              <div className="group relative overflow-hidden rounded-full p-0.5"
+                style={{
+                  background: "linear-gradient(135deg, #e65100, #c62828, #4a148c)",
+                }}
+              >
+                <div
+                  className="rounded-full px-6 py-3 transition-all duration-300 group-hover:bg-transparent"
+                  style={{ background: "var(--savara-warm-black)" }}
+                >
+                  <span
+                    className="text-sm font-bold uppercase tracking-widest group-hover:text-white"
+                    style={{
+                      background: "linear-gradient(135deg, #e65100, #d4a574, #4a148c)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
+                  >
                     Brochure
                   </span>
                 </div>
@@ -132,11 +162,10 @@ export default function AboutSection() {
               return (
                 <div
                   key={image.id}
-                  className={`group absolute h-40 w-56 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-zinc-800/50 shadow-2xl backdrop-blur-sm sm:h-48 sm:w-64 md:h-52 md:w-72 transition-all duration-700 ease-out hover:z-50! hover:scale-110 hover:border-orange-500/50 ${
-                    isVisible
+                  className={`group absolute h-40 w-56 cursor-pointer overflow-hidden rounded-xl shadow-2xl backdrop-blur-sm sm:h-48 sm:w-64 md:h-52 md:w-72 transition-all duration-700 ease-out hover:z-50! hover:scale-110 ${isVisible
                       ? "opacity-100 translate-y-0 scale-100"
                       : "opacity-0 translate-y-16 scale-90"
-                  }`}
+                    }`}
                   style={{
                     top: pos.top,
                     left: pos.left,
@@ -144,15 +173,26 @@ export default function AboutSection() {
                     transform: isVisible ? `rotate(${pos.rotate})` : `rotate(${pos.rotate}) translateY(64px)`,
                     zIndex: pos.zIndex,
                     transitionDelay: `${delay}ms`,
+                    border: "1px solid rgba(212, 165, 116, 0.15)",
                   }}
                 >
-                  {/* Placeholder gradient background */}
-                  <div className="absolute inset-0 bg-linear-to-br from-orange-500/20 via-pink-500/20 to-purple-500/20" />
+                  {/* Gradient overlay */}
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background: "linear-gradient(135deg, rgba(230, 81, 0, 0.15), rgba(74, 20, 140, 0.15))",
+                    }}
+                  />
 
-                  {/* Animated gradient overlay on hover */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  {/* Hover overlay */}
+                  <div
+                    className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    style={{
+                      background: "linear-gradient(to top, rgba(10, 4, 8, 0.8), transparent)",
+                    }}
+                  />
 
-                  {/* Image content */}
+                  {/* Image */}
                   <div className="relative flex h-full w-full items-center justify-center">
                     <Image
                       src={image.src}
@@ -163,35 +203,43 @@ export default function AboutSection() {
                     />
                   </div>
 
-                  {/* Shine effect on hover */}
-                  <div className="absolute inset-0 -translate-x-full skew-x-12 bg-linear-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+                  {/* Shine effect */}
+                  <div
+                    className="absolute inset-0 -translate-x-full skew-x-12 transition-transform duration-700 group-hover:translate-x-full"
+                    style={{
+                      background: "linear-gradient(to right, transparent, rgba(212, 165, 116, 0.1), transparent)",
+                    }}
+                  />
 
-                  {/* Border glow effect */}
-                  <div className="absolute inset-0 rounded-xl opacity-0 shadow-[0_0_30px_rgba(249,115,22,0.3)] transition-opacity duration-300 group-hover:opacity-100" />
-
-                  {/* Floating animation */}
-                  <style jsx>{`
-                    @keyframes float-${index} {
-                      0%, 100% { transform: rotate(${pos.rotate}) translateY(0px); }
-                      50% { transform: rotate(${pos.rotate}) translateY(${index % 2 === 0 ? '-8px' : '8px'}); }
-                    }
-                  `}</style>
+                  {/* Border glow */}
+                  <div
+                    className="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    style={{ boxShadow: "0 0 30px rgba(230, 81, 0, 0.3)" }}
+                  />
                 </div>
               );
             })}
 
             {/* Decorative floating elements */}
-            <div className="absolute -right-4 top-1/4 h-20 w-20 animate-pulse rounded-full bg-orange-500/20 blur-xl" />
             <div
-              className="absolute -left-4 bottom-1/4 h-16 w-16 animate-pulse rounded-full bg-purple-500/20 blur-xl"
-              style={{ animationDelay: "1s" }}
+              className="absolute -right-4 top-1/4 h-20 w-20 animate-pulse rounded-full blur-xl"
+              style={{ background: "rgba(230, 81, 0, 0.15)" }}
+            />
+            <div
+              className="absolute -left-4 bottom-1/4 h-16 w-16 animate-pulse rounded-full blur-xl"
+              style={{ background: "rgba(74, 20, 140, 0.15)", animationDelay: "1s" }}
             />
           </div>
         </div>
       </div>
 
       {/* Bottom decorative line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-orange-500/50 to-transparent" />
+      <div
+        className="absolute bottom-0 left-0 right-0 h-px"
+        style={{
+          background: "linear-gradient(to right, transparent, rgba(230, 81, 0, 0.4), rgba(74, 20, 140, 0.4), transparent)",
+        }}
+      />
     </section>
   );
 }

@@ -3,324 +3,300 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import * as THREE from "three";
 import HamburgerMenu from "./HamburgerMenu";
 import Navbar from "./Navbar";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 export default function Logo3D() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const containerRef = useRef<HTMLDivElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const logoMeshRef = useRef<THREE.Group | null>(null);
-  const isDraggingRef = useRef(false);
-  const previousMousePositionRef = useRef({ x: 0, y: 0 });
-  const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
-  const sceneRef = useRef<THREE.Scene | null>(null);
-  const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const leftLabelRef = useRef<HTMLDivElement>(null);
+  const rightLabelRef = useRef<HTMLDivElement>(null);
+  const archRef = useRef<HTMLDivElement>(null);
+  const spiralRef = useRef<HTMLDivElement>(null);
+  const particlesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!canvasRef.current || !containerRef.current) return;
+    if (!containerRef.current) return;
 
-    // Scene setup
-    const scene = new THREE.Scene();
-    sceneRef.current = scene;
+    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
-    // Camera setup
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
+    // Animate the arch gateway glow
+    tl.fromTo(
+      archRef.current,
+      { opacity: 0, scale: 0.8 },
+      { opacity: 1, scale: 1, duration: 1.5 }
     );
-    camera.position.z = 5;
-    cameraRef.current = camera;
 
-    // Renderer setup with transparency
-    const renderer = new THREE.WebGLRenderer({
-      canvas: canvasRef.current,
-      alpha: true,
-      antialias: true,
+    // Animate the main title/wordmark
+    tl.fromTo(
+      titleRef.current,
+      { opacity: 0, scale: 0.6, filter: "blur(20px)" },
+      { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.5, ease: "elastic.out(1, 0.8)" },
+      "-=0.8"
+    );
+
+    // Animate left and right labels
+    tl.fromTo(
+      leftLabelRef.current,
+      { opacity: 0, x: -50 },
+      { opacity: 1, x: 0, duration: 0.8 },
+      "-=0.5"
+    );
+
+    tl.fromTo(
+      rightLabelRef.current,
+      { opacity: 0, x: 50 },
+      { opacity: 1, x: 0, duration: 0.8 },
+      "-=0.8"
+    );
+
+    // Spiral rotation
+    gsap.to(spiralRef.current, {
+      rotation: 360,
+      duration: 20,
+      repeat: -1,
+      ease: "none",
     });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setClearColor(0x000000, 0);
-    rendererRef.current = renderer;
 
-    // Yellow lighting for metallic effect
-    const ambientLight = new THREE.AmbientLight(0xffff00, 0.4);
-    scene.add(ambientLight);
-
-    const directionalLight1 = new THREE.DirectionalLight(0xffd700, 1.5);
-    directionalLight1.position.set(5, 5, 5);
-    scene.add(directionalLight1);
-
-    const directionalLight2 = new THREE.DirectionalLight(0xffaa00, 1);
-    directionalLight2.position.set(-5, -5, 5);
-    scene.add(directionalLight2);
-
-    const pointLight = new THREE.PointLight(0xffff00, 1, 100);
-    pointLight.position.set(0, 0, 10);
-    scene.add(pointLight);
-
-    // Load the logo texture
-    const textureLoader = new THREE.TextureLoader();
-    textureLoader.load("/fest_logo.png", (texture) => {
-      const image = texture.image as HTMLImageElement;
-      const aspectRatio = image.width / image.height;
-      
-      // Create group to hold all parts
-      const group = new THREE.Group();
-      
-      // Dimensions
-      const planeHeight = 2.8;
-      const planeWidth = planeHeight * aspectRatio;
-      const depth = 0.3;
-
-      // Create front plane with logo texture (with alpha test for transparency)
-      const frontGeometry = new THREE.PlaneGeometry(planeWidth, planeHeight);
-      const frontMaterial = new THREE.MeshStandardMaterial({
-        map: texture,
-        transparent: true,
-        alphaTest: 0.5,
-        metalness: 0.3,
-        roughness: 0.4,
-        side: THREE.FrontSide,
-      });
-      const frontPlane = new THREE.Mesh(frontGeometry, frontMaterial);
-      frontPlane.position.z = depth / 2;
-      group.add(frontPlane);
-
-      // Create back plane with logo texture (mirrored)
-      const backGeometry = new THREE.PlaneGeometry(planeWidth, planeHeight);
-      const backMaterial = new THREE.MeshStandardMaterial({
-        map: texture,
-        transparent: true,
-        alphaTest: 0.5,
-        metalness: 0.3,
-        roughness: 0.4,
-        side: THREE.FrontSide,
-      });
-      const backPlane = new THREE.Mesh(backGeometry, backMaterial);
-      backPlane.position.z = -depth / 2;
-      backPlane.rotation.y = Math.PI;
-      backPlane.scale.x = -1; // Mirror horizontally
-      group.add(backPlane);
-
-      // Create edge geometry using alpha channel
-      // We'll create a "shell" effect by rendering multiple offset layers
-      const canvas2d = document.createElement("canvas");
-      const ctx = canvas2d.getContext("2d");
-      if (ctx) {
-        canvas2d.width = image.width;
-        canvas2d.height = image.height;
-        ctx.drawImage(image, 0, 0);
-        
-        const imageData = ctx.getImageData(0, 0, canvas2d.width, canvas2d.height);
-        const data = imageData.data;
-        
-        // Create edge geometry by finding edge pixels and creating small boxes
-        const edgePositions: number[] = [];
-        const threshold = 128;
-        const pixelScale = planeWidth / image.width;
-        
-        // Sample every pixel for continuous edge (no gaps)
-        const sampleRate = 1;
-        
-        for (let y = 0; y < image.height; y += sampleRate) {
-          for (let x = 0; x < image.width; x += sampleRate) {
-            const idx = (y * image.width + x) * 4;
-            const alpha = data[idx + 3];
-            
-            if (alpha >= threshold) {
-              // Check if this is an edge pixel (check all 8 directions for better edge detection)
-              const checkAlpha = (cx: number, cy: number) => {
-                if (cx < 0 || cx >= image.width || cy < 0 || cy >= image.height) return 0;
-                return data[(cy * image.width + cx) * 4 + 3];
-              };
-              
-              const isEdge = 
-                checkAlpha(x - 1, y) < threshold ||
-                checkAlpha(x + 1, y) < threshold ||
-                checkAlpha(x, y - 1) < threshold ||
-                checkAlpha(x, y + 1) < threshold ||
-                checkAlpha(x - 1, y - 1) < threshold ||
-                checkAlpha(x + 1, y - 1) < threshold ||
-                checkAlpha(x - 1, y + 1) < threshold ||
-                checkAlpha(x + 1, y + 1) < threshold;
-              
-              if (isEdge) {
-                // Convert to 3D coordinates (centered)
-                const px = (x - image.width / 2) * pixelScale;
-                const py = -(y - image.height / 2) * pixelScale;
-                edgePositions.push(px, py);
-              }
-            }
-          }
-        }
-        
-        // Create small boxes at each edge position to form the metallic edge
-        // Make boxes larger to ensure overlap and no gaps
-        const edgeBoxSize = pixelScale * 2.0;
-        const edgeMaterial = new THREE.MeshStandardMaterial({
-          color: 0xffd700,
-          metalness: 0.95,
-          roughness: 0.15,
+    // Floating particles
+    if (particlesRef.current) {
+      const particles = particlesRef.current.children;
+      Array.from(particles).forEach((particle, i) => {
+        gsap.to(particle, {
+          y: gsap.utils.random(-30, 30),
+          x: gsap.utils.random(-20, 20),
+          opacity: gsap.utils.random(0.2, 0.8),
+          duration: gsap.utils.random(3, 6),
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+          delay: i * 0.3,
         });
-        
-        // Use instanced mesh for better performance
-        const edgeBoxGeometry = new THREE.BoxGeometry(edgeBoxSize, edgeBoxSize, depth);
-        const instanceCount = edgePositions.length / 2;
-        const instancedMesh = new THREE.InstancedMesh(edgeBoxGeometry, edgeMaterial, instanceCount);
-        
-        const dummy = new THREE.Object3D();
-        for (let i = 0; i < instanceCount; i++) {
-          dummy.position.set(edgePositions[i * 2], edgePositions[i * 2 + 1], 0);
-          dummy.updateMatrix();
-          instancedMesh.setMatrixAt(i, dummy.matrix);
-        }
-        instancedMesh.instanceMatrix.needsUpdate = true;
-        group.add(instancedMesh);
-      }
-
-      logoMeshRef.current = group;
-      scene.add(group);
-
-      // GSAP ScrollTrigger for vertical rotation on scroll
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-        onUpdate: (self) => {
-          if (logoMeshRef.current && !isDraggingRef.current) {
-            logoMeshRef.current.rotation.x = self.progress * Math.PI * 2;
-          }
-        },
       });
+    }
+
+    // Parallax on scroll
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+      onUpdate: (self) => {
+        if (titleRef.current) {
+          gsap.set(titleRef.current, { y: self.progress * 100 });
+        }
+      },
     });
 
-    // Animation loop
-    const animate = () => {
-      requestAnimationFrame(animate);
-
-      if (logoMeshRef.current) {
-        logoMeshRef.current.rotation.y += 0.01;
-      }
-
-      renderer.render(scene, camera);
-    };
-    animate();
-
-    // Handle window resize
-    const handleResize = () => {
-      if (!cameraRef.current || !rendererRef.current) return;
-      cameraRef.current.aspect = window.innerWidth / window.innerHeight;
-      cameraRef.current.updateProjectionMatrix();
-      rendererRef.current.setSize(window.innerWidth, window.innerHeight);
-    };
-    window.addEventListener("resize", handleResize);
-
-    // Mouse/touch interaction for free rotation
-    const handleMouseDown = (e: MouseEvent) => {
-      isDraggingRef.current = true;
-      previousMousePositionRef.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!isDraggingRef.current || !logoMeshRef.current) return;
-
-      const deltaX = e.clientX - previousMousePositionRef.current.x;
-      const deltaY = e.clientY - previousMousePositionRef.current.y;
-
-      logoMeshRef.current.rotation.y += deltaX * 0.01;
-      logoMeshRef.current.rotation.x += deltaY * 0.01;
-
-      previousMousePositionRef.current = { x: e.clientX, y: e.clientY };
-    };
-
-    const handleMouseUp = () => {
-      isDraggingRef.current = false;
-    };
-
-    const handleTouchStart = (e: TouchEvent) => {
-      isDraggingRef.current = true;
-      previousMousePositionRef.current = {
-        x: e.touches[0].clientX,
-        y: e.touches[0].clientY,
-      };
-    };
-
-    const handleTouchMove = (e: TouchEvent) => {
-      if (!isDraggingRef.current || !logoMeshRef.current) return;
-
-      const deltaX = e.touches[0].clientX - previousMousePositionRef.current.x;
-      const deltaY = e.touches[0].clientY - previousMousePositionRef.current.y;
-
-      logoMeshRef.current.rotation.y += deltaX * 0.01;
-      logoMeshRef.current.rotation.x += deltaY * 0.01;
-
-      previousMousePositionRef.current = {
-        x: e.touches[0].clientX,
-        y: e.touches[0].clientY,
-      };
-    };
-
-    const handleTouchEnd = () => {
-      isDraggingRef.current = false;
-    };
-
-    const canvasEl = canvasRef.current;
-    canvasEl.addEventListener("mousedown", handleMouseDown);
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
-    canvasEl.addEventListener("touchstart", handleTouchStart);
-    window.addEventListener("touchmove", handleTouchMove);
-    window.addEventListener("touchend", handleTouchEnd);
-
-    // Cleanup
     return () => {
-      window.removeEventListener("resize", handleResize);
-      canvasEl.removeEventListener("mousedown", handleMouseDown);
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
-      canvasEl.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchmove", handleTouchMove);
-      window.removeEventListener("touchend", handleTouchEnd);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      renderer.dispose();
     };
   }, []);
 
   return (
     <div
       ref={containerRef}
-      className="relative flex min-h-screen w-full flex-col items-center justify-center px-4"
+      className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden"
     >
       {/* Navbar with Logo and Hamburger Button */}
       <Navbar isMenuOpen={isMenuOpen} onMenuToggle={() => setIsMenuOpen(!isMenuOpen)} />
-      
+
       {/* Hamburger Menu */}
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover -z-10"
-      >
-        <source src="/background_video.mp4" type="video/mp4" />
-      </video>
+      {/* Banner background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/savara_banner_main.jpeg')",
+        }}
+      />
 
-      {/* Three.js Canvas */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 z-10"
+      {/* Dark vignette overlay for text readability */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.3) 0%, rgba(10, 4, 8, 0.7) 70%, rgba(10, 4, 8, 0.85) 100%)",
+        }}
+      />
+
+      {/* Subtle color-enhancing overlay */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(to bottom, rgba(10, 4, 8, 0.4) 0%, transparent 30%, transparent 70%, rgba(10, 4, 8, 0.8) 100%)",
+        }}
+      />
+
+      {/* Background split gradient - Orange left, Purple right */}
+      <div className="absolute inset-0">
+        {/* Left warm side */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(135deg, rgba(230, 81, 0, 0.25) 0%, rgba(198, 40, 40, 0.15) 40%, transparent 60%)",
+          }}
+        />
+        {/* Right cool side */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(225deg, rgba(74, 20, 140, 0.3) 0%, rgba(26, 0, 51, 0.2) 40%, transparent 60%)",
+          }}
+        />
+      </div>
+
+      {/* Stone texture overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.06]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      />
+
+      {/* Animated glow orbs */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div
+          className="absolute w-[600px] h-[600px] rounded-full -left-48 top-1/4"
+          style={{
+            background: "radial-gradient(circle, rgba(230, 81, 0, 0.15) 0%, transparent 70%)",
+            animation: "pulse-glow 4s ease-in-out infinite",
+          }}
+        />
+        <div
+          className="absolute w-[600px] h-[600px] rounded-full -right-48 top-1/4"
+          style={{
+            background: "radial-gradient(circle, rgba(74, 20, 140, 0.2) 0%, transparent 70%)",
+            animation: "pulse-glow 4s ease-in-out infinite 2s",
+          }}
+        />
+        <div
+          className="absolute w-[300px] h-[300px] rounded-full left-1/2 bottom-0 -translate-x-1/2"
+          style={{
+            background: "radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%)",
+            animation: "pulse-glow 3s ease-in-out infinite 1s",
+          }}
+        />
+      </div>
+
+      {/* Spiral decorative element (center-top) */}
+      <div
+        ref={spiralRef}
+        className="absolute top-[15%] left-1/2 -translate-x-1/2 w-40 h-40 sm:w-56 sm:h-56 opacity-10 pointer-events-none"
+      >
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <path
+            d="M100 20 C140 20, 180 60, 180 100 C180 140, 140 180, 100 180 C60 180, 30 150, 30 110 C30 80, 55 55, 80 55 C105 55, 125 75, 125 100 C125 120, 110 135, 90 135 C75 135, 65 120, 65 105 C65 90, 78 80, 90 80"
+            fill="none"
+            stroke="url(#spiralGradient)"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <defs>
+            <linearGradient id="spiralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#e65100" />
+              <stop offset="100%" stopColor="#4a148c" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+
+
+      {/* Floating particles */}
+      <div ref={particlesRef} className="absolute inset-0 pointer-events-none">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full"
+            style={{
+              width: Math.random() * 4 + 2,
+              height: Math.random() * 4 + 2,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              background: i % 2 === 0
+                ? "rgba(230, 81, 0, 0.5)"
+                : "rgba(74, 20, 140, 0.5)",
+              opacity: 0.3,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+        {/* Main Wordmark: SAVĀRA CHRONOSYNC */}
+        <div ref={titleRef} className="opacity-0 mb-4">
+          <div className="relative inline-block wordmark-shimmer-container">
+            <Image
+              src="/color_savara.png"
+              alt="SAVĀRA Chronosync"
+              width={1200}
+              height={500}
+              priority
+              className="h-40 sm:h-52 md:h-64 lg:h-80 xl:h-96 w-auto relative z-[1]"
+              style={{
+                filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",
+              }}
+            />
+            {/* Shimmer overlay */}
+            <div
+              className="absolute inset-0 z-[2] pointer-events-none"
+              style={{
+                background: "linear-gradient(135deg, transparent 0%, rgba(245, 213, 160, 0.25) 20%, transparent 40%, rgba(74, 20, 140, 0.2) 60%, transparent 80%, rgba(230, 81, 0, 0.25) 100%)",
+                backgroundSize: "200% 200%",
+                animation: "wordmark-shimmer 4s linear infinite",
+                mixBlendMode: "color-dodge",
+              }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Left label: SAMGATHA */}
+      <div
+        ref={leftLabelRef}
+        className="absolute bottom-8 sm:bottom-12 left-6 sm:left-12 opacity-0"
+      >
+        <span
+          className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-[0.4em]"
+          style={{
+            fontFamily: "'Cinzel', serif",
+            color: "var(--savara-gold)",
+            textShadow: "0 0 20px rgba(230, 81, 0, 0.3)",
+          }}
+        >
+          Samgatha
+        </span>
+      </div>
+
+      {/* Right label: VASHISHT */}
+      <div
+        ref={rightLabelRef}
+        className="absolute bottom-8 sm:bottom-12 right-6 sm:right-12 opacity-0"
+      >
+        <span
+          className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-[0.4em]"
+          style={{
+            fontFamily: "'Cinzel', serif",
+            color: "var(--savara-gold)",
+            textShadow: "0 0 20px rgba(74, 20, 140, 0.4)",
+          }}
+        >
+          Vashisht
+        </span>
+      </div>
+
+      {/* Bottom gradient fade */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-32"
+        style={{
+          background: "linear-gradient(to top, var(--savara-warm-black) 0%, transparent 100%)",
+        }}
       />
     </div>
   );

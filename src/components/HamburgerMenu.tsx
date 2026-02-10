@@ -18,7 +18,6 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
     if (!itemRef.current) return;
 
     if (isOpen) {
-      // Animate in with stagger
       gsap.fromTo(
         itemRef.current,
         {
@@ -41,12 +40,10 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
   const handleMouseEnter = () => {
     if (!itemRef.current) return;
 
-    // Kill any ongoing animations on letters first
     letterRefs.current.forEach((letter) => {
       if (letter) gsap.killTweensOf(letter);
     });
 
-    // Main item animation
     gsap.to(itemRef.current, {
       x: 40,
       scale: 1.05,
@@ -54,20 +51,18 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
       ease: "power3.out",
     });
 
-    // Animate each letter with wave effect
     letterRefs.current.forEach((letter, i) => {
       if (!letter) return;
       gsap.to(letter, {
         y: -10,
         rotateZ: gsap.utils.random(-15, 15),
-        color: "#f97316",
-        textShadow: "0 0 20px rgba(249, 115, 22, 0.5)",
+        color: "#e65100",
+        textShadow: "0 0 20px rgba(230, 81, 0, 0.5)",
         duration: 0.3,
         delay: i * 0.03,
         ease: "power2.out",
       });
 
-      // Bounce back
       gsap.to(letter, {
         y: 0,
         rotateZ: 0,
@@ -77,7 +72,6 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
       });
     });
 
-    // Add glitch effect
     const glitchTl = gsap.timeline();
     glitchTl
       .to(itemRef.current, {
@@ -97,13 +91,11 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
   const handleMouseLeave = () => {
     if (!itemRef.current) return;
 
-    // Kill any ongoing animations on the item and letters
     gsap.killTweensOf(itemRef.current);
     letterRefs.current.forEach((letter) => {
       if (letter) gsap.killTweensOf(letter);
     });
 
-    // Reset item immediately
     gsap.to(itemRef.current, {
       x: 0,
       scale: 1,
@@ -113,13 +105,12 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
       overwrite: true,
     });
 
-    // Reset all letters immediately
     letterRefs.current.forEach((letter) => {
       if (!letter) return;
       gsap.to(letter, {
         y: 0,
         rotateZ: 0,
-        color: "#fafafa",
+        color: "#f5e6d3",
         textShadow: "none",
         duration: 0.2,
         ease: "power2.out",
@@ -142,7 +133,10 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
       onClick={handleClick}
       style={{ perspective: "1000px" }}
     >
-      <span className="relative inline-flex text-4xl font-black uppercase tracking-tight text-zinc-50 sm:text-5xl md:text-6xl lg:text-7xl">
+      <span
+        className="relative inline-flex text-4xl font-black uppercase tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+        style={{ color: "var(--savara-cream)", fontFamily: "'Cinzel', serif" }}
+      >
         {label.split("").map((char, i) => (
           <span
             key={i}
@@ -157,7 +151,12 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
         ))}
       </span>
       {/* Decorative line */}
-      <span className="absolute -bottom-1 left-0 h-1 w-0 bg-linear-to-r from-orange-500 via-pink-500 to-purple-500 transition-all duration-500 group-hover:w-full" />
+      <span
+        className="absolute -bottom-1 left-0 h-1 w-0 transition-all duration-500 group-hover:w-full"
+        style={{
+          background: "linear-gradient(to right, #e65100, #c62828, #4a148c)",
+        }}
+      />
     </a>
   );
 }
@@ -181,23 +180,19 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
       document.body.style.overflow = "";
     }
 
-    // Cleanup on unmount
     return () => {
       document.body.style.overflow = "";
-      
     };
   }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
-      // Animate overlay in
       gsap.to(overlayRef.current, {
         opacity: 1,
         duration: 0.5,
         ease: "power2.out",
       });
 
-      // Animate menu container
       gsap.fromTo(
         menuRef.current,
         {
@@ -210,14 +205,12 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
         }
       );
     } else {
-      // Animate overlay out
       gsap.to(overlayRef.current, {
         opacity: 0,
         duration: 0.3,
         ease: "power2.in",
       });
 
-      // Animate menu container out
       gsap.to(menuRef.current, {
         clipPath: "circle(0% at calc(100% - 40px) 40px)",
         duration: 0.5,
@@ -228,26 +221,38 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
 
   return (
     <>
-      {/* Blur Overlay */}
-      {/* <div
-        ref={overlayRef}
-        className="pointer-events-none fixed inset-0 z-40 bg-black/30 opacity-0 backdrop-blur-md"
-        style={{ pointerEvents: isOpen ? "auto" : "none" }}
-        onClick={onClose}
-      /> */}
-
       {/* Full Screen Menu */}
       <div
         ref={menuRef}
-        className="fixed inset-0 z-101 flex flex-col items-start justify-center overflow-hidden bg-linear-to-br from-zinc-900 via-zinc-950 to-black px-8 sm:px-16 md:px-24"
-        style={{ clipPath: "circle(0% at calc(100% - 40px) 40px)" }}
+        className="fixed inset-0 z-101 flex flex-col items-start justify-center overflow-hidden px-8 sm:px-16 md:px-24"
+        style={{
+          clipPath: "circle(0% at calc(100% - 40px) 40px)",
+          background: "linear-gradient(135deg, #0a0408 0%, #1a0a04 30%, #0d0520 70%, #0a0408 100%)",
+        }}
       >
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute -left-1/4 top-1/4 h-96 w-96 rounded-full bg-orange-500 blur-[150px]" />
-          <div className="absolute -right-1/4 bottom-1/4 h-96 w-96 rounded-full bg-purple-500 blur-[150px]" />
-          <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-500 blur-[100px]" />
+          <div
+            className="absolute -left-1/4 top-1/4 h-96 w-96 rounded-full blur-[150px]"
+            style={{ background: "var(--savara-orange)" }}
+          />
+          <div
+            className="absolute -right-1/4 bottom-1/4 h-96 w-96 rounded-full blur-[150px]"
+            style={{ background: "var(--savara-purple)" }}
+          />
+          <div
+            className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[100px]"
+            style={{ background: "var(--savara-deep-red)" }}
+          />
         </div>
+
+        {/* Stone texture overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        />
 
         {/* Menu Items */}
         <nav className="relative z-10 flex flex-col gap-2 md:gap-4">
@@ -257,7 +262,13 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
         </nav>
 
         {/* Decorative number */}
-        <div className="absolute bottom-8 right-8 text-[20vw] font-black leading-none text-white/5">
+        <div
+          className="absolute bottom-8 right-8 text-[20vw] font-black leading-none"
+          style={{
+            fontFamily: "'Cinzel', serif",
+            color: "rgba(212, 165, 116, 0.04)",
+          }}
+        >
           26
         </div>
       </div>

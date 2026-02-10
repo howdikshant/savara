@@ -4,59 +4,109 @@ import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-zinc-900 py-16 px-6 sm:px-12 lg:px-20">
+    <footer
+      className="w-full py-16 px-6 sm:px-12 lg:px-20"
+      style={{
+        background: "linear-gradient(180deg, var(--savara-warm-black) 0%, #0d0408 100%)",
+      }}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {/* Logo Section */}
           <div className="flex flex-col items-start">
-            <div className="w-16 h-16 bg-zinc-700 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:scale-105">
-              <span className="font-mono text-2xl font-bold text-zinc-100">
-                F
+            <div
+              className="w-16 h-16 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:scale-105"
+              style={{
+                background: "linear-gradient(135deg, rgba(230, 81, 0, 0.2), rgba(74, 20, 140, 0.2))",
+                border: "1px solid rgba(212, 165, 116, 0.2)",
+              }}
+            >
+              <span
+                className="text-2xl font-bold"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  color: "var(--savara-gold)",
+                }}
+              >
+                S
               </span>
             </div>
-            <h2 className="font-mono text-2xl font-bold tracking-tight text-zinc-100">
-              Fest &apos;26
+            <h2
+              className="text-2xl font-bold tracking-tight"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                color: "var(--savara-cream)",
+              }}
+            >
+              SAVĀRA
             </h2>
-            <p className="font-mono text-sm text-zinc-400 mt-1 tracking-wide">
-              Technocultural Festival
+            <p
+              className="text-sm mt-1 tracking-wide"
+              style={{
+                fontFamily: "'Rajdhani', sans-serif",
+                color: "rgba(212, 165, 116, 0.5)",
+              }}
+            >
+              Chronosync — Where Ancient Meets Future
             </p>
           </div>
 
           {/* Contact Us Section */}
           <div className="flex flex-col items-start">
-            <h3 className="font-mono text-lg font-bold uppercase tracking-widest text-zinc-100 mb-6">
+            <h3
+              className="text-lg font-bold uppercase tracking-widest mb-6"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                color: "var(--savara-cream)",
+              }}
+            >
               Contact Us
             </h3>
-            
+
             <div className="space-y-4">
               {/* Email */}
               <a
                 href="mailto:fest@iiitdm.ac.in"
-                className="group flex items-start gap-3 text-zinc-400 transition-colors duration-300 hover:text-zinc-100"
+                className="group flex items-start gap-3 transition-colors duration-300"
+                style={{ color: "rgba(212, 165, 116, 0.6)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--savara-gold)")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212, 165, 116, 0.6)")}
               >
                 <Mail className="w-5 h-5 mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                <span className="font-mono text-sm relative">
+                <span className="text-sm relative" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
                   fest@iiitdm.ac.in
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-zinc-100 transition-all duration-300 group-hover:w-full" />
+                  <span
+                    className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
+                    style={{ background: "var(--savara-gold)" }}
+                  />
                 </span>
               </a>
 
               {/* Phone */}
               <a
                 href="tel:+910000000000"
-                className="group flex items-start gap-3 text-zinc-400 transition-colors duration-300 hover:text-zinc-100"
+                className="group flex items-start gap-3 transition-colors duration-300"
+                style={{ color: "rgba(212, 165, 116, 0.6)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--savara-gold)")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212, 165, 116, 0.6)")}
               >
                 <Phone className="w-5 h-5 mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                <span className="font-mono text-sm relative">
+                <span className="text-sm relative" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
                   +91 00000 00000
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-zinc-100 transition-all duration-300 group-hover:w-full" />
+                  <span
+                    className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
+                    style={{ background: "var(--savara-gold)" }}
+                  />
                 </span>
               </a>
 
               {/* Address */}
-              <div className="group flex items-start gap-3 text-zinc-400">
+              <div className="group flex items-start gap-3" style={{ color: "rgba(212, 165, 116, 0.6)" }}>
                 <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
-                <address className="font-mono text-sm not-italic leading-relaxed">
+                <address
+                  className="text-sm not-italic leading-relaxed"
+                  style={{ fontFamily: "'Rajdhani', sans-serif" }}
+                >
                   IIITDM Kancheepuram,<br />
                   Melakottaiyur, Nellikuppam Road,<br />
                   Near Kandigai,<br />
@@ -70,63 +120,78 @@ export default function Footer() {
 
           {/* Social Links Section */}
           <div className="flex flex-col items-start">
-            <h3 className="font-mono text-lg font-bold uppercase tracking-widest text-zinc-100 mb-6">
+            <h3
+              className="text-lg font-bold uppercase tracking-widest mb-6"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                color: "var(--savara-cream)",
+              }}
+            >
               Follow Us
             </h3>
-            
+
             <div className="flex flex-col space-y-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 text-zinc-400 transition-colors duration-300 hover:text-zinc-100"
-              >
-                <div className="p-2 rounded-lg bg-zinc-800 transition-all duration-300 group-hover:bg-zinc-700 group-hover:scale-110">
-                  <Instagram className="w-5 h-5" />
-                </div>
-                <span className="font-mono text-sm font-medium relative">
-                  Instagram
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-zinc-100 transition-all duration-300 group-hover:w-full" />
-                </span>
-              </a>
-
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 text-zinc-400 transition-colors duration-300 hover:text-zinc-100"
-              >
-                <div className="p-2 rounded-lg bg-zinc-800 transition-all duration-300 group-hover:bg-zinc-700 group-hover:scale-110">
-                  <Linkedin className="w-5 h-5" />
-                </div>
-                <span className="font-mono text-sm font-medium relative">
-                  LinkedIn
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-zinc-100 transition-all duration-300 group-hover:w-full" />
-                </span>
-              </a>
-
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-3 text-zinc-400 transition-colors duration-300 hover:text-zinc-100"
-              >
-                <div className="p-2 rounded-lg bg-zinc-800 transition-all duration-300 group-hover:bg-zinc-700 group-hover:scale-110">
-                  <Youtube className="w-5 h-5" />
-                </div>
-                <span className="font-mono text-sm font-medium relative">
-                  YouTube
-                  <span className="absolute bottom-0 left-0 w-0 h-px bg-zinc-100 transition-all duration-300 group-hover:w-full" />
-                </span>
-              </a>
+              {[
+                { href: "https://instagram.com", Icon: Instagram, label: "Instagram" },
+                { href: "https://linkedin.com", Icon: Linkedin, label: "LinkedIn" },
+                { href: "https://youtube.com", Icon: Youtube, label: "YouTube" },
+              ].map(({ href, Icon, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-3 transition-colors duration-300"
+                  style={{ color: "rgba(212, 165, 116, 0.6)" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "var(--savara-gold)")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212, 165, 116, 0.6)")}
+                >
+                  <div
+                    className="p-2 rounded-lg transition-all duration-300 group-hover:scale-110"
+                    style={{
+                      background: "rgba(42, 31, 26, 0.5)",
+                      border: "1px solid rgba(212, 165, 116, 0.1)",
+                    }}
+                    onMouseEnter={(e) => {
+                      (e.currentTarget as HTMLElement).style.background = "rgba(230, 81, 0, 0.15)";
+                      (e.currentTarget as HTMLElement).style.borderColor = "rgba(230, 81, 0, 0.3)";
+                    }}
+                    onMouseLeave={(e) => {
+                      (e.currentTarget as HTMLElement).style.background = "rgba(42, 31, 26, 0.5)";
+                      (e.currentTarget as HTMLElement).style.borderColor = "rgba(212, 165, 116, 0.1)";
+                    }}
+                  >
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <span
+                    className="text-sm font-medium relative"
+                    style={{ fontFamily: "'Rajdhani', sans-serif" }}
+                  >
+                    {label}
+                    <span
+                      className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
+                      style={{ background: "var(--savara-gold)" }}
+                    />
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-zinc-800">
-          <p className="font-mono text-xs text-zinc-500 text-center tracking-wider">
-            © 2026 Fest &apos;26 — IIITDM Kancheepuram. All rights reserved.
+        <div
+          className="mt-16 pt-8"
+          style={{ borderTop: "1px solid rgba(212, 165, 116, 0.1)" }}
+        >
+          <p
+            className="text-xs text-center tracking-wider"
+            style={{
+              fontFamily: "'Rajdhani', sans-serif",
+              color: "rgba(212, 165, 116, 0.3)",
+            }}
+          >
+            &copy; 2026 SAVĀRA Chronosync — IIITDM Kancheepuram. All rights reserved.
           </p>
         </div>
       </div>
