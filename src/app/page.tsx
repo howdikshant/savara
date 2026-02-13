@@ -1,29 +1,24 @@
 "use client";
 
-import Footer from "@/components/Footer";
-import AboutSection from "@/components/AboutSection";
-import Sponsors from "@/components/Sponsors";
-import Timeline from "@/components/Timeline";
-import CountdownTimer from "@/components/CountdownTImer";
+import dynamic from "next/dynamic";
 import Logo3D from "@/components/Logo3D";
-import WhatIsSavara from "@/components/WhatIsSavara";
+
+const WhatIsSavara = dynamic(() => import("@/components/WhatIsSavara"));
+const AboutSection = dynamic(() => import("@/components/AboutSection"));
+const Sponsors = dynamic(() => import("@/components/Sponsors"));
+const Footer = dynamic(() => import("@/components/Footer"));
 
 export default function Home() {
-  // Set target date to 3 days from now
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 3);
+
 
   return (
     <>
-      {/* <CountdownTimer targetDate={targetDate} /> */}
+
       <Logo3D />
 
       <WhatIsSavara />
 
       <AboutSection />
-
-      {/* Timeline Section */}
-      {/* <Timeline /> */}
 
       <Sponsors />
 
@@ -31,4 +26,3 @@ export default function Home() {
     </>
   );
 }
-

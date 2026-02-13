@@ -75,8 +75,8 @@ export default function AboutSection() {
         {/* Section Header */}
         <h2
           className={`mb-16 text-5xl font-black uppercase tracking-tight sm:text-6xl md:text-7xl lg:text-8xl transition-all duration-1000 ease-out ${isVisible
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-12"
+            ? "opacity-100 translate-x-0"
+            : "opacity-0 -translate-x-12"
             }`}
           style={{ fontFamily: "'Cinzel', serif" }}
         >
@@ -99,8 +99,8 @@ export default function AboutSection() {
           <div className="flex flex-col justify-center">
             <p
               className={`text-lg font-light leading-relaxed text-pretty sm:text-xl md:text-2xl transition-all duration-1000 delay-200 ease-out ${isVisible
-                  ? "opacity-100 translate-y-0 blur-0"
-                  : "opacity-0 translate-y-8 blur-sm"
+                ? "opacity-100 translate-y-0 blur-0"
+                : "opacity-0 translate-y-8 blur-sm"
                 }`}
               style={{
                 fontFamily: "'Rajdhani', sans-serif",
@@ -115,8 +115,8 @@ export default function AboutSection() {
 
             <div
               className={`mt-10 inline-flex items-center gap-4 transition-all duration-700 delay-500 ease-out ${isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-4"
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
                 }`}
             >
               <div className="group relative overflow-hidden rounded-full p-0.5"
@@ -163,8 +163,8 @@ export default function AboutSection() {
                 <div
                   key={image.id}
                   className={`group absolute h-40 w-56 cursor-pointer overflow-hidden rounded-xl shadow-2xl backdrop-blur-sm sm:h-48 sm:w-64 md:h-52 md:w-72 transition-all duration-700 ease-out hover:z-50! hover:scale-110 ${isVisible
-                      ? "opacity-100 translate-y-0 scale-100"
-                      : "opacity-0 translate-y-16 scale-90"
+                    ? "opacity-100 translate-y-0 scale-100"
+                    : "opacity-0 translate-y-16 scale-90"
                     }`}
                   style={{
                     top: pos.top,
@@ -197,9 +197,10 @@ export default function AboutSection() {
                     <Image
                       src={image.src}
                       alt={image.alt}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-xl"
+                      fill
+                      sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 288px"
+                      className="object-cover rounded-xl"
+                      loading="lazy"
                     />
                   </div>
 

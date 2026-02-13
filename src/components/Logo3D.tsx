@@ -108,12 +108,15 @@ export default function Logo3D() {
       {/* Hamburger Menu */}
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
-      {/* Banner background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/savara_banner_main.jpeg')",
-        }}
+      {/* Banner background image — optimized via Next.js Image */}
+      <Image
+        src="/savara_banner_main.jpeg"
+        alt="SAVĀRA banner background"
+        fill
+        priority
+        quality={75}
+        sizes="100vw"
+        className="object-cover object-center"
       />
 
       {/* Dark vignette overlay for text readability */}
@@ -234,9 +237,10 @@ export default function Logo3D() {
           <Image
             src="/color_savara.png"
             alt="SAVĀRA Chronosync"
-            width={1200}
-            height={500}
+            width={600}
+            height={250}
             priority
+            sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 256px, 384px"
             className="h-40 sm:h-52 md:h-64 lg:h-80 xl:h-96 w-auto"
             style={{
               filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",

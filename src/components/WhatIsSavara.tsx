@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from "react";
 
 export default function WhatIsSavara() {
     const sectionRef = useRef<HTMLElement>(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
     const [isVisible, setIsVisible] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -12,12 +14,18 @@ export default function WhatIsSavara() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setIsVisible(true);
+                        // Lazy-load the video when section is near viewport
+                        if (!videoLoaded && videoRef.current) {
+                            videoRef.current.src = "/background_video.mp4";
+                            videoRef.current.load();
+                            setVideoLoaded(true);
+                        }
                     }
                 });
             },
             {
-                threshold: 0.15,
-                rootMargin: "0px 0px -50px 0px",
+                threshold: 0.05,
+                rootMargin: "200px 0px 0px 0px",
             }
         );
 
@@ -26,7 +34,7 @@ export default function WhatIsSavara() {
         }
 
         return () => observer.disconnect();
-    }, []);
+    }, [videoLoaded]);
 
     return (
         <section
@@ -34,14 +42,15 @@ export default function WhatIsSavara() {
             id="savara"
             className="relative flex min-h-screen items-center justify-center overflow-hidden"
         >
-            {/* Background Video */}
+            {/* Background Video — lazy-loaded */}
             <video
+                ref={videoRef}
                 className="absolute inset-0 h-full w-full object-cover"
-                src="/background_video.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
+                preload="none"
             />
 
             {/* Dark overlay for readability */}
@@ -83,27 +92,13 @@ export default function WhatIsSavara() {
                     }}
                 />
 
-                {/* Sub-label
-                <p
-                    className={`mb-4 text-sm font-bold uppercase tracking-[0.5em] transition-all duration-700 delay-100 ease-out sm:text-base ${isVisible
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-4"
-                        }`}
-                    style={{
-                        fontFamily: "'Rajdhani', sans-serif",
-                        color: "var(--savara-gold)",
-                    }}
-                >
-                    IIITDM Prese
-                </p> */}
-
                 {/* Main heading */}
                 <h2
                     className={`mb-6 text-5xl font-black uppercase tracking-tight transition-all duration-1000 delay-200 ease-out sm:text-6xl md:text-7xl lg:text-8xl ${isVisible
-                            ? "opacity-100 translate-y-0 blur-0"
-                            : "opacity-0 translate-y-8 blur-sm"
+                        ? "opacity-100 translate-y-0 blur-0"
+                        : "opacity-0 translate-y-8 blur-sm"
                         }`}
-                    style={{ fontFamily: "'Cinzel', serif" }}
+                    style={{ fontFamily: "var(--font-cinzel), serif" }}
                 >
                     <span
                         style={{
@@ -122,11 +117,11 @@ export default function WhatIsSavara() {
                 {/* Description */}
                 <p
                     className={`mx-auto max-w-3xl text-lg font-light leading-relaxed text-pretty transition-all duration-1000 delay-400 ease-out sm:text-xl md:text-2xl ${isVisible
-                            ? "opacity-100 translate-y-0 blur-0"
-                            : "opacity-0 translate-y-8 blur-sm"
+                        ? "opacity-100 translate-y-0 blur-0"
+                        : "opacity-0 translate-y-8 blur-sm"
                         }`}
                     style={{
-                        fontFamily: "'Rajdhani', sans-serif",
+                        fontFamily: "var(--font-rajdhani), sans-serif",
                         color: "rgba(245, 230, 211, 0.8)",
                     }}
                 >
@@ -153,11 +148,11 @@ export default function WhatIsSavara() {
                 {/* Sub-description */}
                 <p
                     className={`mx-auto mt-6 max-w-2xl text-base font-light leading-relaxed text-pretty transition-all duration-1000 delay-500 ease-out sm:text-lg ${isVisible
-                            ? "opacity-100 translate-y-0 blur-0"
-                            : "opacity-0 translate-y-6 blur-sm"
+                        ? "opacity-100 translate-y-0 blur-0"
+                        : "opacity-0 translate-y-6 blur-sm"
                         }`}
                     style={{
-                        fontFamily: "'Rajdhani', sans-serif",
+                        fontFamily: "var(--font-rajdhani), sans-serif",
                         color: "rgba(245, 230, 211, 0.55)",
                     }}
                 >
