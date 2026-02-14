@@ -197,10 +197,9 @@ export default function AboutSection() {
                     <Image
                       src={image.src}
                       alt={image.alt}
-                      fill
-                      sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 288px"
-                      className="object-cover rounded-xl"
-                      loading="lazy"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-xl"
                     />
                   </div>
 

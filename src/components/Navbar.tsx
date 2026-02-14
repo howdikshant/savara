@@ -64,9 +64,8 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
         <Image
           src="/iiitdm_logo.png"
           alt="IIITDM Logo"
-          width={160}
-          height={80}
-          sizes="(max-width: 1024px) 64px, 80px"
+          width={1024}
+          height={512}
           className="h-16 lg:h-20 w-auto brightness-0 invert opacity-90"
         />
       </div>
@@ -76,9 +75,8 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
         <Image
           src="/logo_colored.png"
           alt="Savara Logo"
-          width={128}
-          height={128}
-          sizes="(max-width: 1024px) 56px, 64px"
+          width={512}
+          height={512}
           className="h-14 lg:h-16 w-auto"
           style={{
             filter: "drop-shadow(0 0 10px rgba(230, 81, 0, 0.3))",
