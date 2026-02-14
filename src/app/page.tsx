@@ -1,12 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import Logo3D from "@/components/Logo3D";
+import Footer from "@/components/Footer";
+import AboutSection from "@/components/AboutSection";
+import Sponsors from "@/components/Sponsors";
 
-const WhatIsSavara = dynamic(() => import("@/components/WhatIsSavara"));
-const AboutSection = dynamic(() => import("@/components/AboutSection"));
-const Sponsors = dynamic(() => import("@/components/Sponsors"));
-const Footer = dynamic(() => import("@/components/Footer"));
+import Logo3D from "@/components/Logo3D";
+import WhatIsSavara from "@/components/WhatIsSavara";
 
 export default function Home() {
 
@@ -26,3 +25,4 @@ export default function Home() {
     </>
   );
 }
+

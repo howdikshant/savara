@@ -108,15 +108,12 @@ export default function Logo3D() {
       {/* Hamburger Menu */}
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
-      {/* Banner background image — optimized via Next.js Image */}
-      <Image
-        src="/savara_banner_main.jpeg"
-        alt="SAVĀRA banner background"
-        fill
-        priority
-        quality={75}
-        sizes="100vw"
-        className="object-cover object-center"
+      {/* Banner background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/savara_banner_main.jpeg')",
+        }}
       />
 
       {/* Dark vignette overlay for text readability */}
@@ -210,24 +207,30 @@ export default function Logo3D() {
 
 
 
-      {/* Floating particles */}
+      {/* Floating particles — deterministic positions to avoid hydration mismatch */}
       <div ref={particlesRef} className="absolute inset-0 pointer-events-none">
-        {Array.from({ length: 20 }).map((_, i) => (
-          <div
-            key={i}
-            className="absolute rounded-full"
-            style={{
-              width: Math.random() * 4 + 2,
-              height: Math.random() * 4 + 2,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              background: i % 2 === 0
-                ? "rgba(230, 81, 0, 0.5)"
-                : "rgba(74, 20, 140, 0.5)",
-              opacity: 0.3,
-            }}
-          />
-        ))}
+        {Array.from({ length: 20 }).map((_, i) => {
+          const seed = ((i + 1) * 7.3) % 1;
+          const size = (((i * 13 + 5) % 10) / 10) * 4 + 2;
+          const left = ((i * 17 + 3) % 20) * 5;
+          const top = ((i * 11 + 7) % 20) * 5;
+          return (
+            <div
+              key={i}
+              className="absolute rounded-full"
+              style={{
+                width: size,
+                height: size,
+                left: `${left}%`,
+                top: `${top}%`,
+                background: i % 2 === 0
+                  ? "rgba(230, 81, 0, 0.5)"
+                  : "rgba(74, 20, 140, 0.5)",
+                opacity: 0.3,
+              }}
+            />
+          );
+        })}
       </div>
 
       {/* Main Content */}
@@ -237,10 +240,9 @@ export default function Logo3D() {
           <Image
             src="/color_savara.png"
             alt="SAVĀRA Chronosync"
-            width={600}
-            height={250}
+            width={1200}
+            height={500}
             priority
-            sizes="(max-width: 640px) 160px, (max-width: 768px) 208px, (max-width: 1024px) 256px, 384px"
             className="h-40 sm:h-52 md:h-64 lg:h-80 xl:h-96 w-auto"
             style={{
               filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -30,14 +31,14 @@
   --color-savara-warm-black: var(--savara-warm-black);
   --color-savara-stone: var(--savara-stone);
   --color-savara-stone-light: var(--savara-stone-light);
-  --font-sans: var(--font-rajdhani);
-  --font-mono: var(--font-outfit);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-rajdhani), var(--font-outfit), Arial, Helvetica, sans-serif;
+  font-family: 'Rajdhani', 'Outfit', Arial, Helvetica, sans-serif;
 }
 
 /* Cinzel for headings - ancient/ceremonial feel */
@@ -47,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-cinzel), serif;
+  font-family: 'Cinzel', serif;
 }
 
 /* Custom scrollbar */
