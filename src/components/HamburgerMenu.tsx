@@ -1,16 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 interface MenuItemProps {
   label: string;
   index: number;
   isOpen: boolean;
+  isMobile: boolean;
   onClose: () => void;
 }
 
-function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
+function MenuItem({ label, index, isOpen, isMobile, onClose }: MenuItemProps) {
   const itemRef = useRef<HTMLAnchorElement>(null);
   const letterRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
@@ -21,23 +22,24 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
       gsap.fromTo(
         itemRef.current,
         {
-          x: 60,
+          x: isMobile ? 24 : 60,
           opacity: 0,
-          rotateX: -90,
+          rotateX: isMobile ? 0 : -90,
         },
         {
           x: 0,
           opacity: 1,
           rotateX: 0,
-          duration: 0.8,
-          delay: 0.3 + index * 0.08,
-          ease: "power4.out",
-        }
+          duration: isMobile ? 0.35 : 0.8,
+          delay: isMobile ? 0.08 + index * 0.04 : 0.3 + index * 0.08,
+          ease: isMobile ? "power2.out" : "power4.out",
+        },
       );
     }
-  }, [isOpen, index]);
+  }, [isOpen, index, isMobile]);
 
   const handleMouseEnter = () => {
+    if (isMobile) return;
     if (!itemRef.current) return;
 
     letterRefs.current.forEach((letter) => {
@@ -89,6 +91,7 @@ function MenuItem({ label, index, isOpen, onClose }: MenuItemProps) {
   };
 
   const handleMouseLeave = () => {
+    if (isMobile) return;
     if (!itemRef.current) return;
 
     gsap.killTweensOf(itemRef.current);
@@ -169,8 +172,18 @@ interface HamburgerMenuProps {
 export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const backdropRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   const menuItems = ["Home", "About", "Timeline", "Merch", "Sponsors", "Contact"];
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px), (pointer: coarse)");
+    const updateDeviceMode = () => setIsMobile(mediaQuery.matches);
+
+    updateDeviceMode();
+    mediaQuery.addEventListener("change", updateDeviceMode);
+    return () => mediaQuery.removeEventListener("change", updateDeviceMode);
+  }, []);
 
   // Prevent background scrolling when menu is open
   useEffect(() => {
@@ -186,36 +199,38 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
   }, [isOpen]);
 
   useEffect(() => {
+    gsap.killTweensOf([backdropRef.current, panelRef.current]);
+
     if (isOpen) {
       // Fade in backdrop
       gsap.to(backdropRef.current, {
         opacity: 1,
-        duration: 0.4,
+        duration: isMobile ? 0.2 : 0.35,
         ease: "power2.out",
       });
 
       // Slide panel in from right
       gsap.to(panelRef.current, {
         x: 0,
-        duration: 0.6,
-        ease: "power4.out",
+        duration: isMobile ? 0.28 : 0.5,
+        ease: isMobile ? "power2.out" : "power4.out",
       });
     } else {
       // Fade out backdrop
       gsap.to(backdropRef.current, {
         opacity: 0,
-        duration: 0.3,
+        duration: isMobile ? 0.16 : 0.24,
         ease: "power2.in",
       });
 
       // Slide panel out to right
       gsap.to(panelRef.current, {
         x: "100%",
-        duration: 0.4,
-        ease: "power4.in",
+        duration: isMobile ? 0.22 : 0.34,
+        ease: isMobile ? "power2.in" : "power4.in",
       });
     }
-  }, [isOpen]);
+  }, [isOpen, isMobile]);
 
   return (
     <>
@@ -225,9 +240,10 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
         className="fixed inset-0 z-100"
         style={{
           background: "rgba(10, 4, 8, 0.6)",
-          backdropFilter: "blur(4px)",
+          backdropFilter: isMobile ? "none" : "blur(4px)",
           opacity: 0,
           pointerEvents: isOpen ? "auto" : "none",
+          willChange: "opacity",
         }}
         onClick={onClose}
       />
@@ -241,6 +257,7 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
           background: "linear-gradient(135deg, #0a0408 0%, #1a0a04 30%, #0d0520 70%, #0a0408 100%)",
           borderLeft: "1px solid rgba(212, 165, 116, 0.1)",
           boxShadow: "-20px 0 60px rgba(0, 0, 0, 0.5)",
+          willChange: "transform",
         }}
       >
         {/* Background decoration */}
@@ -278,7 +295,14 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
         {/* Menu Items */}
         <nav className="relative z-10 flex flex-col gap-3 md:gap-4">
           {menuItems.map((item, index) => (
-            <MenuItem key={item} label={item} index={index} isOpen={isOpen} onClose={onClose} />
+            <MenuItem
+              key={item}
+              label={item}
+              index={index}
+              isOpen={isOpen}
+              isMobile={isMobile}
+              onClose={onClose}
+            />
           ))}
         </nav>
 

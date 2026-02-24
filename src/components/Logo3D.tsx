@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HamburgerMenu from "./HamburgerMenu";
@@ -11,80 +11,95 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Logo3D() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
   const archRef = useRef<HTMLDivElement>(null);
   const spiralRef = useRef<HTMLDivElement>(null);
   const particlesRef = useRef<HTMLDivElement>(null);
+  const particleCount = useMemo(() => (isMobile ? 10 : 20), [isMobile]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px), (pointer: coarse)");
+    const updateDeviceMode = () => setIsMobile(mediaQuery.matches);
+
+    updateDeviceMode();
+    mediaQuery.addEventListener("change", updateDeviceMode);
+    return () => mediaQuery.removeEventListener("change", updateDeviceMode);
+  }, []);
 
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
-    // Animate the arch gateway glow
-    tl.fromTo(
-      archRef.current,
-      { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 1.5 },
-    );
+      // Animate the arch gateway glow
+      tl.fromTo(
+        archRef.current,
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: isMobile ? 0.8 : 1.5 },
+      );
 
-    // Animate the main title/wordmark
-    tl.fromTo(
-      titleRef.current,
-      { opacity: 0, scale: 0.6, filter: "blur(20px)" },
-      {
-        opacity: 1,
-        scale: 1,
-        filter: "blur(0px)",
-        duration: 1.5,
-        ease: "elastic.out(1, 0.8)",
-      },
-      "-=0.8",
-    );
+      // Animate the main title/wordmark
+      tl.fromTo(
+        titleRef.current,
+        { opacity: 0, scale: 0.7, filter: isMobile ? "blur(8px)" : "blur(20px)" },
+        {
+          opacity: 1,
+          scale: 1,
+          filter: "blur(0px)",
+          duration: isMobile ? 0.9 : 1.5,
+          ease: isMobile ? "power3.out" : "elastic.out(1, 0.8)",
+        },
+        "-=0.6",
+      );
 
-    // Spiral rotation
-    gsap.to(spiralRef.current, {
-      rotation: 360,
-      duration: 20,
-      repeat: -1,
-      ease: "none",
-    });
-
-    // Floating particles
-    if (particlesRef.current) {
-      const particles = particlesRef.current.children;
-      Array.from(particles).forEach((particle, i) => {
-        gsap.to(particle, {
-          y: gsap.utils.random(-30, 30),
-          x: gsap.utils.random(-20, 20),
-          opacity: gsap.utils.random(0.2, 0.8),
-          duration: gsap.utils.random(3, 6),
+      // Spiral rotation
+      if (!isMobile) {
+        gsap.to(spiralRef.current, {
+          rotation: 360,
+          duration: 20,
           repeat: -1,
-          yoyo: true,
-          ease: "sine.inOut",
-          delay: i * 0.3,
+          ease: "none",
         });
-      });
-    }
+      }
 
-    // Parallax on scroll
-    ScrollTrigger.create({
-      trigger: containerRef.current,
-      start: "top top",
-      end: "bottom top",
-      scrub: 1,
-      onUpdate: (self) => {
-        if (titleRef.current) {
-          gsap.set(titleRef.current, { y: self.progress * 100 });
-        }
-      },
+      // Floating particles
+      if (!isMobile && particlesRef.current) {
+        const particles = particlesRef.current.children;
+        Array.from(particles).forEach((particle, i) => {
+          gsap.to(particle, {
+            y: gsap.utils.random(-30, 30),
+            x: gsap.utils.random(-20, 20),
+            opacity: gsap.utils.random(0.2, 0.8),
+            duration: gsap.utils.random(3, 6),
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: i * 0.3,
+          });
+        });
+      }
+
+      // Parallax on scroll
+      if (!isMobile) {
+        ScrollTrigger.create({
+          trigger: containerRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: 0.75,
+          onUpdate: (self) => {
+            if (titleRef.current) {
+              gsap.set(titleRef.current, { y: self.progress * 80 });
+            }
+          },
+        });
+      }
     });
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+    return () => ctx.revert();
+  }, [isMobile]);
 
   return (
     <div
@@ -101,37 +116,41 @@ export default function Logo3D() {
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
       {/* Animated glow orbs */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div
-          className="absolute w-[600px] h-[600px] rounded-full -left-48 top-1/4"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(230, 81, 0, 0.15) 0%, transparent 70%)",
-            animation: "pulse-glow 4s ease-in-out infinite",
-          }}
-        />
-        <div
-          className="absolute w-[600px] h-[600px] rounded-full -right-48 top-1/4"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(74, 20, 140, 0.2) 0%, transparent 70%)",
-            animation: "pulse-glow 4s ease-in-out infinite 2s",
-          }}
-        />
-        <div
-          className="absolute w-[300px] h-[300px] rounded-full left-1/2 bottom-0 -translate-x-1/2"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%)",
-            animation: "pulse-glow 3s ease-in-out infinite 1s",
-          }}
-        />
-      </div>
+      {!isMobile && (
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            className="absolute w-[600px] h-[600px] rounded-full -left-48 top-1/4"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(230, 81, 0, 0.15) 0%, transparent 70%)",
+              animation: "pulse-glow 4s ease-in-out infinite",
+            }}
+          />
+          <div
+            className="absolute w-[600px] h-[600px] rounded-full -right-48 top-1/4"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(74, 20, 140, 0.2) 0%, transparent 70%)",
+              animation: "pulse-glow 4s ease-in-out infinite 2s",
+            }}
+          />
+          <div
+            className="absolute w-[300px] h-[300px] rounded-full left-1/2 bottom-0 -translate-x-1/2"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%)",
+              animation: "pulse-glow 3s ease-in-out infinite 1s",
+            }}
+          />
+        </div>
+      )}
 
       {/* Spiral decorative element (center-top) */}
       <div
         ref={spiralRef}
-        className="absolute top-[15%] left-1/2 -translate-x-1/2 w-40 h-40 sm:w-56 sm:h-56 opacity-10 pointer-events-none"
+        className={`absolute top-[15%] left-1/2 -translate-x-1/2 w-40 h-40 sm:w-56 sm:h-56 opacity-10 pointer-events-none ${
+          isMobile ? "hidden" : ""
+        }`}
       >
         <svg viewBox="0 0 200 200" className="w-full h-full">
           <path
@@ -158,7 +177,7 @@ export default function Logo3D() {
 
       {/* Floating particles — deterministic positions to avoid hydration mismatch */}
       <div ref={particlesRef} className="absolute inset-0 pointer-events-none">
-        {Array.from({ length: 20 }).map((_, i) => {
+        {Array.from({ length: particleCount }).map((_, i) => {
           const size = (((i * 13 + 5) % 10) / 10) * 4 + 2;
           const left = ((i * 17 + 3) % 20) * 5;
           const top = ((i * 11 + 7) % 20) * 5;

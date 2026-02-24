@@ -59,6 +59,16 @@ export default function AboutSection() {
   const frameRefs = useRef<(HTMLDivElement | null)[]>([]);
   const parallaxRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px), (pointer: coarse)");
+    const updateDeviceMode = () => setIsMobile(mediaQuery.matches);
+
+    updateDeviceMode();
+    mediaQuery.addEventListener("change", updateDeviceMode);
+    return () => mediaQuery.removeEventListener("change", updateDeviceMode);
+  }, []);
 
   // IntersectionObserver for header/text fade-in animations
   useEffect(() => {
@@ -104,7 +114,7 @@ export default function AboutSection() {
           scrollTrigger: {
             trigger: container,
             pin: true,
-            scrub: 1,
+            scrub: isMobile ? 0.5 : 1,
             start: "top top",
             end: () => `+=${getScrollDistance()}`,
             invalidateOnRefresh: true,
@@ -113,30 +123,32 @@ export default function AboutSection() {
 
         // Per-image parallax using containerAnimation
         // Each image's inner wrapper pans at a different rate than its frame
-        frameRefs.current.forEach((frame, index) => {
-          const inner = parallaxRefs.current[index];
-          if (!frame || !inner) return;
+        if (!isMobile) {
+          frameRefs.current.forEach((frame, index) => {
+            const inner = parallaxRefs.current[index];
+            if (!frame || !inner) return;
 
-          gsap.fromTo(
-            inner,
-            { xPercent: 6 },
-            {
-              xPercent: -6,
-              ease: "none",
-              scrollTrigger: {
-                trigger: frame,
-                containerAnimation: horizontalTween,
-                start: "left right",
-                end: "right left",
-                scrub: true,
+            gsap.fromTo(
+              inner,
+              { xPercent: 6 },
+              {
+                xPercent: -6,
+                ease: "none",
+                scrollTrigger: {
+                  trigger: frame,
+                  containerAnimation: horizontalTween,
+                  start: "left right",
+                  end: "right left",
+                  scrub: true,
+                },
               },
-            },
-          );
-        });
+            );
+          });
+        }
       });
 
       // Refresh after a beat to ensure pinning measurements are accurate
-      const timer = setTimeout(() => ScrollTrigger.refresh(), 300);
+      const timer = setTimeout(() => ScrollTrigger.refresh(), isMobile ? 180 : 300);
 
       // Store cleanup references on the container for the effect cleanup
       (
@@ -161,7 +173,7 @@ export default function AboutSection() {
       if (el._gsapTimer) clearTimeout(el._gsapTimer);
       if (el._gsapCtx) el._gsapCtx.revert();
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <section
@@ -274,7 +286,7 @@ export default function AboutSection() {
         </div>
 
         {/* Subtle decorative glow inside the carousel area */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className={`absolute inset-0 overflow-hidden pointer-events-none ${isMobile ? "hidden" : ""}`}>
           <div
             className="absolute left-1/4 top-1/2 h-[400px] w-[400px] -translate-y-1/2 rounded-full blur-[150px]"
             style={{ background: "rgba(230, 81, 0, 0.06)" }}
