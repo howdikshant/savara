@@ -60,31 +60,7 @@ export default function Sponsors() {
       ref={sectionRef}
       id="sponsors"
       className="relative overflow-hidden py-20 sm:py-32"
-      style={{
-        background: "linear-gradient(180deg, var(--savara-warm-black) 0%, #0d0520 50%, var(--savara-warm-black) 100%)",
-      }}
     >
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div
-          className="absolute -right-1/4 top-1/4 h-[400px] w-[400px] rounded-full blur-[100px]"
-          style={{ background: "rgba(230, 81, 0, 0.05)" }}
-        />
-        <div
-          className="absolute -left-1/4 bottom-1/4 h-[400px] w-[400px] rounded-full blur-[100px]"
-          style={{ background: "rgba(74, 20, 140, 0.05)" }}
-        />
-      </div>
-
-      {/* Dot pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.02]"
-        style={{
-          backgroundImage: `radial-gradient(rgba(212, 165, 116, 0.3) 1px, transparent 1px)`,
-          backgroundSize: "40px 40px",
-        }}
-      />
-
       <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
         <div className="mb-16 text-center">

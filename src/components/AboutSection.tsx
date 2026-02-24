@@ -168,35 +168,7 @@ export default function AboutSection() {
       ref={sectionRef}
       id="about"
       className="relative"
-      style={{
-        background:
-          "linear-gradient(180deg, var(--savara-warm-black) 0%, #1a0a04 30%, #0d0520 70%, var(--savara-warm-black) 100%)",
-      }}
     >
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute -left-1/4 top-0 h-[500px] w-[500px] rounded-full blur-[120px]"
-          style={{ background: "rgba(230, 81, 0, 0.08)" }}
-        />
-        <div
-          className="absolute -right-1/4 bottom-0 h-[500px] w-[500px] rounded-full blur-[120px]"
-          style={{ background: "rgba(74, 20, 140, 0.08)" }}
-        />
-        <div
-          className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[100px]"
-          style={{ background: "rgba(198, 40, 40, 0.05)" }}
-        />
-      </div>
-
-      {/* Stone texture overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      />
-
       {/* ── Text content area ── */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-20 sm:py-32">
         {/* Section Header */}
@@ -285,10 +257,6 @@ export default function AboutSection() {
       <div
         ref={containerRef}
         className="relative flex h-screen items-center overflow-hidden"
-        style={{
-          background:
-            "linear-gradient(180deg, #1a0a04 0%, #0d0520 50%, var(--savara-warm-black) 100%)",
-        }}
       >
         {/* Oversized watermark text on the left */}
         <div

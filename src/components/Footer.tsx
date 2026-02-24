@@ -10,12 +10,7 @@ export default function Footer() {
   const footerLinkHoverColor = "rgba(245, 230, 211, 0.98)";
 
   return (
-    <footer
-      className="w-full py-16 px-6 sm:px-12 lg:px-20"
-      style={{
-        background: "linear-gradient(180deg, var(--savara-warm-black) 0%, #0d0408 100%)",
-      }}
-    >
+    <footer className="w-full py-16 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {/* Logo Section */}

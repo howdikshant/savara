@@ -13,8 +13,6 @@ export default function Logo3D() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
-  const leftLabelRef = useRef<HTMLDivElement>(null);
-  const rightLabelRef = useRef<HTMLDivElement>(null);
   const archRef = useRef<HTMLDivElement>(null);
   const spiralRef = useRef<HTMLDivElement>(null);
   const particlesRef = useRef<HTMLDivElement>(null);
@@ -42,21 +40,6 @@ export default function Logo3D() {
         duration: 1.5,
         ease: "elastic.out(1, 0.8)",
       },
-      "-=0.8",
-    );
-
-    // Animate left and right labels
-    tl.fromTo(
-      leftLabelRef.current,
-      { opacity: 0, x: -50 },
-      { opacity: 1, x: 0, duration: 0.8 },
-      "-=0.5",
-    );
-
-    tl.fromTo(
-      rightLabelRef.current,
-      { opacity: 0, x: 50 },
-      { opacity: 1, x: 0, duration: 0.8 },
       "-=0.8",
     );
 
@@ -116,63 +99,6 @@ export default function Logo3D() {
 
       {/* Hamburger Menu */}
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-
-      {/* Banner background image */}
-      <Image
-        src="/savara_banner_main.jpeg"
-        alt=""
-        fill
-        priority
-        quality={70}
-        sizes="100vw"
-        className="absolute inset-0 object-cover"
-      />
-
-      {/* Dark vignette overlay for text readability */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.3) 0%, rgba(10, 4, 8, 0.7) 70%, rgba(10, 4, 8, 0.85) 100%)",
-        }}
-      />
-
-      {/* Subtle color-enhancing overlay */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(10, 4, 8, 0.4) 0%, transparent 30%, transparent 70%, rgba(10, 4, 8, 0.8) 100%)",
-        }}
-      />
-
-      {/* Background split gradient - Orange left, Purple right */}
-      <div className="absolute inset-0">
-        {/* Left warm side */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(135deg, rgba(230, 81, 0, 0.25) 0%, rgba(198, 40, 40, 0.15) 40%, transparent 60%)",
-          }}
-        />
-        {/* Right cool side */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(225deg, rgba(74, 20, 140, 0.3) 0%, rgba(26, 0, 51, 0.2) 40%, transparent 60%)",
-          }}
-        />
-      </div>
-
-      {/* Stone texture overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}
-      />
 
       {/* Animated glow orbs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -274,48 +200,6 @@ export default function Logo3D() {
         </div>
       </div>
 
-      {/* Left label: SAMGATHA */}
-      <div
-        ref={leftLabelRef}
-        className="absolute bottom-8 sm:bottom-12 left-6 sm:left-12 opacity-0"
-      >
-        <span
-          className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-[0.4em]"
-          style={{
-            fontFamily: "'Cinzel', serif",
-            color: "var(--savara-gold)",
-            textShadow: "0 0 20px rgba(230, 81, 0, 0.3)",
-          }}
-        >
-          Samgatha
-        </span>
-      </div>
-
-      {/* Right label: VASHISHT */}
-      <div
-        ref={rightLabelRef}
-        className="absolute bottom-8 sm:bottom-12 right-6 sm:right-12 opacity-0"
-      >
-        <span
-          className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-[0.4em]"
-          style={{
-            fontFamily: "'Cinzel', serif",
-            color: "var(--savara-gold)",
-            textShadow: "0 0 20px rgba(74, 20, 140, 0.4)",
-          }}
-        >
-          Vashisht
-        </span>
-      </div>
-
-      {/* Bottom gradient fade */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-32"
-        style={{
-          background:
-            "linear-gradient(to top, var(--savara-warm-black) 0%, transparent 100%)",
-        }}
-      />
     </div>
   );
 }

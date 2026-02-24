@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 export default function WhatIsSavara() {
     const sectionRef = useRef<HTMLElement>(null);
     const [isVisible, setIsVisible] = useState(false);
-    const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -13,7 +12,6 @@ export default function WhatIsSavara() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setIsVisible(true);
-                        setShouldLoadVideo(true);
                     }
                 });
             },
@@ -36,45 +34,6 @@ export default function WhatIsSavara() {
             id="savara"
             className="relative flex min-h-screen items-center justify-center overflow-hidden"
         >
-            {/* Background Video */}
-            <video
-                className="absolute inset-0 h-full w-full object-cover"
-                src={shouldLoadVideo ? "/background_video.mp4" : undefined}
-                autoPlay={shouldLoadVideo}
-                loop
-                muted
-                playsInline
-                preload="none"
-                poster="/savara_banner.jpeg"
-            />
-
-            {/* Dark overlay for readability */}
-            <div
-                className="absolute inset-0"
-                style={{
-                    background:
-                        "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.55) 0%, rgba(10, 4, 8, 0.8) 70%, rgba(10, 4, 8, 0.92) 100%)",
-                }}
-            />
-
-            {/* Top gradient blend from previous section */}
-            <div
-                className="absolute top-0 left-0 right-0 h-40"
-                style={{
-                    background:
-                        "linear-gradient(to bottom, var(--savara-warm-black) 0%, transparent 100%)",
-                }}
-            />
-
-            {/* Bottom gradient blend to next section */}
-            <div
-                className="absolute bottom-0 left-0 right-0 h-40"
-                style={{
-                    background:
-                        "linear-gradient(to top, var(--savara-warm-black) 0%, transparent 100%)",
-                }}
-            />
-
             {/* Content */}
             <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 text-center sm:px-8 lg:px-12">
                 {/* Decorative top line */}
