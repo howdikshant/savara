@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SAVĀRA 26 | ChronoSync",
+  title: "SAVĀRA 2026",
   description: "SAVĀRA ChronoSync — The flagship techno-cultural fest of IIITDM Kancheepuram. Where the ancient meets the future.",
 };
 

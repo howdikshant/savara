@@ -1,6 +1,7 @@
 "use client";
 
 import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,23 +15,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {/* Logo Section */}
           <div className="flex flex-col items-start">
-            <div
-              className="w-16 h-16 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:scale-105"
-              style={{
-                background: "linear-gradient(135deg, rgba(230, 81, 0, 0.2), rgba(74, 20, 140, 0.2))",
-                border: "1px solid rgba(212, 165, 116, 0.2)",
-              }}
-            >
-              <span
-                className="text-2xl font-bold"
-                style={{
-                  fontFamily: "'Cinzel', serif",
-                  color: "var(--savara-gold)",
-                }}
-              >
-                S
-              </span>
-            </div>
+            <Image
+              src="/white_logo_small.png"
+              alt="Savara Logo"
+              width={128}
+              height={128}
+              className="mb-4 h-12 w-auto transition-transform duration-300 hover:scale-105"
+            />
             <h2
               className="text-2xl font-bold tracking-tight"
               style={{
