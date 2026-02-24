@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HamburgerMenu from "./HamburgerMenu";
 import Navbar from "./Navbar";
+import ChronoCountdown from "./ChronoCountdown";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -217,6 +218,7 @@ export default function Logo3D() {
             }}
           />
         </div>
+        <ChronoCountdown />
       </div>
 
     </div>

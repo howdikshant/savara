@@ -142,3 +142,122 @@ h6 {
   animation: pulse-glow 3s ease-in-out infinite;
   pointer-events: none;
 }
+
+@keyframes chrono-digit-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.92);
+    filter: blur(5px);
+  }
+
+  55% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.04);
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes chrono-rift-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@property --chrono-shift {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@keyframes chrono-rift-shift {
+  from {
+    --chrono-shift: 0px;
+  }
+
+  to {
+    --chrono-shift: 120px;
+  }
+}
+
+.chrono-countdown-wrap {
+  border: 1px solid rgba(212, 165, 116, 0.28);
+  border-radius: 14px;
+  padding: 0.8rem 1rem 0.9rem;
+  background:
+    linear-gradient(135deg, rgba(10, 4, 8, 0.72), rgba(20, 10, 28, 0.72)),
+    radial-gradient(circle at 18% 50%, rgba(209, 29, 29, 0.16), transparent 38%),
+    radial-gradient(circle at 82% 50%, rgba(74, 16, 111, 0.22), transparent 38%);
+  box-shadow:
+    0 0 36px rgba(230, 81, 0, 0.1),
+    inset 0 0 26px rgba(74, 20, 140, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.chrono-unit {
+  text-align: center;
+}
+
+.chrono-digits-row {
+  --chrono-shift: 0%;
+  animation: chrono-rift-shift 6.5s linear infinite;
+}
+
+.chrono-digit-value {
+  display: block;
+  min-width: 2ch;
+  line-height: 1;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #f5e6d3 0px,
+    #f6e8d6 16px,
+    #f3d7aa 34px,
+    #f1c382 52px,
+    #efb468 66px,
+    #f1c07b 80px,
+    #f4dcbb 98px,
+    #f5e6d3 120px
+  );
+  background-position: var(--chrono-shift) 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 18px rgba(230, 81, 0, 0.45),
+    0 0 26px rgba(74, 20, 140, 0.28);
+  animation: chrono-digit-enter 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chrono-dot-separator {
+  align-self: center;
+  color: #ffffff;
+  font-size: clamp(1.4rem, 2.9vw, 2rem);
+  line-height: 1;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
+}
+
+.chrono-breach-text {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.15rem, 2.8vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d11d1d, #f09431, #4a106f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 24px rgba(240, 148, 49, 0.2);
+}
