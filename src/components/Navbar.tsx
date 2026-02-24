@@ -80,6 +80,7 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
           alt="IIITDM Logo"
           width={1024}
           height={512}
+          sizes="(max-width: 640px) 96px, (max-width: 1024px) 112px, 128px"
           className="h-16 lg:h-20 w-auto brightness-0 invert opacity-90"
         />
       </div>
@@ -90,6 +91,7 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
           alt="Savara Logo"
           width={512}
           height={512}
+          sizes="(max-width: 640px) 40px, 48px"
           className="h-10 sm:h-12 w-auto"
           style={{
             filter: "drop-shadow(0 0 12px rgba(230, 81, 0, 0.22))",

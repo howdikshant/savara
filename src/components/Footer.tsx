@@ -10,7 +10,7 @@ export default function Footer() {
   const footerLinkHoverColor = "rgba(245, 230, 211, 0.98)";
 
   return (
-    <footer className="w-full py-16 px-6 sm:px-12 lg:px-20">
+    <footer className="defer-render w-full py-16 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {/* Logo Section */}
@@ -20,12 +20,13 @@ export default function Footer() {
               alt="Savara Logo"
               width={128}
               height={128}
+              sizes="48px"
               className="mb-4 h-12 w-auto transition-transform duration-300 hover:scale-105"
             />
             <h2
               className="text-2xl font-bold tracking-tight"
               style={{
-                fontFamily: "'Cinzel', serif",
+                fontFamily: "var(--font-cinzel), serif",
                 color: footerHeadingColor,
               }}
             >
@@ -34,7 +35,7 @@ export default function Footer() {
             <p
               className="mt-1 text-sm font-medium tracking-wide"
               style={{
-                fontFamily: "'Rajdhani', sans-serif",
+                fontFamily: "var(--font-rajdhani), sans-serif",
                 color: footerBodyColor,
               }}
             >
@@ -47,7 +48,7 @@ export default function Footer() {
             <h3
               className="text-lg font-bold uppercase tracking-widest mb-6"
               style={{
-                fontFamily: "'Cinzel', serif",
+                fontFamily: "var(--font-cinzel), serif",
                 color: footerHeadingColor,
               }}
             >
@@ -64,7 +65,7 @@ export default function Footer() {
                 onMouseLeave={(e) => (e.currentTarget.style.color = footerLinkColor)}
               >
                 <Mail className="w-5 h-5 mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                <span className="relative text-sm font-medium" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
+                <span className="relative text-sm font-medium" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                   fest@iiitdm.ac.in
                   <span
                     className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
@@ -82,7 +83,7 @@ export default function Footer() {
                 onMouseLeave={(e) => (e.currentTarget.style.color = footerLinkColor)}
               >
                 <Phone className="w-5 h-5 mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                <span className="relative text-sm font-medium" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
+                <span className="relative text-sm font-medium" style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}>
                   +91 00000 00000
                   <span
                     className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
@@ -96,7 +97,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
                 <address
                   className="text-sm font-medium not-italic leading-relaxed"
-                  style={{ fontFamily: "'Rajdhani', sans-serif" }}
+                  style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}
                 >
                   IIITDM Kancheepuram,<br />
                   Melakottaiyur, Nellikuppam Road,<br />
@@ -114,7 +115,7 @@ export default function Footer() {
             <h3
               className="text-lg font-bold uppercase tracking-widest mb-6"
               style={{
-                fontFamily: "'Cinzel', serif",
+                fontFamily: "var(--font-cinzel), serif",
                 color: footerHeadingColor,
               }}
             >
@@ -156,7 +157,7 @@ export default function Footer() {
                   </div>
                   <span
                     className="relative text-sm font-semibold"
-                    style={{ fontFamily: "'Rajdhani', sans-serif" }}
+                    style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}
                   >
                     {label}
                     <span
@@ -178,7 +179,7 @@ export default function Footer() {
           <p
             className="text-center text-xs font-medium tracking-wider"
             style={{
-              fontFamily: "'Rajdhani', sans-serif",
+              fontFamily: "var(--font-rajdhani), sans-serif",
               color: "rgba(245, 230, 211, 0.62)",
             }}
           >

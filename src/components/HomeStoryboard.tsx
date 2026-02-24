@@ -22,14 +22,19 @@ export default function HomeStoryboard() {
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-
     video.muted = true;
-    video
-      .play()
-      .catch(() => {
-        // Autoplay can be blocked in some contexts; keep the element preloaded.
-      });
-  }, []);
+
+    // Only begin decoding/playing once the video phase is needed.
+    if (backgroundMode === "video") {
+      video
+        .play()
+        .catch(() => {
+          // Autoplay can still be blocked in some contexts.
+        });
+    } else {
+      video.pause();
+    }
+  }, [backgroundMode]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -137,11 +142,11 @@ export default function HomeStoryboard() {
             backgroundMode === "video" ? "opacity-100" : "opacity-0"
           }`}
           src="/background_video.mp4"
-          autoPlay
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
+          poster="/savara_banner.jpeg"
         />
 
         <div
@@ -178,7 +183,7 @@ export default function HomeStoryboard() {
           <span
             className="text-sm font-bold uppercase tracking-[0.4em] sm:text-base md:text-lg"
             style={{
-              fontFamily: "'Cinzel', serif",
+              fontFamily: "var(--font-cinzel), serif",
               color: "var(--savara-gold)",
               textShadow: "0 0 20px rgba(230, 81, 0, 0.3)",
             }}
@@ -195,7 +200,7 @@ export default function HomeStoryboard() {
           <span
             className="text-sm font-bold uppercase tracking-[0.4em] sm:text-base md:text-lg"
             style={{
-              fontFamily: "'Cinzel', serif",
+              fontFamily: "var(--font-cinzel), serif",
               color: "var(--savara-gold)",
               textShadow: "0 0 20px rgba(74, 20, 140, 0.4)",
             }}

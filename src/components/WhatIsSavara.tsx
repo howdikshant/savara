@@ -32,7 +32,7 @@ export default function WhatIsSavara() {
         <section
             ref={sectionRef}
             id="savara"
-            className="relative flex min-h-screen items-center justify-center overflow-hidden"
+            className="defer-render relative flex min-h-screen items-center justify-center overflow-hidden"
         >
             {/* Content */}
             <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 text-center sm:px-8 lg:px-12">
@@ -53,7 +53,7 @@ export default function WhatIsSavara() {
                             : "opacity-0 translate-y-4"
                         }`}
                     style={{
-                        fontFamily: "'Rajdhani', sans-serif",
+                        fontFamily: "var(--font-rajdhani), sans-serif",
                         color: "var(--savara-gold)",
                     }}
                 >
@@ -66,7 +66,7 @@ export default function WhatIsSavara() {
                         ? "opacity-100 translate-y-0 blur-0"
                         : "opacity-0 translate-y-8 blur-sm"
                         }`}
-                    style={{ fontFamily: "'Cinzel', serif" }}
+                    style={{ fontFamily: "var(--font-cinzel), serif" }}
                 >
                     <span
                         style={{
@@ -89,7 +89,7 @@ export default function WhatIsSavara() {
                         : "opacity-0 translate-y-8 blur-sm"
                         }`}
                     style={{
-                        fontFamily: "'Rajdhani', sans-serif",
+                        fontFamily: "var(--font-rajdhani), sans-serif",
                         color: "rgba(245, 230, 211, 0.8)",
                     }}
                 >
@@ -120,7 +120,7 @@ export default function WhatIsSavara() {
                         : "opacity-0 translate-y-6 blur-sm"
                         }`}
                     style={{
-                        fontFamily: "'Rajdhani', sans-serif",
+                        fontFamily: "var(--font-rajdhani), sans-serif",
                         color: "rgba(245, 230, 211, 0.55)",
                     }}
                 >

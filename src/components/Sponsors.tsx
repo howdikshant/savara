@@ -59,7 +59,7 @@ export default function Sponsors() {
     <section
       ref={sectionRef}
       id="sponsors"
-      className="relative overflow-hidden py-20 sm:py-32"
+      className="defer-render relative overflow-hidden py-20 sm:py-32"
     >
       <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
         {/* Section Header */}
@@ -69,7 +69,7 @@ export default function Sponsors() {
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
               }`}
-            style={{ fontFamily: "'Cinzel', serif" }}
+            style={{ fontFamily: "var(--font-cinzel), serif" }}
           >
             <span
               style={{
@@ -89,7 +89,7 @@ export default function Sponsors() {
                 : "opacity-0 translate-y-4"
               }`}
             style={{
-              fontFamily: "'Rajdhani', sans-serif",
+              fontFamily: "var(--font-rajdhani), sans-serif",
               color: "rgba(245, 230, 211, 0.9)",
             }}
           >
@@ -117,7 +117,7 @@ export default function Sponsors() {
           <p
             className="mb-4 text-sm font-medium"
             style={{
-              fontFamily: "'Rajdhani', sans-serif",
+              fontFamily: "var(--font-rajdhani), sans-serif",
               color: "rgba(245, 230, 211, 0.9)",
             }}
           >

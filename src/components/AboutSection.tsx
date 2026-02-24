@@ -190,7 +190,7 @@ export default function AboutSection() {
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-12"
           }`}
-          style={{ fontFamily: "'Cinzel', serif" }}
+          style={{ fontFamily: "var(--font-cinzel), serif" }}
         >
           <span
             style={{
@@ -214,7 +214,7 @@ export default function AboutSection() {
                 : "opacity-0 translate-y-8 blur-sm"
             }`}
             style={{
-              fontFamily: "'Rajdhani', sans-serif",
+              fontFamily: "var(--font-rajdhani), sans-serif",
               color: "rgba(245, 230, 211, 0.75)",
             }}
           >
@@ -274,7 +274,7 @@ export default function AboutSection() {
         <div
           className="absolute left-6 top-1/2 -translate-y-1/2 text-[15vw] sm:text-[10vw] font-black leading-none pointer-events-none"
           style={{
-            fontFamily: "'Cinzel', serif",
+            fontFamily: "var(--font-cinzel), serif",
             color: "rgba(212, 165, 116, 0.04)",
           }}
         >

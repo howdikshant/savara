@@ -138,7 +138,7 @@ function MenuItem({ label, index, isOpen, isMobile, onClose }: MenuItemProps) {
     >
       <span
         className="relative inline-flex text-2xl font-black uppercase tracking-tight sm:text-3xl md:text-4xl"
-        style={{ color: "var(--savara-cream)", fontFamily: "'Cinzel', serif" }}
+        style={{ color: "var(--savara-cream)", fontFamily: "var(--font-cinzel), serif" }}
       >
         {label.split("").map((char, i) => (
           <span
@@ -310,7 +310,7 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
         <div
           className="absolute bottom-6 right-6 text-[15vw] sm:text-[10vw] font-black leading-none pointer-events-none"
           style={{
-            fontFamily: "'Cinzel', serif",
+            fontFamily: "var(--font-cinzel), serif",
             color: "rgba(212, 165, 116, 0.04)",
           }}
         >

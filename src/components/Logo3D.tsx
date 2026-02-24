@@ -15,7 +15,6 @@ export default function Logo3D() {
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
-  const archRef = useRef<HTMLDivElement>(null);
   const spiralRef = useRef<HTMLDivElement>(null);
   const particlesRef = useRef<HTMLDivElement>(null);
   const particleCount = useMemo(() => (isMobile ? 10 : 20), [isMobile]);
@@ -33,29 +32,6 @@ export default function Logo3D() {
     if (!containerRef.current) return;
 
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
-
-      // Animate the arch gateway glow
-      tl.fromTo(
-        archRef.current,
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: isMobile ? 0.8 : 1.5 },
-      );
-
-      // Animate the main title/wordmark
-      tl.fromTo(
-        titleRef.current,
-        { opacity: 0, scale: 0.7, filter: isMobile ? "blur(8px)" : "blur(20px)" },
-        {
-          opacity: 1,
-          scale: 1,
-          filter: "blur(0px)",
-          duration: isMobile ? 0.9 : 1.5,
-          ease: isMobile ? "power3.out" : "elastic.out(1, 0.8)",
-        },
-        "-=0.6",
-      );
-
       // Spiral rotation
       if (!isMobile) {
         gsap.to(spiralRef.current, {
@@ -205,13 +181,14 @@ export default function Logo3D() {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
         {/* Main Wordmark: SAVĀRA CHRONOSYNC */}
-        <div ref={titleRef} className="opacity-0 mb-4">
+        <div ref={titleRef} className="mb-4">
           <Image
-            src="/white_logo.png"
+            src="/white_logo_hero.webp"
             alt="SAVĀRA Chronosync"
             width={1200}
-            height={500}
+            height={480}
             priority
+            sizes="(max-width: 640px) 78vw, (max-width: 1024px) 62vw, 56vw"
             className="h-24 sm:h-32 md:h-40 lg:h-52 xl:h-64 w-auto"
             style={{
               filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",
