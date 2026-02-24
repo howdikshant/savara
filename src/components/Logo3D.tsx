@@ -28,15 +28,21 @@ export default function Logo3D() {
     tl.fromTo(
       archRef.current,
       { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 1.5 }
+      { opacity: 1, scale: 1, duration: 1.5 },
     );
 
     // Animate the main title/wordmark
     tl.fromTo(
       titleRef.current,
       { opacity: 0, scale: 0.6, filter: "blur(20px)" },
-      { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.5, ease: "elastic.out(1, 0.8)" },
-      "-=0.8"
+      {
+        opacity: 1,
+        scale: 1,
+        filter: "blur(0px)",
+        duration: 1.5,
+        ease: "elastic.out(1, 0.8)",
+      },
+      "-=0.8",
     );
 
     // Animate left and right labels
@@ -44,14 +50,14 @@ export default function Logo3D() {
       leftLabelRef.current,
       { opacity: 0, x: -50 },
       { opacity: 1, x: 0, duration: 0.8 },
-      "-=0.5"
+      "-=0.5",
     );
 
     tl.fromTo(
       rightLabelRef.current,
       { opacity: 0, x: 50 },
       { opacity: 1, x: 0, duration: 0.8 },
-      "-=0.8"
+      "-=0.8",
     );
 
     // Spiral rotation
@@ -103,7 +109,10 @@ export default function Logo3D() {
       className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden"
     >
       {/* Navbar with Logo and Hamburger Button */}
-      <Navbar isMenuOpen={isMenuOpen} onMenuToggle={() => setIsMenuOpen(!isMenuOpen)} />
+      <Navbar
+        isMenuOpen={isMenuOpen}
+        onMenuToggle={() => setIsMenuOpen(!isMenuOpen)}
+      />
 
       {/* Hamburger Menu */}
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
@@ -123,7 +132,8 @@ export default function Logo3D() {
       <div
         className="absolute inset-0"
         style={{
-          background: "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.3) 0%, rgba(10, 4, 8, 0.7) 70%, rgba(10, 4, 8, 0.85) 100%)",
+          background:
+            "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.3) 0%, rgba(10, 4, 8, 0.7) 70%, rgba(10, 4, 8, 0.85) 100%)",
         }}
       />
 
@@ -131,7 +141,8 @@ export default function Logo3D() {
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(to bottom, rgba(10, 4, 8, 0.4) 0%, transparent 30%, transparent 70%, rgba(10, 4, 8, 0.8) 100%)",
+          background:
+            "linear-gradient(to bottom, rgba(10, 4, 8, 0.4) 0%, transparent 30%, transparent 70%, rgba(10, 4, 8, 0.8) 100%)",
         }}
       />
 
@@ -141,14 +152,16 @@ export default function Logo3D() {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, rgba(230, 81, 0, 0.25) 0%, rgba(198, 40, 40, 0.15) 40%, transparent 60%)",
+            background:
+              "linear-gradient(135deg, rgba(230, 81, 0, 0.25) 0%, rgba(198, 40, 40, 0.15) 40%, transparent 60%)",
           }}
         />
         {/* Right cool side */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(225deg, rgba(74, 20, 140, 0.3) 0%, rgba(26, 0, 51, 0.2) 40%, transparent 60%)",
+            background:
+              "linear-gradient(225deg, rgba(74, 20, 140, 0.3) 0%, rgba(26, 0, 51, 0.2) 40%, transparent 60%)",
           }}
         />
       </div>
@@ -166,21 +179,24 @@ export default function Logo3D() {
         <div
           className="absolute w-[600px] h-[600px] rounded-full -left-48 top-1/4"
           style={{
-            background: "radial-gradient(circle, rgba(230, 81, 0, 0.15) 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, rgba(230, 81, 0, 0.15) 0%, transparent 70%)",
             animation: "pulse-glow 4s ease-in-out infinite",
           }}
         />
         <div
           className="absolute w-[600px] h-[600px] rounded-full -right-48 top-1/4"
           style={{
-            background: "radial-gradient(circle, rgba(74, 20, 140, 0.2) 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, rgba(74, 20, 140, 0.2) 0%, transparent 70%)",
             animation: "pulse-glow 4s ease-in-out infinite 2s",
           }}
         />
         <div
           className="absolute w-[300px] h-[300px] rounded-full left-1/2 bottom-0 -translate-x-1/2"
           style={{
-            background: "radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%)",
             animation: "pulse-glow 3s ease-in-out infinite 1s",
           }}
         />
@@ -200,15 +216,19 @@ export default function Logo3D() {
             strokeLinecap="round"
           />
           <defs>
-            <linearGradient id="spiralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient
+              id="spiralGradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
               <stop offset="0%" stopColor="#e65100" />
               <stop offset="100%" stopColor="#4a148c" />
             </linearGradient>
           </defs>
         </svg>
       </div>
-
-
 
       {/* Floating particles — deterministic positions to avoid hydration mismatch */}
       <div ref={particlesRef} className="absolute inset-0 pointer-events-none">
@@ -225,9 +245,10 @@ export default function Logo3D() {
                 height: size,
                 left: `${left}%`,
                 top: `${top}%`,
-                background: i % 2 === 0
-                  ? "rgba(230, 81, 0, 0.5)"
-                  : "rgba(74, 20, 140, 0.5)",
+                background:
+                  i % 2 === 0
+                    ? "rgba(230, 81, 0, 0.5)"
+                    : "rgba(74, 20, 140, 0.5)",
                 opacity: 0.3,
               }}
             />
@@ -245,7 +266,7 @@ export default function Logo3D() {
             width={1200}
             height={500}
             priority
-            className="h-40 sm:h-52 md:h-64 lg:h-80 xl:h-96 w-auto"
+            className="h-24 sm:h-32 md:h-40 lg:h-52 xl:h-64 w-auto"
             style={{
               filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",
             }}
@@ -291,7 +312,8 @@ export default function Logo3D() {
       <div
         className="absolute bottom-0 left-0 right-0 h-32"
         style={{
-          background: "linear-gradient(to top, var(--savara-warm-black) 0%, transparent 100%)",
+          background:
+            "linear-gradient(to top, var(--savara-warm-black) 0%, transparent 100%)",
         }}
       />
     </div>
