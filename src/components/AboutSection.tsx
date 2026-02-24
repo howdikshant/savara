@@ -224,7 +224,7 @@ export default function AboutSection() {
         {/* Description */}
         <div className="max-w-3xl">
           <p
-            className={`text-lg font-light leading-relaxed text-pretty sm:text-xl md:text-2xl transition-all duration-1000 delay-200 ease-out ${
+            className={`text-lg font-medium leading-relaxed text-pretty sm:text-xl md:text-2xl transition-all duration-1000 delay-200 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0 blur-0"
                 : "opacity-0 translate-y-8 blur-sm"
@@ -234,7 +234,7 @@ export default function AboutSection() {
               color: "rgba(245, 230, 211, 0.75)",
             }}
           >
-            Join us for Samgatha X Vashisht, 2026, the flagship techno-cultural
+            Join us for Savāra 2026, the flagship techno-cultural
             fest of IIITDM Kancheepuram, a five-day celebration of innovation,
             creativity, and culture.
             <br />

@@ -4,6 +4,11 @@ import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube } from "lucide-react"
 import Image from "next/image";
 
 export default function Footer() {
+  const footerHeadingColor = "var(--savara-cream)";
+  const footerBodyColor = "rgba(245, 230, 211, 0.72)";
+  const footerLinkColor = "rgba(245, 230, 211, 0.8)";
+  const footerLinkHoverColor = "rgba(245, 230, 211, 0.98)";
+
   return (
     <footer
       className="w-full py-16 px-6 sm:px-12 lg:px-20"
@@ -26,16 +31,16 @@ export default function Footer() {
               className="text-2xl font-bold tracking-tight"
               style={{
                 fontFamily: "'Cinzel', serif",
-                color: "var(--savara-cream)",
+                color: footerHeadingColor,
               }}
             >
               SAVĀRA
             </h2>
             <p
-              className="text-sm mt-1 tracking-wide"
+              className="mt-1 text-sm font-medium tracking-wide"
               style={{
                 fontFamily: "'Rajdhani', sans-serif",
-                color: "rgba(212, 165, 116, 0.5)",
+                color: footerBodyColor,
               }}
             >
               Chronosync — Where Ancient Meets Future
@@ -48,7 +53,7 @@ export default function Footer() {
               className="text-lg font-bold uppercase tracking-widest mb-6"
               style={{
                 fontFamily: "'Cinzel', serif",
-                color: "var(--savara-cream)",
+                color: footerHeadingColor,
               }}
             >
               Contact Us
@@ -59,12 +64,12 @@ export default function Footer() {
               <a
                 href="mailto:fest@iiitdm.ac.in"
                 className="group flex items-start gap-3 transition-colors duration-300"
-                style={{ color: "rgba(212, 165, 116, 0.6)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--savara-gold)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212, 165, 116, 0.6)")}
+                style={{ color: footerLinkColor }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = footerLinkHoverColor)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = footerLinkColor)}
               >
                 <Mail className="w-5 h-5 mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-sm relative" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
+                <span className="relative text-sm font-medium" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
                   fest@iiitdm.ac.in
                   <span
                     className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
@@ -77,12 +82,12 @@ export default function Footer() {
               <a
                 href="tel:+910000000000"
                 className="group flex items-start gap-3 transition-colors duration-300"
-                style={{ color: "rgba(212, 165, 116, 0.6)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--savara-gold)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212, 165, 116, 0.6)")}
+                style={{ color: footerLinkColor }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = footerLinkHoverColor)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = footerLinkColor)}
               >
                 <Phone className="w-5 h-5 mt-0.5 shrink-0 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-sm relative" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
+                <span className="relative text-sm font-medium" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
                   +91 00000 00000
                   <span
                     className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
@@ -92,10 +97,10 @@ export default function Footer() {
               </a>
 
               {/* Address */}
-              <div className="group flex items-start gap-3" style={{ color: "rgba(212, 165, 116, 0.6)" }}>
+              <div className="group flex items-start gap-3" style={{ color: footerBodyColor }}>
                 <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
                 <address
-                  className="text-sm not-italic leading-relaxed"
+                  className="text-sm font-medium not-italic leading-relaxed"
                   style={{ fontFamily: "'Rajdhani', sans-serif" }}
                 >
                   IIITDM Kancheepuram,<br />
@@ -115,7 +120,7 @@ export default function Footer() {
               className="text-lg font-bold uppercase tracking-widest mb-6"
               style={{
                 fontFamily: "'Cinzel', serif",
-                color: "var(--savara-cream)",
+                color: footerHeadingColor,
               }}
             >
               Follow Us
@@ -133,9 +138,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 transition-colors duration-300"
-                  style={{ color: "rgba(212, 165, 116, 0.6)" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "var(--savara-gold)")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212, 165, 116, 0.6)")}
+                  style={{ color: footerLinkColor }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = footerLinkHoverColor)}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = footerLinkColor)}
                 >
                   <div
                     className="p-2 rounded-lg transition-all duration-300 group-hover:scale-110"
@@ -155,7 +160,7 @@ export default function Footer() {
                     <Icon className="w-5 h-5" />
                   </div>
                   <span
-                    className="text-sm font-medium relative"
+                    className="relative text-sm font-semibold"
                     style={{ fontFamily: "'Rajdhani', sans-serif" }}
                   >
                     {label}
@@ -176,10 +181,10 @@ export default function Footer() {
           style={{ borderTop: "1px solid rgba(212, 165, 116, 0.1)" }}
         >
           <p
-            className="text-xs text-center tracking-wider"
+            className="text-center text-xs font-medium tracking-wider"
             style={{
               fontFamily: "'Rajdhani', sans-serif",
-              color: "rgba(212, 165, 116, 0.3)",
+              color: "rgba(245, 230, 211, 0.62)",
             }}
           >
             &copy; 2026 SAVĀRA Chronosync — IIITDM Kancheepuram. All rights reserved.

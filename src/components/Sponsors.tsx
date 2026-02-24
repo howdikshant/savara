@@ -108,13 +108,13 @@ export default function Sponsors() {
             <span style={{ color: "var(--savara-cream)" }}>Sponsors</span>
           </h2>
           <p
-            className={`mx-auto mt-4 max-w-2xl transition-all duration-1000 delay-200 ease-out ${isVisible
+            className={`mx-auto mt-4 max-w-2xl font-medium transition-all duration-1000 delay-200 ease-out ${isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-4"
               }`}
             style={{
               fontFamily: "'Rajdhani', sans-serif",
-              color: "rgba(212, 165, 116, 0.5)",
+              color: "rgba(245, 230, 211, 0.9)",
             }}
           >
             Proudly supported by industry leaders
@@ -139,10 +139,10 @@ export default function Sponsors() {
             }`}
         >
           <p
-            className="mb-4 text-sm"
+            className="mb-4 text-sm font-medium"
             style={{
               fontFamily: "'Rajdhani', sans-serif",
-              color: "rgba(212, 165, 116, 0.4)",
+              color: "rgba(245, 230, 211, 0.9)",
             }}
           >
             Interested in sponsoring SAVĀRA?

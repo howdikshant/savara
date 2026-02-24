@@ -125,7 +125,7 @@ export default function WhatIsSavara() {
 
                 {/* Description */}
                 <p
-                    className={`mx-auto max-w-3xl text-lg font-light leading-relaxed text-pretty transition-all duration-1000 delay-400 ease-out sm:text-xl md:text-2xl ${isVisible
+                    className={`mx-auto max-w-3xl text-lg font-medium leading-relaxed text-pretty transition-all duration-1000 delay-400 ease-out sm:text-xl md:text-2xl ${isVisible
                         ? "opacity-100 translate-y-0 blur-0"
                         : "opacity-0 translate-y-8 blur-sm"
                         }`}
@@ -156,7 +156,7 @@ export default function WhatIsSavara() {
 
                 {/* Sub-description */}
                 <p
-                    className={`mx-auto mt-6 max-w-2xl text-base font-light leading-relaxed text-pretty transition-all duration-1000 delay-500 ease-out sm:text-lg ${isVisible
+                    className={`mx-auto mt-6 max-w-2xl text-base font-medium leading-relaxed text-pretty transition-all duration-1000 delay-500 ease-out sm:text-lg ${isVisible
                         ? "opacity-100 translate-y-0 blur-0"
                         : "opacity-0 translate-y-6 blur-sm"
                         }`}
