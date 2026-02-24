@@ -109,11 +109,14 @@ export default function Logo3D() {
       <HamburgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
       {/* Banner background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/savara_banner_main.jpeg')",
-        }}
+      <Image
+        src="/savara_banner_main.jpeg"
+        alt=""
+        fill
+        priority
+        quality={70}
+        sizes="100vw"
+        className="absolute inset-0 object-cover"
       />
 
       {/* Dark vignette overlay for text readability */}
@@ -210,7 +213,6 @@ export default function Logo3D() {
       {/* Floating particles — deterministic positions to avoid hydration mismatch */}
       <div ref={particlesRef} className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 20 }).map((_, i) => {
-          const seed = ((i + 1) * 7.3) % 1;
           const size = (((i * 13 + 5) % 10) / 10) * 4 + 2;
           const left = ((i * 17 + 3) % 20) * 5;
           const top = ((i * 11 + 7) % 20) * 5;
@@ -238,7 +240,7 @@ export default function Logo3D() {
         {/* Main Wordmark: SAVĀRA CHRONOSYNC */}
         <div ref={titleRef} className="opacity-0 mb-4">
           <Image
-            src="/color_savara.png"
+            src="/white_logo.png"
             alt="SAVĀRA Chronosync"
             width={1200}
             height={500}

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 export default function WhatIsSavara() {
     const sectionRef = useRef<HTMLElement>(null);
     const [isVisible, setIsVisible] = useState(false);
+    const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -12,6 +13,7 @@ export default function WhatIsSavara() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setIsVisible(true);
+                        setShouldLoadVideo(true);
                     }
                 });
             },
@@ -37,11 +39,13 @@ export default function WhatIsSavara() {
             {/* Background Video */}
             <video
                 className="absolute inset-0 h-full w-full object-cover"
-                src="/background_video.mp4"
-                autoPlay
+                src={shouldLoadVideo ? "/background_video.mp4" : undefined}
+                autoPlay={shouldLoadVideo}
                 loop
                 muted
                 playsInline
+                preload="none"
+                poster="/savara_banner.jpeg"
             />
 
             {/* Dark overlay for readability */}
