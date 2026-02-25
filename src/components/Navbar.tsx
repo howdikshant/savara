@@ -76,10 +76,10 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
       {/* IIITDM Logo */}
       <div className="fixed z-100 left-6 top-6">
         <Image
-          src="/iiitdm_logo.png"
+          src="/media/iiitdm_logo_256.webp"
           alt="IIITDM Logo"
-          width={1024}
-          height={512}
+          width={256}
+          height={104}
           sizes="(max-width: 640px) 96px, (max-width: 1024px) 112px, 128px"
           className="h-16 lg:h-20 w-auto brightness-0 invert opacity-90"
         />
@@ -87,10 +87,10 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
 
       <div className="fixed right-6 top-6 z-102 flex items-center gap-3">
         <Image
-          src="/white_logo_small.png"
+          src="/media/white_logo_small_256.webp"
           alt="Savara Logo"
-          width={512}
-          height={512}
+          width={243}
+          height={256}
           sizes="(max-width: 640px) 40px, 48px"
           className="h-10 sm:h-12 w-auto"
           style={{

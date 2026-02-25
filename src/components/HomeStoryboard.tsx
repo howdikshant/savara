@@ -81,11 +81,11 @@ export default function HomeStoryboard() {
     <>
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <Image
-          src="/savara_banner_main.jpeg"
+          src="/media/hero-2560.webp"
           alt=""
           fill
           priority
-          quality={75}
+          quality={70}
           sizes="100vw"
           className={`object-cover transition-opacity duration-700 ${
             backgroundMode === "hero" ? "opacity-100" : "opacity-0"
@@ -141,12 +141,12 @@ export default function HomeStoryboard() {
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
             backgroundMode === "video" ? "opacity-100" : "opacity-0"
           }`}
-          src="/background_video.mp4"
+          src="/media/background_video_1080.mp4"
           loop
           muted
           playsInline
           preload="metadata"
-          poster="/savara_banner.jpeg"
+          poster="/media/video-poster-1920.webp"
         />
 
         <div

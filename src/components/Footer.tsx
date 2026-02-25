@@ -16,9 +16,9 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="flex flex-col items-start">
             <Image
-              src="/white_logo_small.png"
+              src="/media/white_logo_small_128.webp"
               alt="Savara Logo"
-              width={128}
+              width={121}
               height={128}
               sizes="48px"
               className="mb-4 h-12 w-auto transition-transform duration-300 hover:scale-105"
