@@ -18,6 +18,7 @@ export default function HomeStoryboard() {
   const [backgroundMode, setBackgroundMode] = useState<BackgroundMode>("hero");
   const footerOverlayRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const isHeroBannerMode = backgroundMode !== "video";
 
   useEffect(() => {
     const video = videoRef.current;
@@ -87,12 +88,12 @@ export default function HomeStoryboard() {
           priority
           quality={95}
           sizes="100vw"
-          className={`object-cover transition-opacity duration-700 ${backgroundMode === "hero" ? "opacity-100" : "opacity-0"
+          className={`object-cover transition-opacity duration-700 ${isHeroBannerMode ? "opacity-100" : "opacity-0"
             }`}
         />
 
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "hero" ? "opacity-100" : "opacity-0"
+          className={`absolute inset-0 transition-opacity duration-700 ${isHeroBannerMode ? "opacity-100" : "opacity-0"
             }`}
         >
           <div
@@ -147,20 +148,20 @@ export default function HomeStoryboard() {
         />
 
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "gradient" ? "opacity-100" : "opacity-0"
-            }`}
-          style={{
-            background:
-              "linear-gradient(180deg, var(--savara-warm-black) 0%, #1a0a04 30%, #0d0520 70%, var(--savara-warm-black) 100%)",
-          }}
-        />
-
-        <div
           className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "video" ? "opacity-100" : "opacity-0"
             }`}
           style={{
             background:
               "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.34) 0%, rgba(10, 4, 8, 0.62) 75%, rgba(10, 4, 8, 0.82) 100%)",
+          }}
+        />
+
+        <div
+          className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "gradient" ? "opacity-100" : "opacity-0"
+            }`}
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.56) 45%, rgba(0, 0, 0, 0.68) 100%)",
           }}
         />
 
