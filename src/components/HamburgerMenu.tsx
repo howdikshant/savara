@@ -129,7 +129,7 @@ function MenuItem({ label, index, isOpen, isMobile, onClose }: MenuItemProps) {
   return (
     <a
       ref={itemRef}
-      href={`#${label.toLowerCase()}`}
+      href={label === "Events" ? "/events" : `#${label.toLowerCase()}`}
       className="group relative block cursor-pointer py-2 opacity-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -174,7 +174,7 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
   const backdropRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  const menuItems = ["Home", "About", "Timeline", "Merch", "Sponsors", "Contact"];
+  const menuItems = ["Home", "About", "Events", "Accomodation", "Tickets", "Merch", "Sponsors", "Contact"];
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px), (pointer: coarse)");

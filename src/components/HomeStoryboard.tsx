@@ -85,30 +85,28 @@ export default function HomeStoryboard() {
           alt=""
           fill
           priority
-          quality={70}
+          quality={95}
           sizes="100vw"
-          className={`object-cover transition-opacity duration-700 ${
-            backgroundMode === "hero" ? "opacity-100" : "opacity-0"
-          }`}
+          className={`object-cover transition-opacity duration-700 ${backgroundMode === "hero" ? "opacity-100" : "opacity-0"
+            }`}
         />
 
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            backgroundMode === "hero" ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "hero" ? "opacity-100" : "opacity-0"
+            }`}
         >
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.3) 0%, rgba(10, 4, 8, 0.7) 70%, rgba(10, 4, 8, 0.85) 100%)",
+                "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.1) 0%, rgba(10, 4, 8, 0.35) 70%, rgba(10, 4, 8, 0.55) 100%)",
             }}
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to bottom, rgba(10, 4, 8, 0.4) 0%, transparent 30%, transparent 70%, rgba(10, 4, 8, 0.8) 100%)",
+                "linear-gradient(to bottom, rgba(10, 4, 8, 0.2) 0%, transparent 30%, transparent 70%, rgba(10, 4, 8, 0.6) 100%)",
             }}
           />
           <div className="absolute inset-0">
@@ -116,14 +114,14 @@ export default function HomeStoryboard() {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(230, 81, 0, 0.25) 0%, rgba(198, 40, 40, 0.15) 40%, transparent 60%)",
+                  "linear-gradient(135deg, rgba(230, 81, 0, 0.15) 0%, rgba(198, 40, 40, 0.08) 40%, transparent 60%)",
               }}
             />
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(225deg, rgba(74, 20, 140, 0.3) 0%, rgba(26, 0, 51, 0.2) 40%, transparent 60%)",
+                  "linear-gradient(225deg, rgba(74, 20, 140, 0.15) 0%, rgba(26, 0, 51, 0.1) 40%, transparent 60%)",
               }}
             />
           </div>
@@ -138,10 +136,9 @@ export default function HomeStoryboard() {
 
         <video
           ref={videoRef}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            backgroundMode === "video" ? "opacity-100" : "opacity-0"
-          }`}
-          src="/media/background_video_1080.mp4"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${backgroundMode === "video" ? "opacity-100" : "opacity-0"
+            }`}
+          src="/background_video.mp4"
           loop
           muted
           playsInline
@@ -150,9 +147,8 @@ export default function HomeStoryboard() {
         />
 
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            backgroundMode === "gradient" ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "gradient" ? "opacity-100" : "opacity-0"
+            }`}
           style={{
             background:
               "linear-gradient(180deg, var(--savara-warm-black) 0%, #1a0a04 30%, #0d0520 70%, var(--savara-warm-black) 100%)",
@@ -160,12 +156,11 @@ export default function HomeStoryboard() {
         />
 
         <div
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            backgroundMode === "video" ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-700 ${backgroundMode === "video" ? "opacity-100" : "opacity-0"
+            }`}
           style={{
             background:
-              "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.45) 0%, rgba(10, 4, 8, 0.72) 75%, rgba(10, 4, 8, 0.88) 100%)",
+              "radial-gradient(ellipse at center, rgba(10, 4, 8, 0.34) 0%, rgba(10, 4, 8, 0.62) 75%, rgba(10, 4, 8, 0.82) 100%)",
           }}
         />
 
@@ -176,9 +171,8 @@ export default function HomeStoryboard() {
         />
 
         <div
-          className={`absolute bottom-8 left-6 transition-opacity duration-700 sm:bottom-12 sm:left-12 ${
-            backgroundMode === "hero" ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute bottom-8 left-6 transition-opacity duration-700 sm:bottom-12 sm:left-12 ${backgroundMode === "hero" ? "opacity-100" : "opacity-0"
+            }`}
         >
           <span
             className="text-sm font-bold uppercase tracking-[0.4em] sm:text-base md:text-lg"
@@ -193,9 +187,8 @@ export default function HomeStoryboard() {
         </div>
 
         <div
-          className={`absolute bottom-8 right-6 transition-opacity duration-700 sm:bottom-12 sm:right-12 ${
-            backgroundMode === "hero" ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute bottom-8 right-6 transition-opacity duration-700 sm:bottom-12 sm:right-12 ${backgroundMode === "hero" ? "opacity-100" : "opacity-0"
+            }`}
         >
           <span
             className="text-sm font-bold uppercase tracking-[0.4em] sm:text-base md:text-lg"

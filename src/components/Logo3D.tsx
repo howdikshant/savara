@@ -178,10 +178,13 @@ export default function Logo3D() {
         })}
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+      {/* Main Content: logo + countdown move together */}
+      <div
+        ref={titleRef}
+        className="relative z-10 flex flex-col items-center justify-center px-4 text-center"
+      >
         {/* Main Wordmark: SAVĀRA CHRONOSYNC */}
-        <div ref={titleRef} className="mb-4">
+        <div className="mb-4">
           <Image
             src="/white_logo_hero.webp"
             alt="SAVĀRA Chronosync"
@@ -189,7 +192,7 @@ export default function Logo3D() {
             height={480}
             priority
             sizes="(max-width: 640px) 78vw, (max-width: 1024px) 62vw, 56vw"
-            className="h-24 sm:h-32 md:h-40 lg:h-52 xl:h-64 w-auto"
+            className="h-24 w-auto sm:h-32 md:h-40 lg:h-52 xl:h-64"
             style={{
               filter: "drop-shadow(0 0 40px rgba(230, 81, 0, 0.3))",
             }}
