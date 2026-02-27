@@ -124,7 +124,7 @@ export default function Footer() {
 
             <div className="flex flex-col space-y-4">
               {[
-                { href: "https://instagram.com", Icon: Instagram, label: "Instagram" },
+                { href: "https://www.instagram.com/savara.iiitdm/", Icon: Instagram, label: "Instagram" },
                 { href: "https://linkedin.com", Icon: Linkedin, label: "LinkedIn" },
                 { href: "https://youtube.com", Icon: Youtube, label: "YouTube" },
               ].map(({ href, Icon, label }) => (

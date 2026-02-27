@@ -124,6 +124,7 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
             style={{ background: "var(--savara-gold)" }}
           />
         </button>
+
       </div>
     </div>
   );

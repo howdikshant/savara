@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { Instagram, Linkedin, Youtube } from "lucide-react";
 
 interface MenuItemProps {
   label: string;
@@ -175,6 +176,11 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
   const [isMobile, setIsMobile] = useState(false);
 
   const menuItems = ["Home", "About", "Events", "Accomodation", "Tickets", "Merch", "Sponsors", "Contact"];
+  const socialLinks = [
+    { href: "https://www.instagram.com/savara.iiitdm/", Icon: Instagram, label: "Instagram" },
+    { href: "https://linkedin.com", Icon: Linkedin, label: "LinkedIn" },
+    { href: "https://youtube.com", Icon: Youtube, label: "YouTube" },
+  ];
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px), (pointer: coarse)");
@@ -292,19 +298,37 @@ export default function HamburgerMenu({ isOpen, onClose }: HamburgerMenuProps) {
           }}
         />
 
-        {/* Menu Items */}
-        <nav className="relative z-10 flex flex-col gap-3 md:gap-4">
-          {menuItems.map((item, index) => (
-            <MenuItem
-              key={item}
-              label={item}
-              index={index}
-              isOpen={isOpen}
-              isMobile={isMobile}
-              onClose={onClose}
-            />
-          ))}
-        </nav>
+        {/* Menu Items + Social rail */}
+        <div className="relative z-10 flex items-center justify-between gap-10 sm:gap-14">
+          <nav className="flex max-w-[75%] flex-col gap-3 md:gap-4">
+            {menuItems.map((item, index) => (
+              <MenuItem
+                key={item}
+                label={item}
+                index={index}
+                isOpen={isOpen}
+                isMobile={isMobile}
+                onClose={onClose}
+              />
+            ))}
+          </nav>
+
+          <div className="flex flex-col items-center justify-center gap-6">
+            {socialLinks.map(({ href, Icon, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="opacity-80 transition-all duration-300 hover:scale-110 hover:opacity-100"
+                style={{ color: "var(--savara-cream)" }}
+              >
+                <Icon className="h-8 w-8 sm:h-9 sm:w-9" />
+              </a>
+            ))}
+          </div>
+        </div>
 
         {/* Decorative number */}
         <div
