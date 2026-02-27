@@ -74,18 +74,18 @@ export default function Navbar({ isMenuOpen, onMenuToggle }: NavbarProps) {
   return (
     <div className="flex flex-row">
       {/* IIITDM Logo */}
-      <div className="fixed z-100 left-6 top-6">
+      <div className="fixed z-100 left-6 top-6 flex h-14 items-center">
         <Image
-          src="/media/iiitdm_logo_256.webp"
+          src="/iiitdm_logo.png"
           alt="IIITDM Logo"
-          width={256}
-          height={104}
-          sizes="(max-width: 640px) 96px, (max-width: 1024px) 112px, 128px"
-          className="h-16 lg:h-20 w-auto brightness-0 invert opacity-90"
+          width={148}
+          height={60}
+          sizes="148px"
+          className="h-[60px] w-[148px] brightness-0 invert opacity-90"
         />
       </div>
 
-      <div className="fixed right-6 top-6 z-102 flex items-center gap-3">
+      <div className="fixed right-6 top-6 z-102 flex h-14 items-center gap-3">
         <Image
           src="/media/white_logo_small_256.webp"
           alt="Savara Logo"
