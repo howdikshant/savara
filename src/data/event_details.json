@@ -1,0 +1,533 @@
+[
+  {
+    "event_type": "flagship",
+    "event_name": "RoboWars",
+    "full_desc": "RoboWars is a high-intensity combat robotics competition organized by the Robotics Club, IIITDM Kancheepuram. The event challenges participants to design, build, and operate a remote-controlled combat robot capable of competing in a tournament-style arena battle. Teams must combine mechanical design, electronics, control systems, and strategic thinking to dominate opponents and emerge victorious.",
+    "short_desc": "A combat robotics competition where participants build and control robots in a tournament-style arena battle.",
+    "club_name": "Robotics Club",
+    "prize_pool": 30000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Sky Symphony",
+    "full_desc": "The SKY SYMPHONY : Aeromodelling Competition 2025-26, is a national platform designed for students passionate about aerodynamics, innovation, and engineering. This prestigious event challenges participants to design, build, and operate radio-controlled fixed-wing aircraft capable of executing complex tasks like payload delivery and precision flying. Whether you're an aeromodelling novice or an experienced designer, this competition is the ultimate arena to test your skills and creativity.",
+    "short_desc": "An aeromodelling competition challenging students to design and fly radio-controlled aircraft for payload delivery and precision tasks.",
+    "club_name": "TALPADE AERO DESIGN CLUB",
+    "prize_pool": 30000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Drone Racing competition",
+    "full_desc": "The Drone Racing Competition challenges participants to design and manually operate a highly maneuverable quadcopter to complete a specified race track in the shortest possible time while maximizing their score. The competition will be conducted at IIITDM Kancheepuram and will consist of two rounds, with technical inspections before each round. Only shortlisted teams from Round 1 will advance to Round 2. The race track and rulebook are tentative, and final details will be shared closer to the event.",
+    "short_desc": "Design and pilot a highly maneuverable quadcopter through a challenging race track to achieve the fastest time.",
+    "club_name": "SAE - Team Astra",
+    "prize_pool": 30000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "WaveQuest",
+    "full_desc": "Design and build a wireless, manually operated, remotely controlled boat that must navigate through obstacles within the least amount of time.",
+    "short_desc": "Build and remotely pilot a wireless boat through a challenging obstacle course in the fastest time possible.",
+    "club_name": "AUV Society",
+    "prize_pool": 25000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Reverse Engineering Challenge",
+    "full_desc": "Identifying circuit configurations from diagrams. Calculating theoretical output voltages (V_{out}), gain, or cutoff frequencies. Predicting LTspice error messages based on faulty schematics. Phase 2: The Simulation Sprint (LTspice) Duration: 2.5 Hours. Requirement: Participants must bring laptops with LTspice pre-installed. Task: A \"Black Box\" problem statement is revealed at the start. Example Task: \"Design a 4th-order Butterworth Low-Pass Filter with a cutoff of 1kHz and a gain of 20dB. Minimize the total number of Op-Amps used.\" Submission: Participants hand in their .asc file via a USB drive or a local intranet folder provided by the club.",
+    "short_desc": "Test your circuit knowledge by identifying configurations and simulating analog designs using LTspice in a time-bound challenge.",
+    "club_name": "System coding club",
+    "prize_pool": 24000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Game Jam",
+    "full_desc": "The Vashisht x Samgatha Game Jam 2025 48-hour game development challenge, conducted as a flagship event of the college fest by the Game Development Community. The event is organized in offline mode, encouraging in-person collaboration, creativity, and rapid prototyping among participants.",
+    "short_desc": "A 48-hour offline game development challenge fostering collaboration, creativity, and rapid prototyping among participants.",
+    "club_name": "Game Dev Community",
+    "prize_pool": 25000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Vashisht Hackathon 3.O",
+    "full_desc": "Vashisht Hackathon 3.O is an open hackathon in the computer science domain, encouraging students to collaborate, innovate, and build creative solutions. Participants choose from multiple tracks like AI, web and mobile development, and more, addressing real-world challenges. This flagship event by the Developer’s Club aims to foster technical skills, teamwork, and problem-solving abilities in a competitive environment.",
+    "short_desc": "An open hackathon across various CS domains like AI and web development, focusing on solving real-world challenges.",
+    "club_name": "Developers Club",
+    "prize_pool": 50000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Capture The Flag",
+    "full_desc": "Hack & Shield is a simultaneous attack-and-defend competition. Every team receives one or more intentionally vulnerable web services. Teams earn points by: (a) keeping their own services up and secure (b) exploiting other teams’ services to capture flags. Points are awarded for successful attacks and continuously deducted for service downtime — the faster you recover, the more points you keep.",
+    "short_desc": "An attack-and-defend competition where teams secure their vulnerable web services while attempting to exploit opponents' systems.",
+    "club_name": "Cybersecurity Club",
+    "prize_pool": 15000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Case Mystery",
+    "full_desc": "The Pivot club Case Study Challenge is a three-round event designed to test participants on problem-solving, analytical thinking, and structured presentation skills, using real-world business scenarios as the core medium of evaluation. The competition begins with Round 1, an online quiz hosted on the Unstop platform, where teams are assessed on business fundamentals, analytical aptitude, and domain knowledge, and only the top-performing teams progress further. Round 2 is an online common case study round on Unstop, where all shortlisted teams receive the same case, analyze it, and submit an original solution deck within a defined time window, highlighting their ability to work under pressure, think critically, and communicate insights clearly. The final Round 3 is conducted offline on campus, where shortlisted teams draw one of two case types through a lottery mechanism and present their solutions before a panel of judges, followed by a Q&A session that evaluates the depth of analysis, feasibility of recommendations, and on-the-spot thinking. Overall, the event simulates a complete case competition journey, offering participants valuable exposure to practical decision-making and skills relevant for consulting, management, and entrepreneurship.",
+    "short_desc": "A three-round case study challenge testing problem-solving, analytical thinking, and business presentation skills through real-world scenarios.",
+    "club_name": "Pivot",
+    "prize_pool": 15000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Pitch on Pitch",
+    "full_desc": "Pitch on Pitch is a startup pitching competition that focuses entirely on how well participants present and defend their ideas. The event tests clarity of thought, structure of the pitch, and the ability to answer questions confidently. The competition begins with an online pitch deck and video submission round. Based on these submissions, the top 8–10 teams are shortlisted. Shortlisted teams will then compete in the on-campus live pitch round, where each team delivers a 5-minute pitch, followed by a 2-minute Q&A session with the judges. Teams are evaluated on pitch clarity, feasibility of the idea, and overall delivery. Pitch on Pitch provides a focused platform for participants to practice pitching, receive feedback, and gain exposure.",
+    "short_desc": "A startup pitching competition evaluating clarity, pitch structure, and the ability to present and defend innovative ideas.",
+    "club_name": "E-Cell IIITDM",
+    "prize_pool": 20000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Luminary Talks",
+    "full_desc": "Luminary Talks is an optics-themed technical presentaon competation organized by the Optica Student Chapter, IIITDM Kancheepuram, as part of the Vashisht × Samgatha combined fest. The event provides a competative plaƞorm for students to present innovative ideas, emerging technologies, and applicaƟon-oriented concepts in the field of optics and photonics. The event is intended for undergraduate and postgraduate students from engineering and allied disciplines who wish to showcase their technical understanding, originality, and problem-oriented thinking in light-based technologies. Luminary Talks encourages interdisciplinary participation while maintaining a strong focus on optics and photonics within a structured and professional competation format.",
+    "short_desc": "An optics-themed presentation competition for students to showcase innovative ideas and emerging technologies in optics and photonics.",
+    "club_name": "Optica Student Chapter",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "IEEE Paper Presentation",
+    "full_desc": "The Paper Presentation event under Samgatha × Vashisht provides a professional platform for students to present their technical ideas, research work, innovative concepts, and project-based studies in front of an expert panel. This event encourages analytical thinking, research orientation, and effective technical communication among participants. The competition aims to bridge the gap between theoretical knowledge and practical application by allowing participants to showcase their work and receive constructive feedback from experienced judges.",
+    "short_desc": "A platform for students to present technical ideas, research, and innovative concepts to an expert panel.",
+    "club_name": "IEEE",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "Triathlon",
+    "full_desc": "Triathlon is the flagship 2-day competitive event, designed to identify the most versatile coders and innovators. Inspired by the spirit of endurance sports, Triathlon challenges participants across three distinct yet interconnected stages, each testing a critical computer science skill. Participants begin with a Debugging Contest that evaluates their ability to analyse, understand, and correct faulty code under time pressure. This is followed by a Competitive Programming Contest, where logical thinking, algorithms, and speed are put to the test. The final and most intensive stage is an AI/ML Challenge, where teams analyse dataset, identify patterns and present a data-backed solution to real-world problems. Spanning two days, Triathlon is not just about writing correct code it is about accuracy, efficiency, teamwork, and innovation.",
+    "short_desc": "A 2-day coding competition featuring a debugging contest, competitive programming, and an intensive AI/ML data challenge.",
+    "club_name": "CS Club",
+    "prize_pool": 35000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "flagship",
+    "event_name": "MazeRover",
+    "full_desc": "The Maze Rover Challenge tests participants' ability to navigate a simulated maze using a rover through teleoperation or autonomous programming. The event blends robotics simulation, ROS-based control, coding, and logical problem-solving",
+    "short_desc": "Navigate a simulated maze with a rover using teleoperation or autonomous programming via ROS and robotics simulation.",
+    "club_name": "MARS",
+    "prize_pool": 25000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "Line Follower Robot Competition",
+    "full_desc": "The Line Follower Robot Competition, organized by the Robotics Club of IIITDM Kancheepuram, is a classic robotics challenge that tests a robot’s ability to autonomously detect and follow a predefined path with speed and precision. Participants must design and program an intelligent robot capable of navigating complex tracks without any human intervention.",
+    "short_desc": "Design and program an autonomous robot to navigate complex, predefined paths with precision and speed.",
+    "club_name": "Robotics Club",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "AERO INNOVATION CHALLENGE",
+    "full_desc": "The Aero Innovation Challenge is a concept-driven technical competition focused on encouraging innovative thinking in the field of aerodynamics and aerospace engineering, with a special emphasis on hybrid and electric flight systems.",
+    "short_desc": "A technical challenge encouraging innovative aerodynamic and aerospace designs, emphasizing hybrid and electric flight systems.",
+    "club_name": "TALPADE AERO DESIGN CLUB",
+    "prize_pool": 8000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "PAPER PLANE AERODYNAMICS CHALLENGE",
+    "full_desc": "The Paper Plane Aerodynamics Challenge is a hands-on and engaging competition designed to introduce participants to the fundamental principles of aerodynamics through simple paper aircraft.",
+    "short_desc": "Learn fundamental aerodynamics by building and flying simple paper aircraft in a fun, engaging competition.",
+    "club_name": "TALPADE AERO DESIGN CLUB",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "CADverse – 3D Modelling Challenge",
+    "full_desc": "Step into a high-intensity CAD Design Challenge where creativity meets engineering precision. Participants (solo or teams of two) will tackle a real-world design problem with defined technical constraints and develop accurate 3D models using approved CAD tools. Designs will be judged on accuracy, creativity, and engineering logic. This event tests your ability to analyze, collaborate, and deliver under pressure.",
+    "short_desc": "A high-intensity CAD challenge where participants develop 3D models to solve real-world engineering problems.",
+    "club_name": "SAE Club - Revolt Racers",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "Motorsport Trivia & Race Strategy",
+    "full_desc": "The Motorsport Trivia & Race Strategy event is an engaging and interactive informal competition designed for motorsport enthusiasts, casual fans, and aspiring race engineers alike. This event blends motorsport knowledge, analytical thinking, and strategic decision-making in a relaxed yet competitive environment.",
+    "short_desc": "An interactive trivia and strategy competition testing motorsport knowledge and analytical thinking for racing enthusiasts.",
+    "club_name": "SAE Club - Revolt Racers",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "Discover the Thrill of Racing Engineering",
+    "full_desc": "The Club Showcase & Open Q&A is an interactive exhibition event aimed at introducing participants to the world of student motorsport engineering and competitive vehicle development. This informal yet insightful event provides a unique opportunity to explore the functioning, structure, and technical depth of Revolt Racers, the institute’s motorsport team.",
+    "short_desc": "An interactive showcase exploring the functioning, structure, and technical depth of the Revolt Racers motorsport team.",
+    "club_name": "SAE Club - Revolt Racers",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "Social Media Challenge – “Fuel the Fest”",
+    "full_desc": "Rev & Render: The Video Edit Challenge is a creative competition organized by SAE Club in collaboration with Imagix Club. Participants are challenged to transform static vehicle photographs (provided via a drive link) into a dynamic and engaging video edit, showcasing creativity, motion, and storytelling through their editing skills. The challenge is open to individual participants only. The Video / Photo inputs will be shared on the 1st day of the fest, with which the participants has to edit and have to make their submission in a google form link that'll be shared on the 3rd of the fest(The form will be open for 5 hours, within which the submission has to be made).The edit that holds the 1st place will be posted in the official social media handle of Revolt Racers.This is your chance to let your edits do the talking.",
+    "short_desc": "Transform static vehicle photographs into engaging, dynamic video edits to showcase your creativity and storytelling skills.",
+    "club_name": "SAE Club - Revolt Racers",
+    "prize_pool": 6000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "AquaRace: AUV Simulator Challenge",
+    "full_desc": "Program an AUV for swift, stable, and fully autonomous navigation from start to finish. Master PID control, path planning, and sensor-based decision-making. The fastest completion time wins!",
+    "short_desc": "Program an Autonomous Underwater Vehicle for swift navigation, mastering PID control and path planning.",
+    "club_name": "AUV Society",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "Robo-Soccer",
+    "full_desc": "",
+    "short_desc": "A robotics competition where teams build and maneuver robots to play a high-energy game of soccer.",
+    "club_name": "MARS",
+    "prize_pool": 15000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "BIT-TRIX",
+    "full_desc": "This is a competitive, hands-on event where participants design a custom 8-bit instruction system using Verilog (hardware) and Assembly (software). Performance is evaluated using an external hardware counter provided by the organizers, which measures execution speed for a predefined workload. Participants are encouraged to explore micro-architectural optimizations such as pipelining, instruction scheduling, parallelism, and execution efficiency within strict design constraints.",
+    "short_desc": "Design a custom 8-bit instruction system with Verilog and Assembly, focusing on micro-architectural optimizations and efficiency.",
+    "club_name": "System coding club",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "ElectroCraft",
+    "full_desc": "ElectroCraft: A First-Year Soldering Soiree\" is an exclusive event for first-year students, designed to introduce them to the art of soldering and prototyping. Participants will learn how to solder components onto a prototyping board, choose from pre-designed circuit templates, and evaluate the output of their creations. This hands-on workshop fosters technical skills and creativity while promoting teamwork and innovation. Perfect for beginners, this event aims to ignite curiosity and provide foundational knowledge in electronics.",
+    "short_desc": "A hands-on soldering and prototyping workshop for first-year students to learn foundational electronics skills.",
+    "club_name": "System coding club",
+    "prize_pool": 6000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "Storycraft",
+    "full_desc": "Literati Society X Game Dev Community Time hesitates, and in that pause, doors open both forward and backward. Voices of the past echo alongside visions of the future, sharing knowledge, tradition, and innovation. We enter a rare moment where time opens in both directions, allowing the past and future to meet in harmony. Beginning from a shared starting point, they navigate a structured, graph-based journey where each node reveals story fragments or randomized game mechanics drawn from different eras. Ancient traditions, future technologies, powerful abilities, and subtle constraints are collected along the chosen path, shaping a unique narrative for each participant. Every decision influences how the story unfolds. Upon reaching the end, participants must present a coherent story that integrates their journey with all the elements they gathered, and all mechanics acquired. What is all this good for? Someone’s eager to greet you at the end.",
+    "short_desc": "Navigate a graph-based journey collecting story fragments and game mechanics to present a coherent, unique narrative.",
+    "club_name": "Game Dev Community",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "Lens & Logic",
+    "full_desc": "Lens & Logic is a collaborative hackathon that blends the art of photography with the logic of programming. Participants are challenged to capture a raw photograph and process it using only code- no Photoshop, no Lightroom, and absolutely no Generative AI. The goal is to create a visually stunning piece of algorithmic art.",
+    "short_desc": "Capture raw photographs and process them entirely with code to create algorithmic art without standard editing software.",
+    "club_name": "Developers Club",
+    "prize_pool": 5000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "BACKEND BREAKDOWN",
+    "full_desc": "Backend Breakdown is a hands-on, offline hackathon focused on debugging, configuring, and fixing backend systems. Participants will be provided with a partially broken backend project along with frontend files and a local database setup. The objective is to analyze the given codebase, identify bugs and misconfigurations, and make the backend system fully functional within the given time. This event emphasizes real-world backend engineering skills without the use of internet or AI tools.",
+    "short_desc": "An offline hackathon demanding real-world backend engineering skills to debug and fix a broken system without AI tools.",
+    "club_name": "Developers Club",
+    "prize_pool": 7000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "CODE RELAY",
+    "full_desc": "",
+    "short_desc": "A fast-paced collaborative coding event where teammates take turns adding to a shared codebase to solve challenges.",
+    "club_name": "Developers Club",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "Hack & Shield",
+    "full_desc": "Hack & Shield is a live attack-and-defend cybersecurity competition. Teams receive intentionally vulnerable web services and earn points by securing their own services while exploiting others. Scores depend on both successful attacks and service uptime.",
+    "short_desc": "A live attack-and-defend cybersecurity contest where teams secure their services while exploiting opponents' vulnerabilities.",
+    "club_name": "Cybersecurity Club",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "Ricing & Scripting Competition",
+    "full_desc": "A two-round individual competition designed to test both aesthetic design skills and practical Linux problem-solving ability. Participants compete in a desktop customization challenge followed by a live scripting challenge.",
+    "short_desc": "Test your Linux problem-solving and aesthetic design skills in a desktop customization and live scripting challenge.",
+    "club_name": "Cybersecurity Club",
+    "prize_pool": 5000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "CHRONO QUEST – The Time-Travel Treasure Hunt",
+    "full_desc": "Chrono Quest is a theme-based treasure hunt event designed in alignment with the fest theme CHRONO-SYNC, where the past, present, and future converge.",
+    "short_desc": "A theme-based treasure hunt exploring the convergence of past, present, and future timelines across campus.",
+    "club_name": "Optica Student Chapter",
+    "prize_pool": 5000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "Raise Your Standards",
+    "full_desc": "Think you have what it takes to be a Tech Tycoon? Put your knowledge to the test in this thrilling quiz competition that covers general technology, logic, and engineering concepts, while also introducing participants to the importance and applications of IEEE standards.",
+    "short_desc": "A tech quiz competition testing logic, engineering concepts, and knowledge of crucial IEEE standards and their applications.",
+    "club_name": "IEEE",
+    "prize_pool": 8000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "MIND MAZE",
+    "full_desc": "Get ready to enter the Mind Maze — a high-energy, team-based fest event that challenges your speed, logic, and teamwork. This event blends rapid-fire questions with fun and engaging games that push participants to think fast, act smart, and work together under pressure. With three exciting rounds, Mind Maze promises a perfect mix of fun, competition, and brain- teasing challenges, making it a must-attend event for fest enthusiasts.",
+    "short_desc": "A high-energy team event blending rapid-fire questions and engaging games to test speed, logic, and teamwork.",
+    "club_name": "IEEE",
+    "prize_pool": 5000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "AlgoXchange",
+    "full_desc": "In a brief moment where time and ideas align, AlgoXchange challenges teams to balance strategy, logic, and speed. Participants invest points to unlock problems, solve them for profit, and adapt as the contest unfolds across two rounds. Drawing from both foundational problem-solving and quick modern tactics, teams must decide when to play safe and when to take risks. Success depends notjust on coding skill, but on timing, teamwork, and smart decisions made in the moment.",
+    "short_desc": "Balance strategy and speed in this coding contest where you invest points to unlock and solve algorithmic problems.",
+    "club_name": "CS Club",
+    "prize_pool": 6000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_formal",
+    "event_name": "OPCODE",
+    "full_desc": "OPCODE: Optimal Coding Challenge is a formal assembly-level programming contest that tests participants’ ability to solve algorithmic problems with absolute precision and efficiency. Teams are required to implement optimal solutions using either ARM or MIPS assembly, where every instruction, register, and memory access matters.",
+    "short_desc": "A challenging assembly-level programming contest focusing on precision and efficiency using ARM or MIPS assembly.",
+    "club_name": "CS Club",
+    "prize_pool": 5000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "tech_informal",
+    "event_name": "CodeHunt",
+    "full_desc": "CodeHunt is a problem-solving journey where each challenge unlocks the path forward. Participants must analyse, debug, and decipher code-based puzzles to uncover clues and progress through the hunt. Blending logical reasoning with exploration, CodeHunt reflects a meeting point of old-school thinking and modern problem-solving. Every solved clue represents a step forward, guided by curiosity and careful observation.",
+    "short_desc": "A code-based treasure hunt where participants decode puzzles and debug logic to unlock clues and advance.",
+    "club_name": "CS Club",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "VIVADHAM – The Classic Clash of Voices",
+    "full_desc": "VIVADHAM is an inter-college, multilingual debate show presented by the Tamil Saalaram Club as part of the Tech-Cultural Fest. Designed to celebrate logic, language, and cultural diversity, the event provides a dynamic platform for students to express perspectives, challenge ideas, and engage in respectful intellectual discourse. The event features two exclusive debate sessions—one in Tamil and one in English, each lasting 1.5 hours. Two teams compete in every session, with 4–5 members per team, based on registrations. Participants register individually. The debate topic will be announced 1 week prior to the event, and participants may choose their side (For / Against) on a first-come, first-serve basis. The debates will be guided by a neutral Moderator from the club, ensuring smooth flow, discipline, and equal opportunity. Judgment will be fair and transparent, combining expert judges’ evaluation and a live audience poll, making the experience both competitive and engaging. Open to students from all colleges, VIVADHAM invites voices beyond borders to debate with reason, respect, and confidence. Debate not to defeat—but to define thought.",
+    "short_desc": "An inter-college multilingual debate celebrating logic and cultural diversity, featuring engaging Tamil and English sessions.",
+    "club_name": "Tamil Saalaram",
+    "prize_pool": 15000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "“One Line • One Rhythm”",
+    "full_desc": "Participants create a complete artwork using ONE continuous line while listening to music. The line must flow with the rhythm, mood, and emotion of the music—no lifting the pen/brush at any point.",
+    "short_desc": "Create a complete artwork using a single, continuous line synchronized with the rhythm and mood of playing music.",
+    "club_name": "Art Club",
+    "prize_pool": 15000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "THEATRICAL ODYSSEY--THE PRICE OF PLEASURE",
+    "full_desc": "Under the theme “SERPENT: Temptation Always Bites Back,” The Price of Pleasure is a thought-provoking stage play that explores how the lure of instant gratification slowly entraps individuals. Through symbolic storytelling and powerful performances, the play reveals how addictions—to substances, screens, or validation - come at the cost of peace, health, and relationships. A striking reminder that every temptation carries a consequence, and not all pleasures are worth the price",
+    "short_desc": "A thought-provoking stage play exploring the entrapment of instant gratification and the hidden costs of modern addictions.",
+    "club_name": "Theatrix Drama Club",
+    "prize_pool": 15000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "KONJAM NADINGA BOSS",
+    "full_desc": "A fun-filled, interactive event that brings teamwork, creativity, and quick thinking to the forefront! Teams will get a chance to showcase their acting, communication, and collaboration skills, all while keeping the excitement alive for everyone watching. Expect laughter, surprises, and epic moments that celebrate imagination and teamwork.",
+    "short_desc": "A fun, interactive acting event showcasing teamwork, quick thinking, and creative collaboration.",
+    "club_name": "Theatrix Drama Club",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "ESCAPE ROOM/CHALLENGE ROOM",
+    "full_desc": "Step into an immersive escape room experience where logic, teamwork, and quick thinking are your only way out. Teams must solve puzzles, uncover hidden clues, and crack challenges within a limited time to escape the room. Every decision matters only those who communicate, think smart, and stay calm under pressure will succeed.",
+    "short_desc": "Solve puzzles and uncover clues within a limited time to break out of this thrilling, immersive escape room.",
+    "club_name": "Theatrix Drama Club",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Fragments of Time",
+    "full_desc": "A Time Travel Photography Challenge Time rarely moves in a straight line—it exists in fragments, memories, and imagined futures. Fragments of Time invites photographers to capture moments from different eras and weave them into a visual narrative. Through this photography challenge, participants will explore how the Past and the Future can coexist through a single creative vision. The event unfolds in two engaging rounds. In the first round, participants submit a pair of photographs—one inspired by vintage aesthetics and the other by a futuristic interpretation—connected through a common theme or story. Shortlisted entries will advance to an on-campus round, where participants will create a photo story within a limited time based on a surprise theme, using the IIITDM Kancheepuram campus as their setting. Open to all photography styles and devices, Fragments of Time celebrates creativity, storytelling, and the power of a single frame to transcend eras. Step into the past. Imagine the future. Capture time in fragments.",
+    "short_desc": "A time-travel photography challenge where participants capture and weave vintage and futuristic aesthetics into a compelling visual narrative.",
+    "club_name": "Imagix",
+    "prize_pool": 10000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Savāra Flagship Quiz",
+    "full_desc": "Welcome to IIITDM-K’s Flagship fest and to Quriosity Quiz Club’s flagship quiz. The quiz consists of a prelims round and a finals round where top 6 teams make it to finals. Quiz topics are wide and varied ranging from sports, history, culture, contemporary, literature etc... most questions will be inspired or tie into the major and minor themes of the fest in some way or another. Kindly have adequate charge in your mobile phone to use buzzer app in finals. Quiz organisers will have all final say in decisions and will be binding.",
+    "short_desc": "A comprehensive quiz covering sports, history, culture, and literature, tying into the major fest themes.",
+    "club_name": "Quriosity Quiz Club",
+    "prize_pool": 18000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Temporal wishpers",
+    "full_desc": "An immersive, interactive event where the participants must choose a side and live the story from within it. The narrative unfolds in real time, shaped by perspective, attention, and choice. Every word matters, hidden details and subtle clues may determine who advances and who falls behind. Listening is survival. Each side experiences the story differently, facing unique challenges that demand strategy, collaboration, and sharp insight. Victory is not guaranteed, it is earned by those who can read between the lines and act with purpose. Presented by the Literati Society, this is not just a story you hear, it’s one you must navigate.",
+    "short_desc": "An interactive storytelling experience where choices, perspective, and hidden clues shape your real-time narrative journey.",
+    "club_name": "Literati Society",
+    "prize_pool": 10500,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Battle of bands -Solo instrumental Publicity event - Open mic",
+    "full_desc": "Battle of bands - This is a live band competition where groups perform original compositions or covers across any genre. Bands will be judged on musical technicality, stage presence, arrangement, and overall performance. Whether you’re into rock, indie, metal, fusion, or experimental sounds, this stage is for bands that know how to play together and own the crowd. Bring your best set and let the music speak. Solo vocals and instrumental - A solo singing and instrumental event open to all genres and styles. Solo singing - This event is about individuality - how you interpret a song and connect with the audience using just your voice. It's all about how you make a song your own and make it shine in your own style. Participants can use an instrumental backing track. Judges will focus on pitch, dynamics, expression, clarity, and stage presence. Solo instrumental - An instrumental performance event where musicians present a solo piece on an instrument of their choice. Any style is welcome - classical, contemporary, or fusion. Evaluation will be based on technique, musicality, rhythm, and overall presentation. This is a space for musicians who communicate through sound rather than lyrics. Publicity event - Open mic An exclusive open mic night celebrating the musical talent of IIITDM Kancheepuram. This event is open to singers, instrumentalists, and bands who want to take the stage and perform live. From soulful vocals and acoustic sets to full-band jams, the evening is all about melody, rhythm, and live performance. Top performances of the night will be awarded exciting surprise gifts.",
+    "short_desc": "A massive musical showdown featuring battle of the bands, solo singing and instrumental showcases, and an open mic.",
+    "club_name": "Music Club",
+    "prize_pool": 40000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "spotlight",
+    "full_desc": "Event 1:Solo Dance Competition Round 1:Participants must submit a video performance of 1-2 minutes. Round 2:Qualifiers will perform live(on stage) for 3-5 minutes. Event 2:Group Dance Competition (maximum of 15 participants) Round 1:Participants must submit a group dance video performance of 1-2 minutes. Round 2:Teams will perform live(on stage) for 4-7 minutes.",
+    "short_desc": "Showcase your moves in solo and group dance competitions featuring video prelims and electrifying live stage finals.",
+    "club_name": "Footlights",
+    "prize_pool": 45000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Free Fire",
+    "full_desc": "Teams will be divided into Groups based on no. of registrations. • Teams in each Group play the Group stage Matches. • In Group stage each Team plays with every other Team in their respective group once.[Round Robin] • *2 teams from each group will advance to Play-offs. (*may change with respect to no. of groups)",
+    "short_desc": "A competitive Free Fire e-sports tournament featuring group stages and high-stakes playoffs.",
+    "club_name": "E-Sports",
+    "prize_pool": 9000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "BGMI",
+    "full_desc": "● PLAYERS WILL PARTICIPATE As A 4 MAN SQUAD. ● UP TO 64 PLAYERs WILL BE PLAYING IN A LOBBY. ● MAPS SELECTED WILL BE NOTIFIED TO THE PARTICIPANTs BEFORE THE MATCH. ● GROUP STAGE IS A 4-MAP SERIES: ● - ERANGLE ● -SANHOK ● -MIRAMAR ● -VIKENDI",
+    "short_desc": "A 4-man squad BGMI tournament with intense lobby battles across Erangel, Sanhok, Miramar, and Vikendi maps.",
+    "club_name": "E-Sports",
+    "prize_pool": 7000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Valorant",
+    "full_desc": "Match making: GROUP STAGES: Two GROUP A & GROUP B. Group stages are best of 3. Top 2 Teams from each group will be selected for Play-offs. Each Team gets to play 3 Games in Group stages. Conducted online. PLAY-OFFS: Play-offs are best of 3. Finals are best of 5. (Refer fixtures.) Conducted offline. BEST OF 3: Team A bans the map. Team B bans the map. Team A picks the map. Team B picks the map. Team A bans the map. Team B bans the map. Team A chooses sides. BEST OF 5: #1 team to go into finals will get both map bans. The remaining maps are picked alternatively. Team A bans the map. Team B bans the map. Team A picks the map. Team B picks the map. Team A picks the map. Team B picks the map. Team A chooses sides. MAPS: HEAVEN, ABYSS, BIND, ASCENT, ICEBOX, LOTUS, SUNSET.",
+    "short_desc": "A Valorant tournament starting with online group stages and culminating in thrilling offline best-of series playoffs.",
+    "club_name": "E-Sports",
+    "prize_pool": 9000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "prism",
+    "full_desc": "Unlike the binary nature of Duality, Spectrum is a celebration of cinematic freedom. There are no sides to choose and no predefined moods to follow. This is a \"Blank Canvas\" event where filmmakers are invited to explore any theme, message, or aesthetic. Whether it is a surrealist dream, a gritty documentary, or a high-octane experimental piece, Spectrum rewards pure storytelling and technical mastery.",
+    "short_desc": "A short film competition celebrating cinematic freedom, inviting filmmakers to showcase their storytelling and technical mastery.",
+    "club_name": "CINEMATICS",
+    "prize_pool": 5000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_formal",
+    "event_name": "Spectrum: ONE MINUITE EDITION",
+    "full_desc": "Unlike the binary nature of Duality, Spectrum is a celebration of cinematic freedom. There are no sides, no prescribed emotions, and no creative boundaries. This One Minute Edition challenges filmmakers to tell a powerful story within just 60 seconds, turning time itself into the ultimate canvas. Whether abstract, narrative-driven, experimental, or poetic—Spectrum rewards pure storytelling, originality, and technical finesse in its most concise form.",
+    "short_desc": "Tell a powerful, creative story within just 60 seconds in this highly constrained but creatively liberating filmmaking challenge.",
+    "club_name": "CINEMATICS",
+    "prize_pool": 12000,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "FRAME PAARUNGA JI",
+    "full_desc": "FRAME PAARUNGA JI is a fun-filled, informal movie-guessing event organized by the Tamil Saalaram Club.",
+    "short_desc": "An entertaining, informal movie-guessing game that tests your knowledge of Tamil cinema frames.",
+    "club_name": "Tamil Saalaram",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "FACE PAINTING",
+    "full_desc": "Unleash your creativity and colors at the Face Painting Event organized by Aurora Art Club! Participants can join in pairs and paint each other, or come solo—our coordinators will be happy to assist. All face paints will be provided by the organizers, so just bring your imagination and enthusiasm. Get ready to transform faces into art and enjoy a fun-filled creative experience...",
+    "short_desc": "Unleash your creativity in pairs or solo by transforming faces into vibrant artwork using provided paints.",
+    "club_name": "Art Club",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "tambola",
+    "full_desc": "Get ready for an exciting and entertaining Tambola event filled with fun, suspense, and cheer. Participants mark their tickets as numbers are called out, hoping to complete winning patterns and shout “Tambola!” From quick wins to full-house thrills, this classic game promises laughter, engagement, and joyful moments for everyone.",
+    "short_desc": "Enjoy the classic game of Tambola full of excitement, suspense, and quick wins with friends.",
+    "club_name": "Theatrix Drama Club",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "Colab Event with Game Dev",
+    "full_desc": "",
+    "short_desc": "A collaborative interactive event bringing together literature and game development for a unique experience.",
+    "club_name": "Literati Society",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "Dance Dumb Charades",
+    "full_desc": "A lively and fun-filled game where participants act out dance steps, songs, Or styles using only movements and expressions—no words allowed.",
+    "short_desc": "Act out dance steps and songs without speaking in this lively and fun dumb charades event.",
+    "club_name": "Footlights",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "Open Floor / DJ Dance",
+    "full_desc": "A high-vibe open dance session with nonstop DJ beats, inviting everyone To let loose, dance freely, and enjoy the celebration together. ⏱ Time Limit: Open session (30 – 45 minutes)",
+    "short_desc": "A high-energy open dance session featuring nonstop DJ beats for everyone to celebrate and dance freely.",
+    "club_name": "Footlights",
+    "prize_pool": 0,
+    "unstop_link": ""
+  },
+  {
+    "event_type": "cult_informal",
+    "event_name": "Experience the Thrill!",
+    "full_desc": "We are excited to host an action-packed PC Gaming Event featuring high-quality monitors and joystick controllers for an immersive gaming experience. Whether you’re a competitive gamer or just want to enjoy some intense gameplay, this event is the perfect place to showcase your skills, reflexes, and strategy. Participants will compete in a thrilling gaming environment designed to test speed, precision, and decision-making. Expect high energy, fair play, and nonstop excitement as players battle it out for victory and bragging rights.",
+    "short_desc": "An action-packed PC gaming experience with immersive gear, testing player reflexes, speed, and competitive strategies.",
+    "club_name": "E-Sports",
+    "prize_pool": 0,
+    "unstop_link": ""
+  }
+]

@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-type EventItem = {
-  name: string;
-  tag?: string;
-  level?: string;
-  summary: string;
-  href?: string;
-  prizePool?: string;
-  unstopUrl?: string;
+export type EventItem = {
+  event_type: "flagship" | "tech_formal" | "tech_informal" | "cult_formal" | "cult_informal";
+  event_name: string;
+  full_desc: string;
+  short_desc: string;
+  club_name: string;
+  prize_pool: number;
+  unstop_link: string;
 };
 
 type EventsCategoryPageProps = {
@@ -29,6 +29,23 @@ export default function EventsCategoryPage({
   background,
   events,
 }: EventsCategoryPageProps) {
+  const formatPrize = (value: number) => `₹${value.toLocaleString("en-IN")}`;
+  const formatEventType = (value: EventItem["event_type"]) => {
+    switch (value) {
+      case "flagship":
+        return "Flagship";
+      case "tech_formal":
+        return "Formal";
+      case "tech_informal":
+        return "Informal";
+      case "cult_formal":
+        return "Formal";
+      case "cult_informal":
+        return "Informal";
+      default:
+        return "";
+    }
+  };
   return (
     <main
       className="min-h-screen px-4 pb-20 pt-24 sm:px-6 sm:pt-28 lg:px-10"
@@ -84,7 +101,7 @@ export default function EventsCategoryPage({
           {events.map((event) => {
             const card = (
               <article
-                key={event.name}
+                key={`${event.event_type}-${event.event_name}`}
                 className="group relative overflow-hidden rounded-2xl border border-white/5 bg-black/25 p-6 shadow-lg shadow-black/40 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/70 sm:rounded-3xl"
               >
                 <div
@@ -103,9 +120,9 @@ export default function EventsCategoryPage({
                         color: "var(--savara-cream)",
                       }}
                     >
-                      {event.name}
+                      {event.event_name}
                     </h2>
-                    {event.tag && (
+                    {event.event_type && (
                       <span
                         className="rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.2em]"
                         style={{
@@ -113,9 +130,13 @@ export default function EventsCategoryPage({
                           backgroundColor: "rgba(10,4,8,0.85)",
                           color: accent,
                           border: `1px solid ${accentSoft}`,
+                          boxShadow:
+                            event.event_type === "flagship"
+                              ? "0 0 16px rgba(212, 165, 116, 0.45), 0 0 30px rgba(212, 165, 116, 0.25)"
+                              : "none",
                         }}
                       >
-                        {event.tag}
+                        {formatEventType(event.event_type)}
                       </span>
                     )}
                   </div>
@@ -127,12 +148,12 @@ export default function EventsCategoryPage({
                       color: "rgba(245, 230, 211, 0.78)",
                     }}
                   >
-                    {event.summary}
+                    {event.short_desc}
                   </p>
 
                   <div className="mt-1 flex items-end justify-between gap-3">
                     <div className="space-y-1">
-                      {event.level && (
+                      {event.club_name && (
                         <p
                           className="text-[11px] uppercase tracking-[0.25em]"
                           style={{
@@ -140,10 +161,10 @@ export default function EventsCategoryPage({
                             color: "rgba(245, 230, 211, 0.6)",
                           }}
                         >
-                          {event.level}
+                          {event.club_name}
                         </p>
                       )}
-                      {event.prizePool && (
+                      {event.prize_pool > 0 && (
                         <p
                           className="text-xs uppercase tracking-[0.25em]"
                           style={{
@@ -156,7 +177,7 @@ export default function EventsCategoryPage({
                       )}
                     </div>
 
-                    {event.prizePool && (
+                    {event.prize_pool > 0 && (
                       <div className="text-right">
                         <p
                           className="text-[10px] font-semibold uppercase tracking-[0.28em] text-right sm:text-[11px]"
@@ -177,7 +198,7 @@ export default function EventsCategoryPage({
                             backgroundClip: "text",
                           }}
                         >
-                          {event.prizePool}
+                          {formatPrize(event.prize_pool)}
                         </p>
                       </div>
                     )}
@@ -186,25 +207,17 @@ export default function EventsCategoryPage({
               </article>
             );
 
-            if (event.unstopUrl) {
+            if (event.unstop_link) {
               return (
                 <a
-                  key={event.name}
-                  href={event.unstopUrl}
+                  key={`${event.event_type}-${event.event_name}`}
+                  href={event.unstop_link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
                 >
                   {card}
                 </a>
-              );
-            }
-
-            if (event.href) {
-              return (
-                <Link key={event.name} href={event.href} className="block">
-                  {card}
-                </Link>
               );
             }
 
@@ -215,4 +228,3 @@ export default function EventsCategoryPage({
     </main>
   );
 }
-
