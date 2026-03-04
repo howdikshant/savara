@@ -6,7 +6,7 @@
     "short_desc": "A combat robotics competition where participants build and control robots in a tournament-style arena battle.",
     "club_name": "Robotics Club",
     "prize_pool": 30000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/robowars-8kg-savara-iiitdm-kancheepuram-1641452",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -28,7 +28,7 @@
     "short_desc": "An aeromodelling competition challenging students to design and fly radio-controlled aircraft for payload delivery and precision tasks.",
     "club_name": "TALPADE AERO DESIGN CLUB",
     "prize_pool": 30000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/sky-symphony-savara-iiitdm-kancheepuram-1639328",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -50,7 +50,7 @@
     "short_desc": "Design and pilot a highly maneuverable quadcopter through a challenging race track to achieve the fastest time.",
     "club_name": "SAE - Team Astra",
     "prize_pool": 30000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/drone-racing-competition-savara-iiitdm-kancheepuram-1640769",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -72,7 +72,7 @@
     "short_desc": "Build and remotely pilot a wireless boat through a challenging obstacle course in the fastest time possible.",
     "club_name": "AUV Society",
     "prize_pool": 25000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/wavequest-iiitdm-kancheepuram-1639339",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -94,7 +94,7 @@
     "short_desc": "Test your circuit knowledge by identifying configurations and simulating analog designs using LTspice in a time-bound challenge.",
     "club_name": "System coding club",
     "prize_pool": 24000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/reverse-engineering-challenge-savara-iiitdm-kancheepuram-1639979",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -116,7 +116,7 @@
     "short_desc": "A 48-hour offline game development challenge fostering collaboration, creativity, and rapid prototyping among participants.",
     "club_name": "Game Dev Community",
     "prize_pool": 25000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/game-jam-savara-iiitdm-kancheepuram-1641905",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -138,7 +138,7 @@
     "short_desc": "An open hackathon across various CS domains like AI and web development, focusing on solving real-world challenges.",
     "club_name": "Developers Club",
     "prize_pool": 50000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/vashisht-hackathon-3o-savara-iiitdm-kancheepuram-1640006",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -160,7 +160,7 @@
     "short_desc": "An attack-and-defend competition where teams secure their vulnerable web services while attempting to exploit opponents' systems.",
     "club_name": "Cybersecurity Club",
     "prize_pool": 15000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/capture-the-flag-savara-iiitdm-kancheepuram-1640013",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -204,7 +204,7 @@
     "short_desc": "A startup pitching competition evaluating clarity, pitch structure, and the ability to present and defend innovative ideas.",
     "club_name": "E-Cell IIITDM",
     "prize_pool": 20000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/pitch-on-pitch-savara-iiitdm-kancheepuram-1640837",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -226,7 +226,7 @@
     "short_desc": "An optics-themed presentation competition for students to showcase innovative ideas and emerging technologies in optics and photonics.",
     "club_name": "Optica Student Chapter",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/luminary-talks-savara-iiitdm-kancheepuram-1640808",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -248,7 +248,7 @@
     "short_desc": "A platform for students to present technical ideas, research, and innovative concepts to an expert panel.",
     "club_name": "IEEE",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/ieee-paper-presentation-savara-iiitdm-kancheepuram-1640853",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -270,7 +270,7 @@
     "short_desc": "A 2-day coding competition featuring a debugging contest, competitive programming, and an intensive AI/ML data challenge.",
     "club_name": "CS Club",
     "prize_pool": 35000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/triathlon-savara-iiitdm-kancheepuram-1639995",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -292,7 +292,7 @@
     "short_desc": "Navigate a simulated maze with a rover using teleoperation or autonomous programming via ROS and robotics simulation.",
     "club_name": "MARS",
     "prize_pool": 25000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/mazerover-savara-iiitdm-kancheepuram-1639362",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -314,7 +314,7 @@
     "short_desc": "Design and program an autonomous robot to navigate complex, predefined paths with precision and speed.",
     "club_name": "Robotics Club",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/line-follower-savara-iiitdm-kancheepuram-1641466",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -336,7 +336,7 @@
     "short_desc": "A technical challenge encouraging innovative aerodynamic and aerospace designs, emphasizing hybrid and electric flight systems.",
     "club_name": "TALPADE AERO DESIGN CLUB",
     "prize_pool": 8000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/aero-innovation-challenge-savara-iiitdm-kancheepuram-1639356",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -380,7 +380,7 @@
     "short_desc": "A high-intensity CAD challenge where participants develop 3D models to solve real-world engineering problems.",
     "club_name": "SAE Club - Revolt Racers",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/cad-verse-3d-modelling-challenge-iiitdm-kancheepuram-1639315",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -468,7 +468,7 @@
     "short_desc": "Program an Autonomous Underwater Vehicle for swift navigation, mastering PID control and path planning.",
     "club_name": "AUV Society",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/aquarace-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1639344",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -490,7 +490,7 @@
     "short_desc": "A robotics competition where teams build and maneuver robots to play a high-energy game of soccer.",
     "club_name": "MARS",
     "prize_pool": 15000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/robo-soccer-savara-iiitdm-kancheepuram-1639367",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -512,7 +512,7 @@
     "short_desc": "Design a custom 8-bit instruction system with Verilog and Assembly, focusing on micro-architectural optimizations and efficiency.",
     "club_name": "System coding club",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/bit-trix-savara-iiitdm-kancheepuram-1640023",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -578,7 +578,7 @@
     "short_desc": "Capture raw photographs and process them entirely with code to create algorithmic art without standard editing software.",
     "club_name": "Developers Club",
     "prize_pool": 5000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/lens-logic-savara-iiitdm-kancheepuram-1640822",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -600,7 +600,7 @@
     "short_desc": "An offline hackathon demanding real-world backend engineering skills to debug and fix a broken system without AI tools.",
     "club_name": "Developers Club",
     "prize_pool": 7000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/backend-breakdown-savara-iiitdm-kancheepuram-1640028",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -644,7 +644,7 @@
     "short_desc": "A live attack-and-defend cybersecurity contest where teams secure their services while exploiting opponents' vulnerabilities.",
     "club_name": "Cybersecurity Club",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/hack-and-shield-savara-iiitdm-kancheepuram-1640035",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -666,7 +666,7 @@
     "short_desc": "Test your Linux problem-solving and aesthetic design skills in a desktop customization and live scripting challenge.",
     "club_name": "Cybersecurity Club",
     "prize_pool": 5000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/ricing-scripting-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepur-1640055",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -754,7 +754,7 @@
     "short_desc": "Balance strategy and speed in this coding contest where you invest points to unlock and solve algorithmic problems.",
     "club_name": "CS Club",
     "prize_pool": 6000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/algoxchange-savara-iiitdm-kancheepuram-1648423",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -776,7 +776,7 @@
     "short_desc": "A challenging assembly-level programming contest focusing on precision and efficiency using ARM or MIPS assembly.",
     "club_name": "CS Club",
     "prize_pool": 5000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/hackathons/opcode-optimal-coding-challenge-savara-iiitdm-kancheepuram-1640051",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report at the venue at least 30 minutes before the event starts.",
@@ -820,7 +820,7 @@
     "short_desc": "An inter-college multilingual debate celebrating logic and cultural diversity, featuring engaging Tamil and English sessions.",
     "club_name": "Tamil Saalaram",
     "prize_pool": 15000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/vivaadham-classic-debate-savara-iiitdm-kancheepuram-1640800",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -842,7 +842,7 @@
     "short_desc": "Create a complete artwork using a single, continuous line synchronized with the rhythm and mood of playing music.",
     "club_name": "Art Club",
     "prize_pool": 15000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/one-line-one-rhythm-iiitdm-kancheepuram-1640825",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -864,7 +864,7 @@
     "short_desc": "A thought-provoking stage play exploring the entrapment of instant gratification and the hidden costs of modern addictions.",
     "club_name": "Theatrix Drama Club",
     "prize_pool": 15000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/theatrical-oddessey-savara-iiitdm-kancheepuram-1639991",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -930,7 +930,7 @@
     "short_desc": "A time-travel photography challenge where participants capture and weave vintage and futuristic aesthetics into a compelling visual narrative.",
     "club_name": "Imagix",
     "prize_pool": 10000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/fragments-of-time-iiitdm-kancheepuram-1641460",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -952,7 +952,7 @@
     "short_desc": "A comprehensive quiz covering sports, history, culture, and literature, tying into the major fest themes.",
     "club_name": "Quriosity Quiz Club",
     "prize_pool": 18000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/competitions/savara-flagship-quiz-savara-iiitdm-kancheepuram-1640787",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -974,7 +974,7 @@
     "short_desc": "An interactive storytelling experience where choices, perspective, and hidden clues shape your real-time narrative journey.",
     "club_name": "Literati Society",
     "prize_pool": 10500,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/temporal-whispers-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1649847",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -996,7 +996,7 @@
     "short_desc": "Gear up for a high-octane musical battle as bands of all genres compete for the ultimate title.",
     "club_name": "Music Club",
     "prize_pool": 40000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/battle-of-bands-savara-iiitdm-kancheepuram-1639330",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1018,7 +1018,7 @@
     "short_desc": "Showcase your talent in solo singing and instrumental performances across all genres.",
     "club_name": "Music Club",
     "prize_pool": 5000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/solos-vocals-and-instrumental-savara-iiitdm-kancheepuram-1639340",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1040,7 +1040,7 @@
     "short_desc": "Showcase your moves in solo and group dance competitions featuring video prelims and electrifying live stage finals.",
     "club_name": "Footlights",
     "prize_pool": 45000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/spotlight-savara-iiitdm-kancheepuram-1640026",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1062,7 +1062,7 @@
     "short_desc": "A competitive Free Fire e-sports tournament featuring group stages and high-stakes playoffs.",
     "club_name": "E-Sports",
     "prize_pool": 9000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/free-fire-savara-iiitdm-kancheepuram-1641457",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1084,7 +1084,7 @@
     "short_desc": "A 4-man squad BGMI tournament with intense lobby battles across Erangel, Sanhok, Miramar, and Vikendi maps.",
     "club_name": "E-Sports",
     "prize_pool": 7000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/bgmi-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1648479",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1106,7 +1106,7 @@
     "short_desc": "A Valorant tournament starting with online group stages and culminating in thrilling offline best-of series playoffs.",
     "club_name": "E-Sports",
     "prize_pool": 9000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/valorant-savara-iiitdm-kancheepuram-1641469",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1128,7 +1128,7 @@
     "short_desc": "A short film competition celebrating cinematic freedom, inviting filmmakers to showcase their storytelling and technical mastery.",
     "club_name": "CINEMATICS",
     "prize_pool": 5000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/prism-one-minute-film-making-contest-iiitdm-kancheepuram-1639335",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
@@ -1150,7 +1150,7 @@
     "short_desc": "Tell a powerful, creative story within just 60 seconds in this highly constrained but creatively liberating filmmaking challenge.",
     "club_name": "CINEMATICS",
     "prize_pool": 12000,
-    "unstop_link": "",
+    "unstop_link": "https://unstop.com/events/spectrum-2026-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1639316",
     "rules": [
       "All participants must carry a valid college ID.",
       "Teams must report backstage at least 30 minutes before their slot.",
