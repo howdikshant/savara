@@ -177,33 +177,11 @@
   },
   {
     "event_type": "flagship",
-    "event_name": "Case Mystery",
-    "full_desc": "The Pivot club Case Study Challenge is a three-round event designed to test participants on problem-solving, analytical thinking, and structured presentation skills, using real-world business scenarios as the core medium of evaluation. The competition begins with Round 1, an online quiz hosted on the Unstop platform, where teams are assessed on business fundamentals, analytical aptitude, and domain knowledge, and only the top-performing teams progress further. Round 2 is an online common case study round on Unstop, where all shortlisted teams receive the same case, analyze it, and submit an original solution deck within a defined time window, highlighting their ability to work under pressure, think critically, and communicate insights clearly. The final Round 3 is conducted offline on campus, where shortlisted teams draw one of two case types through a lottery mechanism and present their solutions before a panel of judges, followed by a Q&A session that evaluates the depth of analysis, feasibility of recommendations, and on-the-spot thinking. Overall, the event simulates a complete case competition journey, offering participants valuable exposure to practical decision-making and skills relevant for consulting, management, and entrepreneurship.",
-    "short_desc": "A three-round case study challenge testing problem-solving, analytical thinking, and business presentation skills through real-world scenarios.",
-    "club_name": "Pivot",
-    "prize_pool": 15000,
-    "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
-  },
-  {
-    "event_type": "flagship",
     "event_name": "Pitch on Pitch",
     "full_desc": "Pitch on Pitch is a startup pitching competition that focuses entirely on how well participants present and defend their ideas. The event tests clarity of thought, structure of the pitch, and the ability to answer questions confidently. The competition begins with an online pitch deck and video submission round. Based on these submissions, the top 8–10 teams are shortlisted. Shortlisted teams will then compete in the on-campus live pitch round, where each team delivers a 5-minute pitch, followed by a 2-minute Q&A session with the judges. Teams are evaluated on pitch clarity, feasibility of the idea, and overall delivery. Pitch on Pitch provides a focused platform for participants to practice pitching, receive feedback, and gain exposure.",
     "short_desc": "A startup pitching competition evaluating clarity, pitch structure, and the ability to present and defend innovative ideas.",
     "club_name": "E-Cell IIITDM",
-    "prize_pool": 20000,
+    "prize_pool": 35000,
     "unstop_link": "https://unstop.com/competitions/pitch-on-pitch-savara-iiitdm-kancheepuram-1640837",
     "rules": [
       "All participants must carry a valid college ID.",
