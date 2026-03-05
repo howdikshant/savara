@@ -1,0 +1,61 @@
+{
+  "event_id": "1639330",
+  "url": "https://unstop.com/events/battle-of-bands-savara-iiitdm-kancheepuram-1639330",
+  "event_name": "Battle of Bands",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/69997a25841d5_battle-of-bands.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/69997a2b886d2_battle-of-bands.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698b4a69d5688_music-club-logo.jpeg",
+  "description_html": "<h1 data-start=\"179\" data-end=\"205\">Battle of Bands &ndash; Savara</h1>\n<h2 data-start=\"207\" data-end=\"218\">Overview</h2>\n<p data-start=\"220\" data-end=\"464\">Battle of Bands is a live music competition where bands perform original compositions or covers across any genre. Whether you're into rock, indie, metal, fusion, or experimental sounds, this stage is for musicians who know how to own the crowd.</p>\n<p data-start=\"466\" data-end=\"632\">Bands will be judged on musical technicality, stage presence, arrangement, and overall performance. Bring your best set, showcase your sound, and let the music speak.</p>\n<hr data-start=\"634\" data-end=\"637\" />\n<h2 data-start=\"639\" data-end=\"660\">Competition Format</h2>\n<h3 data-start=\"662\" data-end=\"700\">Round 1 &ndash; Online Elimination Round</h3>\n<ul data-start=\"702\" data-end=\"960\">\n<li data-start=\"702\" data-end=\"797\">\n<p data-start=\"704\" data-end=\"797\">Bands must submit a recorded performance video (maximum 3 minutes) through the Google Form.</p>\n</li>\n<li data-start=\"798\" data-end=\"829\">\n<p data-start=\"800\" data-end=\"829\"><strong data-start=\"642\" data-end=\"662\">Submission Link:</strong><br data-start=\"662\" data-end=\"665\" />Submit your entry here: <a class=\"decorated-link\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSfcyYnI_HL75Bzkw2jHT5ikDuMqfBKXiVT7wJ88KvJL-sJezA/viewform?usp=publish-editor\" target=\"_new\" rel=\"noopener\" data-start=\"689\" data-end=\"807\">https://docs.google.com/forms/d/e/1FAIpQLSfcyYnI_HL75Bzkw2jHT5ikDuMqfBKXiVT7wJ88KvJL-sJezA/viewform?usp=publish-editor</a></p>\n</li>\n<li data-start=\"830\" data-end=\"883\">\n<p data-start=\"832\" data-end=\"883\">The video will be evaluated by the judging panel.</p>\n</li>\n<li data-start=\"884\" data-end=\"960\">\n<p data-start=\"886\" data-end=\"960\">Selected bands will qualify for the Grand Finale on the Savara main stage.</p>\n</li>\n</ul>\n<hr data-start=\"962\" data-end=\"965\" />\n<h3 data-start=\"967\" data-end=\"998\">Round 2 &ndash; Main Stage Finale</h3>\n<ul data-start=\"1000\" data-end=\"1221\">\n<li data-start=\"1000\" data-end=\"1061\">\n<p data-start=\"1002\" data-end=\"1061\">The finale will be held live on 30th March during Savara.</p>\n</li>\n<li data-start=\"1062\" data-end=\"1120\">\n<p data-start=\"1064\" data-end=\"1120\">Each band will receive 15 minutes of performance time.</p>\n</li>\n<li data-start=\"1121\" data-end=\"1221\">\n<p data-start=\"1123\" data-end=\"1221\">An additional 5 minutes will be provided for sound check and setup (including setup and takedown).</p>\n</li>\n</ul>\n<hr data-start=\"1223\" data-end=\"1226\" />\n<h2 data-start=\"1228\" data-end=\"1251\">Guidelines and Rules</h2>\n<ul data-start=\"1253\" data-end=\"1818\" data-is-last-node=\"\" data-is-only-node=\"\">\n<li data-start=\"1253\" data-end=\"1300\">\n<p data-start=\"1255\" data-end=\"1300\">A participant can only be part of one band.</p>\n</li>\n<li data-start=\"1301\" data-end=\"1430\">\n<p data-start=\"1303\" data-end=\"1430\">A band must have a minimum of 3 members and a maximum of 9 members (including at least one vocalist and one instrumentalist).</p>\n</li>\n<li data-start=\"1431\" data-end=\"1558\">\n<p data-start=\"1433\" data-end=\"1558\">All instruments must be brought by the participants, except for the drum kit and one keyboard stand which will be provided.</p>\n</li>\n<li data-start=\"1559\" data-end=\"1637\">\n<p data-start=\"1561\" data-end=\"1637\">On-stage monitors will be provided; in-ear monitors will not be available.</p>\n</li>\n<li data-start=\"1638\" data-end=\"1719\">\n<p data-start=\"1640\" data-end=\"1719\">Pre-recorded tracks are not allowed. Only live performances will be accepted.</p>\n</li>\n<li data-start=\"1720\" data-end=\"1818\" data-is-last-node=\"\">\n<p data-start=\"1722\" data-end=\"1818\" data-is-last-node=\"\">Bands must follow the specified submission format and deadline for the online elimination round.</p>\n</li>\n</ul>",
+  "start_date": "2026-02-10T00:00:00+05:30",
+  "end_date": "2026-03-30T20:00:00+05:30",
+  "location": "IIITDM Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 3,
+      "max": 9
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Dikshant",
+        "email": "ec23b1082@iiitdm.ac.in",
+        "phone": "+919324224589",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "1st",
+      "value": "INR 25,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "2nd",
+      "value": "INR 15,000",
+      "certificate": true
+    },
+    "second_runner_up": null
+  },
+  "attachments": []
+}

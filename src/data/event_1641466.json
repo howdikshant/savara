@@ -1,0 +1,72 @@
+{
+  "event_id": "1641466",
+  "url": "https://unstop.com/competitions/line-follower-savara-iiitdm-kancheepuram-1641466",
+  "event_name": "Line Follower",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/69994e3a0eaa9_line-follower.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/69994e2d060d5_line-follower.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698f3c36089f2_robotics_club.png",
+  "description_html": "<p>The Line Follower Robot Competition, organized by the Robotics Club of IIITDM Kancheepuram, is a classic robotics challenge that tests a robot&rsquo;s ability to autonomously detect and follow a predefined path with speed and precision. Participants must design and program an intelligent robot capable of navigating complex tracks without any human intervention.</p>\n<p><strong>Competition Format:</strong></p>\n<ul>\n<li>Autonomous line-following challenge</li>\n<li>Black line track on white surface</li>\n<li>Maximum team size: 5 members</li>\n<li>Each team gets 10 minutes to complete multiple attempts</li>\n<li>The shortest official time is considered for ranking</li>\n</ul>\n<p><strong>Robot Specifications (Summary):</strong></p>\n<ul>\n<li>Maximum dimensions: 35 cm &times; 35 cm (no height restriction)</li>\n<li>Battery-operated robots only</li>\n<li>No external communication (Bluetooth, WiFi, RF) allowed</li>\n<li>No internal or external cameras permitted</li>\n<li>Robot must be fully autonomous</li>\n</ul>\n<p><strong>Track Details:</strong></p>\n<ul>\n<li>The track consists of black lines with a width of 38 mm &plusmn; 2 mm on a white background. The course may include sharp turns, intersections, loops, and dead ends, designed to challenge the robot&rsquo;s sensing and control logic.</li>\n</ul>\n<p><strong>Scoring &amp;amp; Evaluation:</strong></p>\n<ul>\n<li>The official time is calculated using a scoring formula that includes:<br />\n<ul>\n<li>Run Time</li>\n<li>Line Crossing Penalties</li>\n<li>Restart Penalties</li>\n<li>Adjustment Penalties</li>\n</ul>\n</li>\n<li>The robot with the lowest official time is declared the winner.</li>\n</ul>\n<p><strong>Rounds:</strong></p>\n<ul>\n<li>Round 1: All registered teams compete on the initial track.</li>\n<li>Round 2 (Finale): Shortlisted teams compete on a more complex track.</li>\n<li>Shortlisting is based on the official time recorded in Round 1.</li>\n</ul>\n<p><strong>Rules &amp;amp; Safety:</strong></p>\n<ul>\n<li>Robots must not damage the track in any way. Any form of external control, track damage, or violation of size constraints will lead to disqualification. Judges&rsquo; decisions are final.<br /><br /></li>\n</ul>",
+  "start_date": "2026-02-13T00:00:00+05:30",
+  "end_date": "2026-03-28T20:36:00+05:30",
+  "location": "IIITDM Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 5
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Ashwath",
+        "email": "me24b2006@iiitdm.ac.in",
+        "phone": "+919042545776",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "winner",
+      "value": "INR 5,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "1st runner up",
+      "value": "INR 3,000",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "2nd runner up",
+      "value": "INR 2,000",
+      "certificate": true
+    }
+  },
+  "attachments": [
+    {
+      "name": "Line_Follower_Rulebook.pdf - Robotics IIITDM.pdf",
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/attachements/files/deafd7c2-ae88-4b75-b96a-90a9422c9009.pdf",
+      "file_type": "application/pdf",
+      "file_size_bytes": 147055
+    }
+  ]
+}

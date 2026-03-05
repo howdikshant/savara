@@ -1,0 +1,65 @@
+{
+  "event_id": "1652706",
+  "url": "https://unstop.com/competitions/raise-your-standards-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kanc-1652706",
+  "event_name": "Raise Your Standards",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/69a87b64bab80_raise-your-standards.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/69a87b7519448_raise-your-standards.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-69a877dbd3f88_ieee.jpg",
+  "description_html": "<p>The event consists of two rounds:</p>\n<p><strong>Screening Round </strong>&ndash;Solve challenging questions on general technology, aptitude, and engineering concepts to secure your spot in the finals.</p>\n<p><strong>Final Round</strong> &ndash; Compete against the best through a mix of general and IEEE-related questions and claim the title of Tech Tycoon!</p>\n<p><strong>Team Size:</strong> 3 players per team</p>\n<p>Step into the world of tech innovation and strategy, challenge your expertise, explore IEEE standards, and prove your problem-solving skills.</p>\n<p>Are you ready to Raise Your Standards, Folks!</p>",
+  "start_date": "2026-03-05T01:00:00+05:30",
+  "end_date": "2026-03-26T00:00:00+05:30",
+  "location": "IIITDM KANCHEEPURAM",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 3
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-26T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Kancheepuram",
+    "organisation_url": "https://unstop.com/c/indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-placement-interview-competitions-articles-videos-2212",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": []
+  },
+  "prizes": {
+    "winner": {
+      "label": "Winner",
+      "value": "INR 4,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "First Runner-up",
+      "value": "INR 2,500",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "Second Runner-up",
+      "value": "INR 1,500",
+      "certificate": true
+    }
+  },
+  "attachments": [
+    {
+      "name": "rb 2.pdf",
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/attachements/files/ec008b18-8540-438a-a47d-9111f5f94d7e.pdf",
+      "file_type": "application/pdf",
+      "file_size_bytes": 21490
+    }
+  ]
+}

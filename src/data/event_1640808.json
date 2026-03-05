@@ -1,0 +1,72 @@
+{
+  "event_id": "1640808",
+  "url": "https://unstop.com/competitions/luminary-talks-savara-iiitdm-kancheepuram-1640808",
+  "event_name": "Luminary Talks",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/69994b7fd8a77_luminary-talks.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/69994b8d2f6aa_luminary-talks.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698dee05e9f92_screenshot_2026-01-28-15-21-19-84_6012fa4d4ddec268fc5c7112cbb265e7.jpg__1_.jpeg",
+  "description_html": "<p><strong>About the Event:</strong></p>\n<p>Luminary Talks is a optics and photonics presentation competition. The event provides a dynamic platform for students to present innovative ideas, emerging technologies, and impactful applications in the field of optics and photonics.</p>\n<p>The competition encourages interdisciplinary participation while maintaining a strong technical focus on light-based technologies. Participants will showcase their conceptual clarity, innovation, and ability to communicate complex optical principles effectively.</p>\n<p><strong>Event Structure:</strong></p>\n<p>Stage 1: Abstract Submission (Online Round)</p>\n<ul data-start=\"1318\" data-end=\"1654\">\n<li data-start=\"1318\" data-end=\"1377\">Teams must submit a <strong data-start=\"1340\" data-end=\"1376\">one-page abstract in Word format</strong>.</li>\n<li data-start=\"1378\" data-end=\"1566\">The abstract must include:\n<ul data-start=\"1409\" data-end=\"1566\">\n<li data-start=\"1409\" data-end=\"1431\">Title of the topic</li>\n<li data-start=\"1434\" data-end=\"1470\">Brief description of the concept</li>\n<li data-start=\"1473\" data-end=\"1516\">Optical or photonics principle involved</li>\n<li data-start=\"1519\" data-end=\"1566\">Relevance, innovation, and potential impact</li>\n</ul>\n</li>\n<li data-start=\"1567\" data-end=\"1654\">Abstracts will be shortlisted based on clarity, originality, and technical relevance.</li>\n</ul>\n<p><strong data-start=\"1656\" data-end=\"1705\">Abstract Submission Deadline: 21st March 2026</strong></p>\n<p>Stage 2: In-Person Presentation (Final Round)</p>\n<ul data-start=\"1763\" data-end=\"2059\">\n<li data-start=\"1763\" data-end=\"1865\">Shortlisted teams will deliver a live technical presentation at IIITDM Kancheepuram during the fest.</li>\n<li data-start=\"1866\" data-end=\"1994\"><strong data-start=\"1868\" data-end=\"1927\">Total Duration (Presentation + Q&amp;A): Maximum 10 minutes</strong>\n<ul data-start=\"1930\" data-end=\"1994\">\n<li data-start=\"1930\" data-end=\"1965\">Presentation: Maximum 5 minutes</li>\n<li data-start=\"1968\" data-end=\"1994\">Q&amp;A Session: 4 minutes</li>\n</ul>\n</li>\n<li data-start=\"1995\" data-end=\"2059\">Participants must strictly adhere to the allotted time limits.</li>\n</ul>\n<p><strong>Presentation Guidelines:</strong></p>\n<ul>\n<li data-start=\"2096\" data-end=\"2131\">Maximum of <strong data-start=\"2107\" data-end=\"2120\">10 slides</strong> permitted.</li>\n<li data-start=\"2134\" data-end=\"2189\">Content must clearly relate to optics and/or photonics.</li>\n<li data-start=\"2192\" data-end=\"2251\">All images, figures, and references must be properly cited.</li>\n<li data-start=\"2254\" data-end=\"2330\">If included, demonstration or concept videos must not exceed <strong data-start=\"2315\" data-end=\"2329\">30 seconds</strong>.</li>\n</ul>\n<p><strong>Suggested Topics (Not Limited To):</strong></p>\n<p>Participants may choose any topic related to optics and photonics, including:</p>\n<ul>\n<li data-start=\"2456\" data-end=\"2510\">Optics in Artificial Intelligence and Machine Vision</li>\n<li data-start=\"2513\" data-end=\"2558\">Photonics for Sustainable and Smart Systems</li>\n<li data-start=\"2561\" data-end=\"2595\">Biomedical and Healthcare Optics</li>\n<li data-start=\"2598\" data-end=\"2647\">Quantum Optics and Secure Optical Communication</li>\n<li data-start=\"2650\" data-end=\"2684\">Integrated and Silicon Photonics</li>\n<li data-start=\"2687\" data-end=\"2755\">Design-Centric Optical Innovations (AR/VR, perception, illumination)</li>\n</ul>\n<p>Original topics beyond the listed domains are permitted, provided they maintain a strong connection to optics or photonics.</p>\n<p><strong>Judging Criteria:</strong></p>\n<p>Presentations will be evaluated based on:</p>\n<ul>\n<li data-start=\"2953\" data-end=\"2991\">Technical understanding and accuracy</li>\n<li data-start=\"2994\" data-end=\"3022\">Innovation and originality</li>\n<li data-start=\"3025\" data-end=\"3068\">Relevance and potential real-world impact</li>\n<li data-start=\"3071\" data-end=\"3114\">Quality of presentation and communication</li>\n<li data-start=\"3117\" data-end=\"3177\">Effectiveness in handling questions during the Q&amp;A session</li>\n</ul>\n<p>The decision of the judges will be final and binding.</p>\n<p><strong>General Rules:</strong></p>\n<ul>\n<li data-start=\"3485\" data-end=\"3550\">Plagiarism in any form will result in immediate disqualification.</li>\n<li data-start=\"3553\" data-end=\"3623\">Participants must strictly adhere to time limits and event guidelines.</li>\n<li data-start=\"3626\" data-end=\"3678\">Any form of misconduct may lead to disqualification.</li>\n<li data-start=\"3681\" data-end=\"3777\">The organizing committee reserves the right to modify the event structure or rules if necessary</li>\n</ul>",
+  "start_date": "2026-02-13T00:00:00+05:30",
+  "end_date": "2026-03-30T20:00:00+05:30",
+  "location": "IIITDM kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "All"
+    ],
+    "sectors": [
+      "all"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 2
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T20:47:47+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Siddhartha",
+        "email": "cs22b1099@iiitdm.ac.in",
+        "phone": "+918790311579",
+        "designation": null
+      },
+      {
+        "name": "Thanmaya",
+        "email": "ec23b1125@iiitdm.ac.in",
+        "phone": null,
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "1st Prize",
+      "value": "INR 5,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "2rd Prize",
+      "value": "INR 3,000",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "3rd Prize",
+      "value": "INR 2,000",
+      "certificate": true
+    }
+  },
+  "attachments": [
+    {
+      "name": "Event Rule Book",
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/attachements/files/0d445eb9-6c40-4009-99b4-b01c13dd4d7c.pdf",
+      "file_type": "application/pdf",
+      "file_size_bytes": 686515
+    }
+  ]
+}

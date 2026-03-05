@@ -1,0 +1,72 @@
+{
+  "event_id": "1639991",
+  "url": "https://unstop.com/events/theatrical-oddessey-savara-iiitdm-kancheepuram-1639991",
+  "event_name": "Theatrical Odyssey",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/6999769751145_theatrical-odyssey.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/6999769e8376b_theatrical-odyssey.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698c95685309a_theatrix-drama_club.jpg",
+  "description_html": "<p>CHRONO-SYNC explores a rare moment where time opens in both directions, allowing the past and future to meet. As people cross into each other&rsquo;s worlds, ancient traditions and<br />advanced technology are shared with curiosity and respect. Neither seeks to replace the other instead, both learn, adapt, and grow together. Through this timeless exchange, culture and<br />innovation find balance, reminding us that true progress is achieved when heritage and advancement move forward in harmony.<br />A captivating live performance where a gateway through time brings the past and future together. Through expressive acting and symbolic staging, ancient traditions and advanced innovation meet with curiosity and respect, creating a world where culture and progress grow in harmony.</p>\n<p><strong>Guidelines and Rules:</strong></p>\n<ul>\n<li>The play may be performed in English, Tamil, or Hindi.Original or adapted scripts are permitted.</li>\n<li>Time limit: Performance: 30 minutes , Setup: 10 minutes</li>\n<li>Vulgar, offensive, or inappropriate content is not allowed and may lead to disqualification.</li>\n<li>Any damage to the stage or equipment will attract penalties.</li>\n<li>The judges decision is final and binding.</li>\n</ul>",
+  "start_date": "2026-02-11T00:00:00+05:30",
+  "end_date": "2026-03-25T00:00:00+05:30",
+  "location": "IIITDM KANCHEEPURAM",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 3,
+      "max": 12
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Dhakshitha",
+        "email": "ec23b1025@iiitdm.ac.in",
+        "phone": "+918106843027",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "1",
+      "value": "INR 7,000",
+      "certificate": false
+    },
+    "runner_up": {
+      "label": "2",
+      "value": "INR 5,000",
+      "certificate": false
+    },
+    "second_runner_up": {
+      "label": "3",
+      "value": "INR 3,000",
+      "certificate": false
+    }
+  },
+  "attachments": [
+    {
+      "name": "Formal - Rules & Regulations.pdf",
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/attachements/files/28959ed1-c109-465d-954e-7cad1c028990.pdf",
+      "file_type": "application/pdf",
+      "file_size_bytes": 1059157
+    }
+  ]
+}

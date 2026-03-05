@@ -1,0 +1,67 @@
+{
+  "event_id": "1640023",
+  "url": "https://unstop.com/competitions/bit-trix-savara-iiitdm-kancheepuram-1640023",
+  "event_name": "Bit-Trix",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/699952d9876fa_bit-trix.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/699952e62428e_bit-trix.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698c9ddb3dfd7_scc_logo.png",
+  "description_html": "<p>This is a competitive, hands-on event where participants design a custom 8-bit instruction&nbsp;<br />system using Verilog (hardware) and Assembly (software). Performance is evaluated using&nbsp;<br />an external hardware counter provided by the organizers, which measures execution speed&nbsp;<br />for a predefined workload.&nbsp;<br />Participants are encouraged to explore micro-architectural optimizations such as pipelining,&nbsp;<br />instruction scheduling, parallelism, and execution efficiency within strict design constraints.&nbsp;</p>\n<p><strong>Objectives:</strong></p>\n<ul>\n<li>Test real hardware&ndash;software co-design skills&nbsp;</li>\n<li>Encourage micro-architecture innovation under constraints&nbsp;<br />Evaluate performance optimization, not just correctness&nbsp;</li>\n<li>Expose participants to low-level system thinking (ISA &harr; datapath &harr; control &harr; software)&nbsp;</li>\n<li>Simulate industry-style performance benchmarking&nbsp;</li>\n<li>Design your own ISA&nbsp;</li>\n</ul>\n<p><strong>Rules and Regulations:</strong></p>\n<ul>\n<li>Architecture Rules&nbsp;<br />\n<ul>\n<li>Custom ISA allowed, but must be documented&nbsp;</li>\n<li>Only one core allowed&nbsp;</li>\n<li>Clock frequency must be fixed (defined by organizers)&nbsp;</li>\n<li>External performance counter must not be modified or bypassed&nbsp;</li>\n<li>All designs must be fully synthesizable&nbsp;</li>\n</ul>\n</li>\n<li>Software Rules&nbsp;<br />\n<ul>\n<li>Programs must be written only in assembly&nbsp;</li>\n<li>No hard-coded results or lookup tables&nbsp;</li>\n<li>Code must execute only on the designed CPU&nbsp;</li>\n</ul>\n</li>\n<li>Submission Rules&nbsp;</li>\n<li>Submit:&nbsp;<br />\n<ul>\n<li>Verilog source files&nbsp;</li>\n<li>Assembly program&nbsp;</li>\n<li>ISA documentation&nbsp;</li>\n<li>Micro-architecture explanation (1&ndash;2 pages)&nbsp;</li>\n</ul>\n</li>\n<li>Late submissions &rarr; disqualified&nbsp;</li>\n</ul>\n<p><strong>Note:</strong></p>\n<ul>\n<li>In case of any disputes, final decision will taken by the organisers. People are expected to bring their own extension boxes.</li>\n</ul>\n<p><strong>Expected Tools to Be Installed:</strong></p>\n<ul>\n<li>Mandatory&nbsp;</li>\n<li>Verilog HDL simulator (any one):&nbsp;</li>\n<li>ModelSim / Questa&nbsp;</li>\n<li>Icarus Verilog&nbsp;</li>\n<li>Verilator&nbsp;</li>\n<li>Vivado&nbsp;</li>\n<li>Recommended&nbsp;</li>\n<li>GTKWave (waveform analysis)&nbsp;</li>\n<li>Python / Bash (automation &amp; testing)&nbsp;</li>\n<li>Make / shell scripting tools&nbsp;</li>\n</ul>\n<p><strong>Disallowed Actions:</strong></p>\n<ul>\n<li>Modifying or tampering with the external counter&nbsp;</li>\n<li>Using behavioral shortcuts (e.g., pre-computed outputs)&nbsp;</li>\n<li>Using any language other than recommended.&nbsp;</li>\n<li>Hard-coding answers for benchmark tasks&nbsp;</li>\n<li>Clock manipulation or overclocking&nbsp;</li>\n<li>Using multi-cycle tricks that violate ISA semantics&nbsp;</li>\n<li>Copying designs from open-source CPUs without attribution&nbsp;</li>\n<li>Any violation = instant disqualification. No warnings.&nbsp;</li>\n</ul>\n<p><strong>Evaluation Criteria:</strong></p>\n<ul>\n<li>Execution speed (counter value)&nbsp;</li>\n<li>Correctness of output&nbsp;</li>\n<li>Architectural innovation&nbsp;</li>\n<li>ISA &amp; design documentation&nbsp;</li>\n<li>Code clarity &amp; structure&nbsp;</li>\n<li>Weight&nbsp;<br />\n<ul>\n<li>40%&nbsp;</li>\n<li>25%&nbsp;</li>\n<li>15%&nbsp;</li>\n<li>10%&nbsp;</li>\n<li>10%&nbsp;</li>\n</ul>\n</li>\n<li>Tie-breaker: Lower cycle count wins.&nbsp;</li>\n</ul>\n<p><strong>Event Duration:</strong></p>\n<ul>\n<li>Total duration: 4&ndash;5 hours&nbsp;</li>\n<li>Architecture design &amp; coding: 2&ndash;4 hours&nbsp;</li>\n<li>Testing &amp; optimization: 1&ndash;2 hours&nbsp;</li>\n<li>Final evaluation &amp; demo: 1 hour&nbsp;</li>\n<li>(Optional: multi-day version for advanced participants)&nbsp;</li>\n</ul>\n<p><strong>Target Audience:</strong></p>\n<ul>\n<li>Undergraduate &amp; postgraduate students in:&nbsp;<br />\n<ul>\n<li>Electronics &amp; Communication&nbsp;</li>\n<li>Electrical Engineering&nbsp;</li>\n<li>Computer Engineering&nbsp;</li>\n<li>Embedded Systems&nbsp;</li>\n</ul>\n</li>\n<li>Strong fit for:&nbsp;<br />\n<ul>\n<li>Computer Architecture enthusiasts&nbsp;</li>\n<li>VLSI &amp; RTL design learners&nbsp;</li>\n<li>Low-level systems programmers</li>\n</ul>\n</li>\n</ul>",
+  "start_date": "2026-02-11T00:00:00+05:30",
+  "end_date": "2026-03-28T16:32:00+05:30",
+  "location": "Indian Institute of Information Technology Design and Manufacturing",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 2,
+      "max": 3
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T21:02:12+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "A.Nikhileswar",
+        "email": "scc@iiitdm.ac.in",
+        "phone": "+918122140419",
+        "designation": null
+      },
+      {
+        "name": "Tarun Vignesh",
+        "email": "ec23b1047@iiitdm.ac.in",
+        "phone": "+917708970183",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "1st",
+      "value": "INR 5,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "2nd",
+      "value": "INR 3,000",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "3rd",
+      "value": "INR 2,000",
+      "certificate": true
+    }
+  },
+  "attachments": []
+}

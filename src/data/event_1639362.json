@@ -1,0 +1,68 @@
+{
+  "event_id": "1639362",
+  "url": "https://unstop.com/competitions/mazerover-savara-iiitdm-kancheepuram-1639362",
+  "event_name": "MazeRover",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/699952667e70c_mazerover.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/6999526fae3ec_mazerover.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698b57f613db2_shunya_logo_1.png",
+  "description_html": "<p><strong style=\"color: #000000;\">Description: Physical bot required</strong></p>\n<div class=\"position-relative\">\n<ul>\n<li>Teams are expected to reach the mentioned goal in a maze with an automatic rover or by teleoperation using the given clues.</li>\n<li>The team with the highest points will be the winner of the challenge!</li>\n<li>Teams will have the option to navigate their rover through the maze in either teleoperation mode or autonomous mode.</li>\n<li>Points will be awarded for successfully escaping the maze, finding hidden objects, time efficiency, and more.</li>\n<li>Don't miss this exciting opportunity to showcase your skills and creativity!</li>\n</ul>\n<strong>Team &amp; Registration Rules</strong>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Team size: </span><strong>1 to 4 members</strong></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Multiple teams per institution are allowed</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Registration must be completed </span><strong>at least 2 days prior</strong><span style=\"font-weight: 400;\"> to the event</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Each team must nominate </span><strong>one team leader</strong><span style=\"font-weight: 400;\"> for communication</span></li>\n</ul>\n<strong>Robot Specifications</strong>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">The robot must be </span><strong>fully autonomous</strong></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><strong>Teleoperation or remote control</strong><span style=\"font-weight: 400;\"> is allowed during the run(Partial score will be awarded)</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Maximum robot weight: </span><strong>5 kg</strong><span style=\"font-weight: 400;\"> (including battery and all attachments)</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Robot dimensions: Refer rule book</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">The robot must be </span><strong>self-powered</strong></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Robots must not damage the arena or maze structure</span></li>\n</ul>\n</div>",
+  "start_date": "2026-02-10T00:00:00+05:30",
+  "end_date": "2026-03-28T21:39:00+05:30",
+  "location": "IIITDM Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 4
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Avichal Anurag",
+        "email": "mars@iiitdm.ac.in",
+        "phone": "+918789071486",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "Winner",
+      "value": "INR 20,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "Runner-up",
+      "value": "INR 5,000",
+      "certificate": true
+    },
+    "second_runner_up": null
+  },
+  "attachments": [
+    {
+      "name": "Rule Book - MazeRover Challenge – Hardware Edition.pdf",
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/attachements/files/0147ad73-2cec-49bc-8ce0-dcf07d10761b.pdf",
+      "file_type": "application/pdf",
+      "file_size_bytes": 117146
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "event_id": "1640789",
+  "url": "https://unstop.com/events/judge-the-book-by-its-cover-savara-iiitdm-kancheepuram-1640789",
+  "event_name": "Judge The Book By Its Cover",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/699979cd3da07_judge-the-book-by-its-cover.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/699979c39131f_judge-the-book-by-its-cover.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698de5f1d6b97_book_club___literati_society__.png",
+  "description_html": "<p><strong>Description:</strong></p>\n<ul>\n<li>Every story makes its first impression before a single page is turned.</li>\n<li>In this event, participants are presented with a curated mix of book and manga covers and challenged to judge the story hidden within them.</li>\n<li>With minimal to no summaries or background information provided, participants must rely entirely on visual cues. Your task is to write a short, powerful judgment based only on the cover&mdash;capturing the genre, emotions, and the world it hints at. Each decision is instinctive, and each word must carry weight.</li>\n<li>This event tests perception, imagination, and expressive clarity. The most compelling entries are those that transform a silent image into a vivid narrative.</li>\n</ul>\n<p><strong>Rulebook:</strong></p>\n<p><strong>Event Duration:</strong></p>\n<ul>\n<li>2 Hours</li>\n</ul>\n<p><strong>Prize Pool:</strong></p>\n<ul>\n<li>₹1,500</li>\n</ul>\n<p><strong>Team Participation:</strong></p>\n<ul>\n<li>Team size: 1&ndash;2 members</li>\n<li>On-spot registration is allowed before the event begins</li>\n</ul>\n<p><strong>Event Structure:</strong></p>\n<ul>\n<li>The event consists of multiple rounds</li>\n<li>Each round lasts 10 minutes</li>\n<li>In every round, teams will be shown one book or manga cover</li>\n</ul>\n<p><strong>Task:</strong></p>\n<ul>\n<li>For each round, teams must write a short judgment based only on the displayed cover</li>\n<li>Judgments should reflect:</li>\n<li>Interpretation</li>\n<li>Imagination</li>\n<li>Attention to visual details</li>\n<li>Submissions must be completed within the 10-minute time limit</li>\n</ul>\n<p><strong>Scoring &amp; Evaluation:</strong></p>\n<ul>\n<li>Each round will be scored independently</li>\n<li>Scores will accumulate across all rounds</li>\n</ul>\n<p><strong>Winning Criteria:</strong></p>\n<ul>\n<li>The team with the highest total score at the end of the event will be declared the winner</li>\n<li>In case of a tie, a tiebreaker round may be conducted</li>\n</ul>\n<p><strong>Rules &amp; Conduct:</strong></p>\n<ul>\n<li>Use of external resources is strictly prohibited</li>\n<li>Plagiarism or copying will result in disqualification</li>\n<li>Teams must strictly adhere to time limits</li>\n</ul>\n<p><strong>Prizes:</strong></p>\n<ul>\n<li>Total prize pool: ₹1,500</li>\n<li>Prize distribution will be announced at the end of the event</li>\n</ul>\n<p><strong>General Guidelines:</strong></p>\n<ul>\n<li>Participants must maintain decorum and fair play</li>\n<li>Judges&rsquo; decisions are final</li>\n<li>Organizers reserve the right to make changes if necessary</li>\n</ul>",
+  "start_date": "2026-02-20T00:00:00+05:30",
+  "end_date": "2026-03-30T10:15:00+05:30",
+  "location": "IIITDM Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 2
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Anurag Sharma",
+        "email": "cs23b1062@iiitdm.ac.in",
+        "phone": "+917236090923",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "First Prize",
+      "value": "INR 750",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "Second Prize",
+      "value": "INR 500",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "Third Prize",
+      "value": "INR 250",
+      "certificate": true
+    }
+  },
+  "attachments": []
+}

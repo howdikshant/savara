@@ -1,0 +1,73 @@
+{
+  "event_id": "1640825",
+  "url": "https://unstop.com/competitions/one-line-one-rhythm-iiitdm-kancheepuram-1640825",
+  "event_name": "One Line One Rhythm",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/69982e44a0aec_one-line-one-rhythm.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/69982e553da3d_one-line-one-rhythm.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698df16b85650_art_club.png",
+  "description_html": "<p>Participants create a complete artwork using ONE continuous line while listening to music.<br />The line must flow with the rhythm, mood, and emotion of the music&mdash;no lifting the pen/brush at any point.</p>\n<p><strong>Rules:</strong></p>\n<ul>\n<li>This is a solo participation event only.</li>\n<li>Each participant must use only one continuous line for the entire artwork.</li>\n<li>Lifting the pen or brush is strictly not allowed once drawing starts.</li>\n<li>Only one pen or brush may be used throughout the event.</li>\n<li>No erasing, overwriting, or corrections are permitted.</li>\n<li>Participants must create the artwork while music is playing.</li>\n<li>The artwork should reflect the emotion and rhythm of the music.</li>\n<li>No rulers, stencils, or guiding tools are allowed.</li>\n<li>Participants must stop immediately when the time limit ends.</li>\n<li>Artworks that do not follow the event rules may not be considered for final evaluation.</li>\n</ul>\n<p><strong>Note:</strong></p>\n<ul>\n<li>If time is left, participants can paint inside the one continuous line, but the line must remain clearly visible and unbroken.</li>\n<li>For the continuous line, participants may use either a pen (or) a brush any one of their choice.</li>\n<li>Materials will be provided.</li>\n</ul>",
+  "start_date": "2026-02-12T00:00:00+05:30",
+  "end_date": "2026-03-27T21:00:00+05:30",
+  "location": "Indian Institute of Information Technology Design and Manufacturing, Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical",
+      "School Students"
+    ],
+    "sectors": [
+      "students",
+      "school"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 1
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Pallavi Challa",
+        "email": "ec23b1014@iiitdm.ac.in",
+        "phone": "+917396353232",
+        "designation": null
+      },
+      {
+        "name": "Sukumar",
+        "email": "cs23b1095@iiitdm.ac.in",
+        "phone": "+919989477066",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "1st Prize",
+      "value": "INR 5,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "2nd Prize",
+      "value": "INR 4,000",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "5th Prize",
+      "value": "INR 1,000",
+      "certificate": true
+    }
+  },
+  "attachments": []
+}

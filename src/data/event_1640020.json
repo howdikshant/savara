@@ -1,0 +1,59 @@
+{
+  "event_id": "1640020",
+  "url": "https://unstop.com/events/storycraft-savara-iiitdm-kancheepuram-1640020",
+  "event_name": "Storycraft",
+  "event_banner": "",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/lambda-pdfs/opportunity-bannerImages/1770823397.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698c9cc743f57_game_dev_community.jpeg",
+  "description_html": "<p>Storycraft is a narrative-driven challenge where time opens in both directions&mdash;past and future converge. Participants begin from a shared starting point and navigate a structured, graph-based journey, collecting story fragments and randomized game mechanics from different eras.<br />Ancient traditions, futuristic technologies, powerful abilities, and subtle constraints are gathered along each chosen path. Every decision shapes a unique narrative. Upon reaching the end, teams must present a coherent story that integrates all collected elements and mechanics.<br data-start=\"831\" data-end=\"834\" />And at the end of the journey&mdash;someone is waiting to meet you.</p>\n<p><strong>Judging Criteria (100%):</strong></p>\n<p>Each criterion carries 25% weightage.</p>\n<ul>\n<li>Narrative Coherence\n<ul>\n<li data-start=\"1007\" data-end=\"1047\">Smooth and logical flow of the story</li>\n<li data-start=\"1048\" data-end=\"1128\">Effective connection of multiple story fragments into one cohesive narrative</li>\n</ul>\n</li>\n<li>Integration of Game Mechanics\n<ul>\n<li data-start=\"1167\" data-end=\"1229\">Creative and effective use of all collected game mechanics</li>\n<li data-start=\"1230\" data-end=\"1288\">Clear explanation of how mechanics influence the story</li>\n</ul>\n</li>\n<li>Creativity &amp; Originality\n<ul>\n<li data-start=\"1322\" data-end=\"1383\">Uniqueness of narrative choices and storytelling approach</li>\n</ul>\n</li>\n<li>Boss Encounter Execution\n<ul>\n<li data-start=\"1417\" data-end=\"1479\">Logical and strategic use of acquired powers and mechanics</li>\n<li data-start=\"1480\" data-end=\"1529\">Clear explanation of how the boss is defeated</li>\n</ul>\n</li>\n</ul>\n<p><strong>Team Composition:</strong></p>\n<ul data-start=\"1559\" data-end=\"1605\">\n<li data-start=\"1559\" data-end=\"1605\">Teams may consist of 1 to 3 members only</li>\n</ul>\n<p><strong>Mandatory Use of Mechanics:</strong></p>\n<ul data-start=\"1644\" data-end=\"1824\">\n<li data-start=\"1644\" data-end=\"1755\">Every story element and game mechanic collected during the event must be used in the final narrative.</li>\n<li data-start=\"1756\" data-end=\"1824\">Ignoring any collected mechanic may result in score deduction.</li>\n</ul>\n<p><strong>Presentation Guidelines:</strong></p>\n<ul data-start=\"1861\" data-end=\"1957\">\n<li data-start=\"1861\" data-end=\"1957\"><strong>Teams must present their final narrative within the time limit announced on the event day.</strong></li>\n</ul>\n<p><strong>Judges&rsquo; Decision:</strong></p>\n<ul data-start=\"1986\" data-end=\"2039\">\n<li data-start=\"1986\" data-end=\"2039\">The judges&rsquo; decision will be final and binding.</li>\n</ul>",
+  "start_date": "2026-02-26T00:00:00+05:30",
+  "end_date": "2026-03-05T23:14:41+05:30",
+  "location": "IIITDM Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 1,
+      "max": 3
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-02-26T23:13:59+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Nishant",
+        "email": "cs23i1002@iiitdm.ac.in",
+        "phone": "+916385162752",
+        "designation": null
+      },
+      {
+        "name": "Anurag",
+        "email": "cs23b1062@iiitdm.ac.in",
+        "phone": "+917236090923",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": null,
+    "runner_up": null,
+    "second_runner_up": null
+  },
+  "attachments": []
+}

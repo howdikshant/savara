@@ -1,0 +1,78 @@
+{
+  "event_id": "1640769",
+  "url": "https://unstop.com/competitions/drone-racing-competition-savara-iiitdm-kancheepuram-1640769",
+  "event_name": "Drone Racing Competition",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/699864504f5d8_drone-racing-competition.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/6998645c360c9_drone-racing-competition.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698ddf3697b1d_astra_logo.png",
+  "description_html": "<ul>\n<li>Drone Racing is an exciting technical event where teams design, build, and manually fly their own quadcopters through a challenging obstacle race track.</li>\n<li>The goal is simple: complete the track in the shortest time while correctly passing all obstacles in sequence.</li>\n<li>Each team must build its own drone and pilot it using direct visual control, making it a true hands-on engineering challenge.</li>\n</ul>\n<p><strong>The competition is conducted in two rounds:</strong></p>\n<ul>\n<li>A qualification round to identify strong teams</li>\n<li>A final round with stricter rules and greater difficulty</li>\n<li>Teams earn points by successfully completing obstacles, maintaining accuracy, and finishing within time limits. Faster and cleaner runs score higher, while mistakes and crashes lead to penalties.</li>\n</ul>",
+  "start_date": "2026-02-12T00:00:00+05:30",
+  "end_date": "2026-03-28T18:00:00+05:30",
+  "location": "IIITDM, Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 2,
+      "max": 5
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Vigesh",
+        "email": "me23b2035@iiitdm.ac.in",
+        "phone": "+919442649655",
+        "designation": null
+      },
+      {
+        "name": "Shivanni",
+        "email": "me23b1037@iiitdm.ac.in",
+        "phone": null,
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "1",
+      "value": "INR 13,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "2",
+      "value": "INR 9,500",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "3",
+      "value": "INR 7,500",
+      "certificate": true
+    }
+  },
+  "attachments": [
+    {
+      "name": "Drone Racing Rule Book.pdf",
+      "url": "https://d8it4huxumps7.cloudfront.net/uploads/attachements/files/06ca2be9-03be-46ee-b605-480ccaeadf92.pdf",
+      "file_type": "application/pdf",
+      "file_size_bytes": 589593
+    }
+  ]
+}

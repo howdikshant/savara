@@ -1,0 +1,65 @@
+{
+  "event_id": "1639995",
+  "url": "https://unstop.com/hackathons/triathlon-savara-iiitdm-kancheepuram-1639995",
+  "event_name": "Triathlon",
+  "event_banner": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/banner/69994d1e5de40_triathlon.png",
+  "event_banner_mobile": "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/69994d2a53f84_triathlon.png",
+  "event_logo": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-698ca26e033fd_cs_club_logo_-_cs_club_iiitdm.png",
+  "description_html": "<p>Triathlon is the flagship 2-day competitive event, designed to identify the most versatile coders and innovators. Inspired by the spirit of endurance sports, Triathlon challenges participants across three distinct yet interconnected stages, each testing a critical computer science skill.</p>\n<p><strong>Event Structure:</strong></p>\n<p><span style=\"font-weight: 400;\">The event consists of three mandatory stages. Teams must participate in all stages to be eligible for final rankings and prizes.</span></p>\n<ul>\n<li data-start=\"32\" data-end=\"64\">Stage 1: Debugging Contest\n<ul>\n<li data-start=\"69\" data-end=\"88\">Duration: 2 Hours</li>\n<li data-start=\"93\" data-end=\"105\">Day: Day 1</li>\n</ul>\n</li>\n<li data-start=\"109\" data-end=\"147\">Stage 2: Competitive Programming\n<ul>\n<li data-start=\"152\" data-end=\"171\">Duration: 3 Hours</li>\n<li data-start=\"176\" data-end=\"188\">Day: Day 1</li>\n</ul>\n</li>\n<li data-start=\"192\" data-end=\"237\">Stage 3: AI/ML Challenge + Presentation\n<ul>\n<li data-start=\"242\" data-end=\"263\">Duration: ~15 Hours</li>\n<li data-start=\"268\" data-end=\"287\">Day: Day 1 &rarr; Day 2</li>\n</ul>\n</li>\n</ul>\n<p><strong>Stage 1: Debugging Contest:</strong></p>\n<p><strong>Format:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Participants will be given multiple buggy code snippets</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Errors may be syntactic, logical, or runtime-related</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Programming languages will be announced beforehand</span></li>\n</ul>\n<p><strong>Rules:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Participants must fix the code to generate correct outputs</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Internet access is strictly prohibited</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Teams must submit solutions within the allotted time</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Any form of plagiarism or collaboration between teams is not allowed</span></li>\n</ul>\n<p><strong>Scoring:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Points awarded for each correctly debugged problem</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Time taken may be used as a tie-breaker</span></li>\n</ul>\n<p><strong>Stage 2: Competitive Programming Contest:</strong></p>\n<p><strong>Format:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Standard competitive programming contest</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Problems will vary in difficulty from easy to hard</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Hosted on a designated coding platform</span></li>\n</ul>\n<p><strong>Rules:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Internet usage is restricted to the contest platform</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Teams must adhere to the platform&rsquo;s rules and guidelines</span></li>\n</ul>\n<p><strong>Scoring:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Based on the number of problems solved</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Tie-breaker: Time</span></li>\n</ul>\n<p><strong>Stage 3: AI/ML Challenge:</strong></p>\n<p><strong>Format:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Teams will be provided with one or more real-world datasets at the start of Day 1</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">The objective is to explore the data, uncover meaningful patterns, and design an intelligent, data-driven solution to the given problem statement</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Solutions may involve machine learning models, intelligent logic, or advanced data-driven techniques, depending on the team&rsquo;s approach</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">The challenge continues into Day 2, concluding with presentations</span></li>\n</ul>\n<p><strong>Allowed Resources:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Open-source libraries and frameworks are allowed</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Pre-trained models or existing techniques may be used (must be clearly disclosed)</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Internet access is permitted for research and development</span></li>\n</ul>\n<p><strong>Submission Requirements:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Code or workflow used for deriving insights or building the solution</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Key observations, patterns, and reasoning derived from the data</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Presentation</span></li>\n</ul>\n<p><strong>Presentation (Day 2):</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">5&ndash;7 minutes presentation per team</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">2&ndash;3 minutes Q&amp;A session</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Teams must clearly justify their approach using evidence from data and results</span></li>\n</ul>\n<p><strong>Evaluation Criteria</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Understanding of the problem and dataset</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Depth of insights and pattern discovery</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Appropriateness of the chosen approach (analytics / ML / intelligent logic)</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Soundness of conclusions and feasibility of solution</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Clarity and confidence in presentation</span></li>\n</ul>\n<p><strong>Final Scoring:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Scores from all three stages will be combined</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Only teams completing all stages are eligible for prizes</span></li>\n</ul>\n<p><strong>Code of Conduct:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Any form of cheating, plagiarism, or misconduct will result in disqualification</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Participants must follow instructions provided by organizers</span></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Decisions made by the organizing committee are final and binding</span></li>\n</ul>\n<p><strong>Note:</strong></p>\n<ul>\n<li>Participants are requested to bring their own extension boxes for power supply.</li>\n</ul>",
+  "start_date": "2026-02-11T00:00:00+05:30",
+  "end_date": "2026-03-29T14:00:00+05:30",
+  "location": "Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",
+  "eligibility": {
+    "eligible_for": [
+      "Undergraduate",
+      "Postgraduate",
+      "Engineering Students",
+      "Management",
+      "Arts, Commerce, Sciences & Others",
+      "Law",
+      "Medical"
+    ],
+    "sectors": [
+      "students"
+    ],
+    "team_size": {
+      "min": 2,
+      "max": 4
+    },
+    "gender": "All",
+    "same_college_only": false,
+    "registration_deadline": "2026-03-25T00:00:00+05:30"
+  },
+  "organizer": {
+    "organisation_name": "IIITDM Kancheepuram",
+    "organisation_url": "https://unstop.com/c/iiitdm-kancheepuram-recruiter-career-interview-selection-process-job-profile-articles-videos-1161222",
+    "created_by_name": "Savaara IIITDM",
+    "created_by_email": "fest@iiitdm.ac.in",
+    "contacts": [
+      {
+        "name": "Piyush Mishra",
+        "email": "csclub@iiitdm.ac.in",
+        "phone": "+918121802038",
+        "designation": null
+      }
+    ]
+  },
+  "prizes": {
+    "winner": {
+      "label": "Winner",
+      "value": "INR 20,000",
+      "certificate": true
+    },
+    "runner_up": {
+      "label": "First Runner-Up",
+      "value": "INR 10,000",
+      "certificate": true
+    },
+    "second_runner_up": {
+      "label": "Second Runner-Up",
+      "value": "INR 5,000",
+      "certificate": true
+    }
+  },
+  "attachments": []
+}

@@ -7,19 +7,7 @@
     "club_name": "Robotics Club",
     "prize_pool": 30000,
     "unstop_link": "https://unstop.com/competitions/robowars-8kg-savara-iiitdm-kancheepuram-1641452",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1641452"
   },
   {
     "event_type": "flagship",
@@ -29,19 +17,7 @@
     "club_name": "TALPADE AERO DESIGN CLUB",
     "prize_pool": 30000,
     "unstop_link": "https://unstop.com/competitions/sky-symphony-savara-iiitdm-kancheepuram-1639328",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639328"
   },
   {
     "event_type": "flagship",
@@ -51,19 +27,7 @@
     "club_name": "SAE - Team Astra",
     "prize_pool": 30000,
     "unstop_link": "https://unstop.com/competitions/drone-racing-competition-savara-iiitdm-kancheepuram-1640769",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640769"
   },
   {
     "event_type": "flagship",
@@ -73,19 +37,7 @@
     "club_name": "AUV Society",
     "prize_pool": 25000,
     "unstop_link": "https://unstop.com/competitions/wavequest-iiitdm-kancheepuram-1639339",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639339"
   },
   {
     "event_type": "flagship",
@@ -95,19 +47,7 @@
     "club_name": "System coding club",
     "prize_pool": 24000,
     "unstop_link": "https://unstop.com/hackathons/reverse-engineering-challenge-savara-iiitdm-kancheepuram-1639979",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639979"
   },
   {
     "event_type": "flagship",
@@ -117,19 +57,7 @@
     "club_name": "Game Dev Community",
     "prize_pool": 25000,
     "unstop_link": "https://unstop.com/hackathons/game-jam-savara-iiitdm-kancheepuram-1641905",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1641905"
   },
   {
     "event_type": "flagship",
@@ -139,19 +67,7 @@
     "club_name": "Developers Club",
     "prize_pool": 50000,
     "unstop_link": "https://unstop.com/hackathons/vashisht-hackathon-3o-savara-iiitdm-kancheepuram-1640006",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640006"
   },
   {
     "event_type": "flagship",
@@ -161,19 +77,7 @@
     "club_name": "Cybersecurity Club",
     "prize_pool": 15000,
     "unstop_link": "https://unstop.com/hackathons/capture-the-flag-savara-iiitdm-kancheepuram-1640013",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640013"
   },
   {
     "event_type": "flagship",
@@ -183,19 +87,7 @@
     "club_name": "E-Cell IIITDM",
     "prize_pool": 35000,
     "unstop_link": "https://unstop.com/competitions/pitch-on-pitch-savara-iiitdm-kancheepuram-1640837",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640837"
   },
   {
     "event_type": "flagship",
@@ -205,19 +97,7 @@
     "club_name": "Optica Student Chapter",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/luminary-talks-savara-iiitdm-kancheepuram-1640808",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640808"
   },
   {
     "event_type": "flagship",
@@ -227,19 +107,7 @@
     "club_name": "IEEE",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/ieee-paper-presentation-savara-iiitdm-kancheepuram-1640853",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640853"
   },
   {
     "event_type": "flagship",
@@ -249,19 +117,7 @@
     "club_name": "CS Club",
     "prize_pool": 35000,
     "unstop_link": "https://unstop.com/hackathons/triathlon-savara-iiitdm-kancheepuram-1639995",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639995"
   },
   {
     "event_type": "flagship",
@@ -271,19 +127,7 @@
     "club_name": "MARS",
     "prize_pool": 25000,
     "unstop_link": "https://unstop.com/competitions/mazerover-savara-iiitdm-kancheepuram-1639362",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639362"
   },
   {
     "event_type": "tech_formal",
@@ -293,19 +137,7 @@
     "club_name": "Robotics Club",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/line-follower-savara-iiitdm-kancheepuram-1641466",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1641466"
   },
   {
     "event_type": "tech_formal",
@@ -315,19 +147,7 @@
     "club_name": "TALPADE AERO DESIGN CLUB",
     "prize_pool": 8000,
     "unstop_link": "https://unstop.com/competitions/aero-innovation-challenge-savara-iiitdm-kancheepuram-1639356",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639356"
   },
   {
     "event_type": "tech_informal",
@@ -337,19 +157,7 @@
     "club_name": "TALPADE AERO DESIGN CLUB",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_formal",
@@ -359,19 +167,7 @@
     "club_name": "SAE Club - Revolt Racers",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/cad-verse-3d-modelling-challenge-iiitdm-kancheepuram-1639315",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639315"
   },
   {
     "event_type": "tech_informal",
@@ -381,19 +177,7 @@
     "club_name": "SAE Club - Revolt Racers",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_informal",
@@ -403,19 +187,7 @@
     "club_name": "SAE Club - Revolt Racers",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_informal",
@@ -425,19 +197,7 @@
     "club_name": "SAE Club - Revolt Racers",
     "prize_pool": 6000,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_formal",
@@ -447,19 +207,7 @@
     "club_name": "AUV Society",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/aquarace-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1639344",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639344"
   },
   {
     "event_type": "tech_formal",
@@ -469,19 +217,7 @@
     "club_name": "MARS",
     "prize_pool": 15000,
     "unstop_link": "https://unstop.com/competitions/robo-soccer-savara-iiitdm-kancheepuram-1639367",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639367"
   },
   {
     "event_type": "tech_formal",
@@ -491,19 +227,7 @@
     "club_name": "System coding club",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/bit-trix-savara-iiitdm-kancheepuram-1640023",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640023"
   },
   {
     "event_type": "tech_informal",
@@ -513,19 +237,7 @@
     "club_name": "System coding club",
     "prize_pool": 6000,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_informal",
@@ -534,20 +246,8 @@
     "short_desc": "Navigate a graph-based journey collecting story fragments and game mechanics to present a coherent, unique narrative.",
     "club_name": "Game Dev Community",
     "prize_pool": 0,
-    "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_link": "https://unstop.com/events/storycraft-savara-iiitdm-kancheepuram-1640020",
+    "unstop_event_id": "1640020"
   },
   {
     "event_type": "tech_formal",
@@ -557,19 +257,7 @@
     "club_name": "Developers Club",
     "prize_pool": 5000,
     "unstop_link": "https://unstop.com/hackathons/lens-logic-savara-iiitdm-kancheepuram-1640822",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640822"
   },
   {
     "event_type": "tech_formal",
@@ -579,19 +267,7 @@
     "club_name": "Developers Club",
     "prize_pool": 7000,
     "unstop_link": "https://unstop.com/hackathons/backend-breakdown-savara-iiitdm-kancheepuram-1640028",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640028"
   },
   {
     "event_type": "tech_informal",
@@ -601,19 +277,7 @@
     "club_name": "Developers Club",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_formal",
@@ -623,19 +287,7 @@
     "club_name": "Cybersecurity Club",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/hackathons/hack-and-shield-savara-iiitdm-kancheepuram-1640035",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640035"
   },
   {
     "event_type": "tech_formal",
@@ -645,19 +297,7 @@
     "club_name": "Cybersecurity Club",
     "prize_pool": 5000,
     "unstop_link": "https://unstop.com/hackathons/ricing-scripting-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepur-1640055",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640055"
   },
   {
     "event_type": "tech_informal",
@@ -667,19 +307,7 @@
     "club_name": "Optica Student Chapter",
     "prize_pool": 5000,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_formal",
@@ -688,20 +316,8 @@
     "short_desc": "A tech quiz competition testing logic, engineering concepts, and knowledge of crucial IEEE standards and their applications.",
     "club_name": "IEEE",
     "prize_pool": 8000,
-    "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_link": "https://unstop.com/competitions/raise-your-standards-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kanc-1652706",
+    "unstop_event_id": "1652706"
   },
   {
     "event_type": "tech_informal",
@@ -711,19 +327,7 @@
     "club_name": "IEEE",
     "prize_pool": 5000,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "tech_formal",
@@ -733,19 +337,7 @@
     "club_name": "CS Club",
     "prize_pool": 6000,
     "unstop_link": "https://unstop.com/hackathons/algoxchange-savara-iiitdm-kancheepuram-1648423",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1648423"
   },
   {
     "event_type": "tech_formal",
@@ -755,19 +347,7 @@
     "club_name": "CS Club",
     "prize_pool": 5000,
     "unstop_link": "https://unstop.com/hackathons/opcode-optimal-coding-challenge-savara-iiitdm-kancheepuram-1640051",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640051"
   },
   {
     "event_type": "tech_informal",
@@ -777,19 +357,7 @@
     "club_name": "CS Club",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report at the venue at least 30 minutes before the event starts.",
-      "Use of any unfair means will lead to immediate disqualification.",
-      "Judges' decisions will be final and binding.",
-      "Pre-built solutions or plagiarized work is strictly prohibited."
-    ],
-    "guidelines": [
-      "Bring your own laptops, chargers, and any required hardware.",
-      "Ensure all required software is pre-installed before the event.",
-      "Participants are encouraged to collaborate and maintain sportsmanship.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_formal",
@@ -799,19 +367,7 @@
     "club_name": "Tamil Saalaram",
     "prize_pool": 15000,
     "unstop_link": "https://unstop.com/events/vivaadham-classic-debate-savara-iiitdm-kancheepuram-1640800",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640800"
   },
   {
     "event_type": "cult_formal",
@@ -821,19 +377,7 @@
     "club_name": "Art Club",
     "prize_pool": 15000,
     "unstop_link": "https://unstop.com/competitions/one-line-one-rhythm-iiitdm-kancheepuram-1640825",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640825"
   },
   {
     "event_type": "cult_formal",
@@ -843,19 +387,7 @@
     "club_name": "Theatrix Drama Club",
     "prize_pool": 15000,
     "unstop_link": "https://unstop.com/events/theatrical-oddessey-savara-iiitdm-kancheepuram-1639991",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639991"
   },
   {
     "event_type": "cult_formal",
@@ -865,19 +397,7 @@
     "club_name": "Theatrix Drama Club",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_formal",
@@ -887,19 +407,7 @@
     "club_name": "Theatrix Drama Club",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_formal",
@@ -909,19 +417,7 @@
     "club_name": "Imagix",
     "prize_pool": 10000,
     "unstop_link": "https://unstop.com/competitions/fragments-of-time-iiitdm-kancheepuram-1641460",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1641460"
   },
   {
     "event_type": "cult_formal",
@@ -931,19 +427,7 @@
     "club_name": "Quriosity Quiz Club",
     "prize_pool": 18000,
     "unstop_link": "https://unstop.com/competitions/savara-flagship-quiz-savara-iiitdm-kancheepuram-1640787",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640787"
   },
   {
     "event_type": "cult_formal",
@@ -953,19 +437,7 @@
     "club_name": "Literati Society",
     "prize_pool": 10500,
     "unstop_link": "https://unstop.com/events/temporal-whispers-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1649847",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1649847"
   },
   {
     "event_type": "cult_flagship",
@@ -975,19 +447,7 @@
     "club_name": "Music Club",
     "prize_pool": 40000,
     "unstop_link": "https://unstop.com/events/battle-of-bands-savara-iiitdm-kancheepuram-1639330",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639330"
   },
   {
     "event_type": "cult_formal",
@@ -997,19 +457,7 @@
     "club_name": "Music Club",
     "prize_pool": 5000,
     "unstop_link": "https://unstop.com/events/solos-vocals-and-instrumental-savara-iiitdm-kancheepuram-1639340",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639340"
   },
   {
     "event_type": "cult_flagship",
@@ -1019,19 +467,7 @@
     "club_name": "Footlights",
     "prize_pool": 45000,
     "unstop_link": "https://unstop.com/events/spotlight-savara-iiitdm-kancheepuram-1640026",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1640026"
   },
   {
     "event_type": "cult_formal",
@@ -1041,19 +477,7 @@
     "club_name": "E-Sports",
     "prize_pool": 9000,
     "unstop_link": "https://unstop.com/events/free-fire-savara-iiitdm-kancheepuram-1641457",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1641457"
   },
   {
     "event_type": "cult_formal",
@@ -1063,19 +487,7 @@
     "club_name": "E-Sports",
     "prize_pool": 7000,
     "unstop_link": "https://unstop.com/events/bgmi-savara-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1648479",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1648479"
   },
   {
     "event_type": "cult_formal",
@@ -1085,19 +497,7 @@
     "club_name": "E-Sports",
     "prize_pool": 9000,
     "unstop_link": "https://unstop.com/events/valorant-savara-iiitdm-kancheepuram-1641469",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1641469"
   },
   {
     "event_type": "cult_formal",
@@ -1107,19 +507,7 @@
     "club_name": "CINEMATICS",
     "prize_pool": 5000,
     "unstop_link": "https://unstop.com/events/prism-one-minute-film-making-contest-iiitdm-kancheepuram-1639335",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639335"
   },
   {
     "event_type": "cult_flagship",
@@ -1129,19 +517,7 @@
     "club_name": "CINEMATICS",
     "prize_pool": 12000,
     "unstop_link": "https://unstop.com/events/spectrum-2026-indian-institute-of-information-technology-design-and-manufacturing-iiitdm-kancheepuram-1639316",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": "1639316"
   },
   {
     "event_type": "cult_informal",
@@ -1151,19 +527,7 @@
     "club_name": "Tamil Saalaram",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_informal",
@@ -1173,19 +537,7 @@
     "club_name": "Art Club",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_informal",
@@ -1195,19 +547,7 @@
     "club_name": "Theatrix Drama Club",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_informal",
@@ -1217,19 +557,7 @@
     "club_name": "Literati Society",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_informal",
@@ -1239,19 +567,7 @@
     "club_name": "Footlights",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_informal",
@@ -1261,19 +577,7 @@
     "club_name": "Footlights",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   },
   {
     "event_type": "cult_informal",
@@ -1283,18 +587,6 @@
     "club_name": "E-Sports",
     "prize_pool": 0,
     "unstop_link": "",
-    "rules": [
-      "All participants must carry a valid college ID.",
-      "Teams must report backstage at least 30 minutes before their slot.",
-      "Only campus-appropriate and non-offensive content is permitted.",
-      "Judges' decisions will be final and binding.",
-      "Time limits must be strictly adhered to; exceeding them may lead to penalties."
-    ],
-    "guidelines": [
-      "Costumes and props should be planned for quick setup and exit.",
-      "Audio tracks must be submitted in advance in .mp3 or .wav format.",
-      "Participants are encouraged to be creative and original in their performances.",
-      "Contact the event coordinators for any queries beforehand."
-    ]
+    "unstop_event_id": ""
   }
 ]
