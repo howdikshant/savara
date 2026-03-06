@@ -132,7 +132,7 @@ function MenuItem({ label, index, isOpen, isMobile, onClose }: MenuItemProps) {
     About: "/#about",
     Events: "/events",
     Accomodation: "/accomodation",
-    Tickets: "/tickets",
+    Tickets: "/dashboard/ticket",
     Merch: "/merch",
     Sponsors: "/#sponsors",
     Contact: "/#contact",

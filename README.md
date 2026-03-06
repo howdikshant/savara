@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Savara Ticketing Dashboard
 
-## Getting Started
+This project now includes a Supabase-backed ticketing and event participation workflow for Savara:
 
-First, run the development server:
+- Google OAuth sign-in only
+- Protected dashboard routes under `/dashboard/*`
+- Admin purchase verification with activation-code generation and Resend email
+- Participant activation and e-ticket with QR
+- Volunteer/admin event check-in with individual and team modes
+
+## Environment Setup
+
+Create `.env.local` using `.env.example`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Required variables:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `NEXT_PUBLIC_SITE_URL` (example: `http://localhost:3000`)
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
+- `RESEND_API_KEY`
+- `RESEND_FROM_EMAIL`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Supabase Auth Setup
 
-## Learn More
+In Supabase dashboard:
 
-To learn more about Next.js, take a look at the following resources:
+1. Enable Google provider under Auth > Providers.
+2. Set Site URL to your app URL.
+3. Add redirect URL: `https://<your-domain>/auth/callback` and local `http://localhost:3000/auth/callback`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Schema and RLS were applied via Supabase MCP migrations in this branch, including:
 
-## Deploy on Vercel
+- `profiles`, `roles`, `activation_codes`, `tickets`
+- `events`, `teams`, `team_members`, `event_checkins`
+- RPC functions for admin verification, activation redemption, and check-in workflows
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Role Management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Roles are email-based via `public.roles` table:
+
+- default (no row): participant
+- `is_volunteer = true`: volunteer
+- `is_admin = true`: admin
+
+Example SQL:
+
+```sql
+insert into public.roles (email, is_admin, is_volunteer)
+values
+  ('admin@example.com', true, false),
+  ('volunteer@example.com', false, true)
+on conflict (email) do update
+set
+  is_admin = excluded.is_admin,
+  is_volunteer = excluded.is_volunteer;
+```
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Key Routes
+
+- `/auth/login`
+- `/dashboard`
+- `/dashboard/ticket`
+- `/dashboard/events/check-in`
+- `/dashboard/admin/purchases`
