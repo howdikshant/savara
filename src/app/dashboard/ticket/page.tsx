@@ -22,6 +22,8 @@ export default async function DashboardTicketPage() {
     .eq("id", user.id)
     .maybeSingle();
 
+  const { data: participations } = await supabase.rpc("get_my_participations");
+
   const displayName = profile?.full_name || user.user_metadata?.full_name || user.email || "Participant";
   const pendingCode = user.email ? await getPendingActivationCodeForEmail(user.email) : null;
 
@@ -98,6 +100,52 @@ export default async function DashboardTicketPage() {
             <p className="text-xs" style={{ color: "rgba(245, 230, 211, 0.65)" }}>
               Show this QR code during event check-in.
             </p>
+          </div>
+        )}
+      </article>
+
+      <article
+        className="rounded-xl border p-5 lg:col-span-2"
+        style={{ borderColor: "rgba(212, 165, 116, 0.2)", background: "rgba(42, 31, 26, 0.42)" }}
+      >
+        <h2 className="text-2xl font-bold uppercase">Participated Events</h2>
+        <p className="mt-2 text-sm" style={{ color: "rgba(245, 230, 211, 0.78)" }}>
+          Your attendance records from volunteer check-ins.
+        </p>
+
+        {(participations ?? []).length === 0 ? (
+          <p className="mt-4 text-sm" style={{ color: "rgba(245, 230, 211, 0.7)" }}>
+            No event participation recorded yet.
+          </p>
+        ) : (
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full min-w-[520px] text-left text-sm">
+              <thead>
+                <tr style={{ color: "rgba(245, 230, 211, 0.72)" }}>
+                  <th className="py-2">Event</th>
+                  <th className="py-2">Check-In Time</th>
+                  <th className="py-2">Team</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(participations ?? []).map((row) => (
+                  <tr key={`${row.event_id}-${row.checked_in_at}`} className="border-t" style={{ borderColor: "rgba(212, 165, 116, 0.14)" }}>
+                    <td className="py-2">{row.event_name}</td>
+                    <td className="py-2">
+                      {new Date(row.checked_in_at).toLocaleString("en-IN", {
+                        year: "numeric",
+                        month: "short",
+                        day: "2-digit",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hour12: true,
+                      })}
+                    </td>
+                    <td className="py-2">{row.team_name ?? "Individual"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         )}
       </article>

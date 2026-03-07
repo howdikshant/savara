@@ -324,6 +324,16 @@ export type Database = {
         Returns: string;
       };
       generate_activation_code: { Args: never; Returns: string };
+      get_my_participations: {
+        Args: never;
+        Returns: {
+          checked_in_at: string;
+          event_id: string;
+          event_name: string;
+          event_slug: string;
+          team_name: string | null;
+        }[];
+      };
       is_admin: { Args: never; Returns: boolean };
       is_volunteer_or_admin: { Args: never; Returns: boolean };
       join_team_with_members: {
