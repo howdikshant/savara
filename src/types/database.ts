@@ -324,6 +324,19 @@ export type Database = {
         Returns: string;
       };
       generate_activation_code: { Args: never; Returns: string };
+      get_event_participants: {
+        Args: { p_event_id: string };
+        Returns: {
+          checkin_id: number;
+          checked_in_at: string;
+          email: string;
+          full_name: string | null;
+          participant_type: string;
+          team_id: string | null;
+          team_name: string | null;
+          ticket_id: string;
+        }[];
+      };
       get_my_participations: {
         Args: never;
         Returns: {
@@ -364,6 +377,10 @@ export type Database = {
       };
       remove_event_checkin: {
         Args: { p_event_id: string; p_qr_token: string };
+        Returns: boolean;
+      };
+      remove_event_checkin_by_ticket: {
+        Args: { p_event_id: string; p_ticket_id: string };
         Returns: boolean;
       };
     };

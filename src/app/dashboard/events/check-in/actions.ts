@@ -82,6 +82,35 @@ export async function removeCheckInAction(formData: FormData) {
   return { success: "Participant removed from this event." };
 }
 
+export async function removeCheckInByTicketAction(formData: FormData) {
+  await requireVolunteerOrAdmin();
+  const supabase = await createClient();
+
+  const eventId = String(formData.get("eventId") ?? "").trim();
+  const ticketId = String(formData.get("ticketId") ?? "").trim();
+
+  if (!eventId || !ticketId) {
+    return { error: "Event and ticket are required." };
+  }
+
+  const { data, error } = await supabase.rpc("remove_event_checkin_by_ticket", {
+    p_event_id: eventId,
+    p_ticket_id: ticketId,
+  });
+
+  if (error) {
+    return { error: error.message };
+  }
+
+  revalidatePath("/dashboard/events/check-in");
+
+  if (!data) {
+    return { success: "No check-in found to remove." };
+  }
+
+  return { success: "Participant removed from this event." };
+}
+
 export async function createTeamAction(formData: FormData) {
   await requireVolunteerOrAdmin();
   const supabase = await createClient();

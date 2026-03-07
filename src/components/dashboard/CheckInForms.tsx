@@ -33,6 +33,17 @@ type ScannedParticipant = {
 
 type ScannerMode = "individual" | "remove" | "create-member" | "join-member";
 
+type EventParticipant = {
+  checkin_id: number;
+  checked_in_at: string;
+  email: string;
+  full_name: string | null;
+  participant_type: string;
+  team_id: string | null;
+  team_name: string | null;
+  ticket_id: string;
+};
+
 const initialState = { error: "", success: "" };
 
 function extractQrToken(rawValue: string) {
@@ -115,6 +126,21 @@ export function CheckInForms({ events, teams }: { events: EventOption[]; teams: 
   const [joinMembers, setJoinMembers] = useState<ScannedParticipant[]>([]);
   const [leaderQr, setLeaderQr] = useState("");
   const [teamName, setTeamName] = useState("");
+  const [eventParticipants, setEventParticipants] = useState<EventParticipant[]>([]);
+  const [participantsLoading, setParticipantsLoading] = useState(false);
+  const [participantMenuOpenFor, setParticipantMenuOpenFor] = useState<string | null>(null);
+  const [participantActionBusy, setParticipantActionBusy] = useState<string | null>(null);
+
+  function clearFlowStates() {
+    setIndividualToken("");
+    setRemoveToken("");
+    setCreateMembers([]);
+    setJoinMembers([]);
+    setLeaderQr("");
+    setScanError("");
+    setScanFeedback("");
+    setParticipantMenuOpenFor(null);
+  }
 
   useEffect(() => {
     const saved = window.localStorage.getItem("checkin:selectedEvent");
@@ -163,6 +189,80 @@ export function CheckInForms({ events, teams }: { events: EventOption[]; teams: 
     },
     initialState,
   );
+
+  useEffect(() => {
+    if (individualState.success || removeState.success || createState.success || joinState.success) {
+      void loadParticipants(selectedEvent);
+    }
+  }, [
+    selectedEvent,
+    individualState.success,
+    removeState.success,
+    createState.success,
+    joinState.success,
+  ]);
+
+  async function loadParticipants(eventId: string) {
+    if (!eventId) {
+      setEventParticipants([]);
+      return;
+    }
+
+    setParticipantsLoading(true);
+    try {
+      const response = await fetch(`/dashboard/events/check-in/participants?eventId=${encodeURIComponent(eventId)}`);
+      const payload = (await response.json()) as { error?: string; participants?: EventParticipant[] };
+
+      if (!response.ok) {
+        throw new Error(payload.error ?? "Unable to load participants.");
+      }
+
+      setEventParticipants(payload.participants ?? []);
+    } catch (error) {
+      setScanError(error instanceof Error ? error.message : "Unable to load participants.");
+      setEventParticipants([]);
+    } finally {
+      setParticipantsLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    void loadParticipants(selectedEvent);
+  }, [selectedEvent]);
+
+  async function removeParticipantFromList(ticketId: string) {
+    setParticipantActionBusy(ticketId);
+    setScanError("");
+    setScanFeedback("");
+    try {
+      const response = await fetch("/dashboard/events/check-in/remove", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          eventId: selectedEvent,
+          ticketId,
+        }),
+      });
+
+      const payload = (await response.json()) as { error?: string; removed?: boolean };
+      if (!response.ok) {
+        throw new Error(payload.error ?? "Unable to remove participant.");
+      }
+
+      if (payload.removed) {
+        setScanFeedback("Participant removed from this event.");
+      } else {
+        setScanFeedback("No check-in found to remove.");
+      }
+
+      await loadParticipants(selectedEvent);
+    } catch (error) {
+      setScanError(error instanceof Error ? error.message : "Unable to remove participant.");
+    } finally {
+      setParticipantActionBusy(null);
+      setParticipantMenuOpenFor(null);
+    }
+  }
 
   async function resolveParticipant(qrValue: string) {
     setScanError("");
@@ -276,13 +376,7 @@ export function CheckInForms({ events, teams }: { events: EventOption[]; teams: 
           value={selectedEvent}
           onChange={(event) => {
             setSelectedEvent(event.target.value);
-            setIndividualToken("");
-            setRemoveToken("");
-            setCreateMembers([]);
-            setJoinMembers([]);
-            setLeaderQr("");
-            setScanError("");
-            setScanFeedback("");
+            clearFlowStates();
           }}
         >
           {events.map((eventOption) => (
@@ -574,6 +668,80 @@ export function CheckInForms({ events, teams }: { events: EventOption[]; teams: 
             </li>
           ))}
         </ul>
+
+        <h3 className="mt-6 text-xl font-bold uppercase">Existing Participants</h3>
+        <p className="mt-2 text-sm" style={{ color: "rgba(245, 230, 211, 0.8)" }}>
+          Checked-in participants for selected event.
+        </p>
+
+        {participantsLoading ? (
+          <p className="mt-4 text-sm" style={{ color: "rgba(245, 230, 211, 0.72)" }}>
+            Loading participants...
+          </p>
+        ) : eventParticipants.length === 0 ? (
+          <p className="mt-4 text-sm" style={{ color: "rgba(245, 230, 211, 0.72)" }}>
+            No participants checked in yet.
+          </p>
+        ) : (
+          <ul className="mt-4 space-y-2 text-sm">
+            {eventParticipants.map((participant) => (
+              <li
+                key={`${participant.ticket_id}-${participant.checkin_id}`}
+                className="rounded-md border px-3 py-2"
+                style={{ borderColor: "rgba(212, 165, 116, 0.18)" }}
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="font-medium">
+                      {participant.full_name ?? participant.email}
+                      <span className="ml-2 text-xs" style={{ color: "rgba(245, 230, 211, 0.65)" }}>
+                        ({participant.participant_type})
+                      </span>
+                    </p>
+                    <p style={{ color: "rgba(245, 230, 211, 0.76)" }}>{participant.email}</p>
+                    <p className="text-xs" style={{ color: "rgba(245, 230, 211, 0.65)" }}>
+                      {participant.team_name ? `Team: ${participant.team_name}` : "Individual"} · {new Date(participant.checked_in_at).toLocaleString("en-IN")}
+                    </p>
+                  </div>
+
+                  <div className="relative">
+                    <button
+                      type="button"
+                      className="rounded-md border px-2 py-1 text-xs"
+                      style={{ borderColor: "rgba(212, 165, 116, 0.25)" }}
+                      onClick={() =>
+                        setParticipantMenuOpenFor((current) =>
+                          current === participant.ticket_id ? null : participant.ticket_id,
+                        )
+                      }
+                    >
+                      More
+                    </button>
+
+                    {participantMenuOpenFor === participant.ticket_id && (
+                      <div
+                        className="absolute right-0 z-20 mt-2 min-w-32 rounded-md border p-1"
+                        style={{
+                          borderColor: "rgba(212, 165, 116, 0.25)",
+                          background: "rgba(10, 4, 8, 0.95)",
+                        }}
+                      >
+                        <button
+                          type="button"
+                          disabled={participantActionBusy === participant.ticket_id}
+                          className="w-full rounded px-2 py-1 text-left text-xs hover:bg-white/10"
+                          onClick={() => void removeParticipantFromList(participant.ticket_id)}
+                        >
+                          {participantActionBusy === participant.ticket_id ? "Removing..." : "Delete Participant"}
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
       </article>
     </section>
   );
