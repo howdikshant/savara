@@ -5,13 +5,17 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function signInWithGoogle(nextPath?: string) {
   const supabase = await createClient();
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  const vercelUrl = process.env.VERCEL_URL?.trim();
 
-  if (!siteUrl) {
-    throw new Error("NEXT_PUBLIC_SITE_URL is not configured");
+  const resolvedSiteUrl =
+    siteUrl || (vercelUrl ? `https://${vercelUrl.replace(/^https?:\/\//, "")}` : undefined);
+
+  if (!resolvedSiteUrl) {
+    throw new Error("NEXT_PUBLIC_SITE_URL is not configured and VERCEL_URL is unavailable");
   }
 
-  const callbackUrl = new URL("/auth/callback", siteUrl);
+  const callbackUrl = new URL("/auth/callback", resolvedSiteUrl);
   if (nextPath) {
     callbackUrl.searchParams.set("next", nextPath);
   }
