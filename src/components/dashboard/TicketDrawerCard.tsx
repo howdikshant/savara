@@ -288,6 +288,23 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
         onDragStart={(event) => event.preventDefault()}
       >
         <div className="absolute inset-0 border border-[rgba(212,165,116,0.45)] bg-[rgba(12,6,11,0.8)] shadow-[0_24px_56px_rgba(0,0,0,0.55)]" />
+        <button
+          type="button"
+          aria-label="Close ticket"
+          className="absolute bottom-3 left-1/2 z-20 grid h-11 w-11 -translate-x-1/2 place-items-center rounded-full border border-[rgba(212,165,116,0.7)] bg-[rgba(10,4,8,0.92)] text-lg font-bold leading-none text-[rgba(245,230,211,0.95)]"
+          style={{ boxShadow: "0 6px 22px rgba(0,0,0,0.45)" }}
+          onPointerDown={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+          }}
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            onRequestHide?.();
+          }}
+        >
+          X
+        </button>
         <div
           className="relative h-full w-full overflow-hidden"
           style={{
