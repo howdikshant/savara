@@ -81,6 +81,7 @@ export function DashboardTicketPanel({
       {hasTicket && qrDataUrl && (
         <TicketDrawerCard
           visible={visible}
+          onRequestHide={() => setVisible(false)}
           displayName={displayName}
           participantType={participantType}
           qrDataUrl={qrDataUrl}

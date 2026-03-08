@@ -71,6 +71,7 @@ export default async function DashboardTicketPage() {
       {qrDataUrl && (
         <TicketDrawerCard
           visible
+          onRequestHide={undefined}
           displayName={displayName}
           participantType={ticket.participant_type === "internal" ? "internal" : "external"}
           qrDataUrl={qrDataUrl}

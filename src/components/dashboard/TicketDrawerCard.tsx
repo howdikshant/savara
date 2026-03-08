@@ -16,6 +16,7 @@ type TicketDrawerCardProps = {
   participantType: "internal" | "external";
   qrDataUrl: string;
   perks: PerkItem[];
+  onRequestHide?: () => void;
 };
 
 const PEEK_HEIGHT = 86;
@@ -64,7 +65,7 @@ function animateTo({
   window.requestAnimationFrame(tick);
 }
 
-export function TicketDrawerCard({ visible, displayName, participantType, qrDataUrl, perks }: TicketDrawerCardProps) {
+export function TicketDrawerCard({ visible, displayName, participantType, qrDataUrl, perks, onRequestHide }: TicketDrawerCardProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const dragAxisRef = useRef<"none" | "vertical" | "horizontal">("none");
   const pointerStartRef = useRef({ x: 0, y: 0 });
@@ -222,7 +223,10 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
 
     const axis = dragAxisRef.current;
     if (axis === "vertical") {
-      const shouldOpen = hiddenHeight === 0 ? true : openRatio > VERTICAL_THRESHOLD;
+      const draggedDistance = Math.abs(pointerDeltaRef.current.y);
+      const dragRatio = hiddenHeight === 0 ? 0 : draggedDistance / hiddenHeight;
+      const startedOpen = drawerStartRef.current <= 1;
+      const shouldOpen = startedOpen ? dragRatio < 0.14 : openRatio > VERTICAL_THRESHOLD;
       snapDrawer(shouldOpen);
     }
 
@@ -253,16 +257,10 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
       style={{
         zIndex: 20,
         opacity: visible || isInteracting || isOpen ? 1 : 0,
-        transition: "opacity 200ms ease-out",
+        transition: "opacity 180ms ease-out",
       }}
     >
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 20% 15%, rgba(209, 29, 29, 0.22), transparent 42%), radial-gradient(circle at 78% 8%, rgba(74, 16, 111, 0.22), transparent 36%), linear-gradient(180deg, #0a0408 0%, #13080f 72%, #0a0408 100%)",
-        }}
-      />
+      {visible && <button type="button" className="pointer-events-auto absolute inset-0" onClick={onRequestHide} aria-label="Close ticket" />}
 
       <div className="absolute inset-x-0 top-12 text-center">
         {!isInteracting && !isOpen && (
