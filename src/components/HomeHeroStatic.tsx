@@ -22,7 +22,7 @@ export default function HomeHeroStatic() {
           }}
         >
           <span className="inline-block h-2 w-2 rounded-full animate-[pulse_1.6s_ease-in-out_infinite]" style={{ background: "#f09431" }} />
-          <span>Early bird offer live . get tickets now -&gt;</span>
+          <span>Early bird offer live • get tickets now!</span>
         </Link>
         <div className="mb-4">
           <Image

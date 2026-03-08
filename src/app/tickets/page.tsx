@@ -13,7 +13,10 @@ export default function TicketsPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0" style={{ background: "rgba(0, 0, 0, 0.55)" }} />
+        <div
+          className="absolute inset-0"
+          style={{ background: "rgba(0, 0, 0, 0.55)" }}
+        />
         <div
           className="absolute inset-0"
           style={{
@@ -53,10 +56,10 @@ export default function TicketsPage() {
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
             }}
-            >
-              Tickets
-            </span>
-          </h1>
+          >
+            Tickets
+          </span>
+        </h1>
         <p
           className="mt-4 text-base leading-relaxed sm:text-lg"
           style={{
@@ -109,7 +112,10 @@ export default function TicketsPage() {
             background: "rgba(42, 31, 26, 0.5)",
           }}
         >
-          <h2 className="text-xl font-bold uppercase" style={{ fontFamily: "var(--font-cinzel), serif" }}>
+          <h2
+            className="text-xl font-bold uppercase"
+            style={{ fontFamily: "var(--font-cinzel), serif" }}
+          >
             Buy Tickets
           </h2>
           <p
@@ -122,7 +128,7 @@ export default function TicketsPage() {
             Open the purchase form to complete your ticket booking.
           </p>
           <a
-            href="https://docs.google.com/forms/d/1bcCLKk82SMcdXjoOlLYLcMu89j1Hn-8jkSNGcJXgzHM/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd5iXbOJcR1wCyMEG57VKTW1kNuaZdzVdoW8xCa-wVyQkGvIw/viewform"
             target="_blank"
             rel="noreferrer"
             className="mt-4 inline-flex items-center rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
