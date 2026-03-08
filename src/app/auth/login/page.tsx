@@ -6,7 +6,8 @@ type LoginPageProps = {
 
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const params = await searchParams;
-  const nextPath = params.next && params.next.startsWith("/") ? params.next : "/dashboard";
+  const nextPath =
+    params.next && params.next.startsWith("/") ? params.next : "/dashboard";
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-md items-center px-6 py-20">
@@ -24,9 +25,6 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           Sign In
         </p>
         <h1 className="mt-3 text-3xl font-black uppercase">Dashboard Access</h1>
-        <p className="mt-3 text-base" style={{ color: "rgba(245, 230, 211, 0.8)" }}>
-          Continue with Google to access your ticket, event participation, and check-in tools.
-        </p>
 
         <div
           className="mt-4 rounded-md border px-4 py-3"
@@ -41,8 +39,12 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           >
             Important for IIITDM Students
           </p>
-          <p className="mt-1 text-sm font-semibold" style={{ color: "rgba(245, 230, 211, 0.95)" }}>
-            If you are from IIITDM Kancheepuram, please use your institute email.
+          <p
+            className="mt-1 text-sm font-semibold"
+            style={{ color: "rgba(245, 230, 211, 0.95)" }}
+          >
+            If you are from IIITDM Kancheepuram, please use your institute
+            email.
           </p>
         </div>
 

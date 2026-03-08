@@ -125,21 +125,37 @@ export default function TicketsPage() {
               color: "rgba(245, 230, 211, 0.78)",
             }}
           >
-            Open the purchase form to complete your ticket booking.
+            Choose the correct form to complete your ticket booking. After
+            payment verification, you will receive activation code in email.
           </p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd5iXbOJcR1wCyMEG57VKTW1kNuaZdzVdoW8xCa-wVyQkGvIw/viewform"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-flex items-center rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
-            style={{
-              background: "var(--savara-gold)",
-              color: "#0a0408",
-              fontFamily: "var(--font-rajdhani), sans-serif",
-            }}
-          >
-            Open Form
-          </a>
+          <div className="mt-4 flex w-full flex-col gap-3 sm:flex-row">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd5iXbOJcR1wCyMEG57VKTW1kNuaZdzVdoW8xCa-wVyQkGvIw/viewform"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex flex-1 items-center justify-center rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
+              style={{
+                background: "var(--savara-gold)",
+                color: "#0a0408",
+                fontFamily: "var(--font-rajdhani), sans-serif",
+              }}
+            >
+              IIITDM Students
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd6wB6kbhiKq-vIZ7oNy9_Ax2syKh49e_ytDTb-O6flFAbc6w/viewform"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex flex-1 items-center justify-center rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
+              style={{
+                background: "var(--savara-gold)",
+                color: "#0a0408",
+                fontFamily: "var(--font-rajdhani), sans-serif",
+              }}
+            >
+              Non-IIITDM Participants
+            </a>
+          </div>
         </section>
       </div>
     </main>

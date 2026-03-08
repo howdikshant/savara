@@ -63,15 +63,15 @@ export async function sendActivationCodeEmail(params: {
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #111;">
         <h2 style="margin-bottom: 8px;">Your Savara 2026 Ticket Activation Code</h2>
         <p style="margin: 0 0 10px;">Thank you for purchasing Savara 2026 tickets!</p>
-        <p style="margin: 0 0 10px;">Use this code in your dashboard to activate tickets.</p>
+        <p style="margin: 0 0 10px;">Enter this code in the savara.in dashboard to activate tickets.</p>
         <p style="margin: 0 0 4px;"><strong>Activation code:</strong> ${params.activationCode}</p>
-        <p style="margin: 0 0 16px;"><strong>Ticket capacity:</strong> ${params.ticketCount}</p>
-        <p style="margin: 0 0 16px;">Sign in and redeem in your dashboard.</p>
+        <p style="margin: 0 0 16px;"><strong>Code is valid for</strong> ${params.ticketCount} users.</p>
+        <p style="margin: 0 0 16px;">To get your ticket, enter this code in the dashboard link below. ${params.ticketCount > 1 ? "You can share this code with your friends to redeem" : ""}</p>
         <a
           href="${dashboardUrl}"
           style="display: inline-block; background: #d4a574; color: #0a0408; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: 600;"
         >
-          Login to Redeem Code
+          Dashboard to Redeem Code
         </a>
       </div>
     `,

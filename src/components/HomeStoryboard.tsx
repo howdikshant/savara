@@ -118,8 +118,8 @@ export default function HomeStoryboard() {
               }}
             >
               We&apos;re giving away{" "}
-              <strong>free tickets to some of the lucky winners </strong> who buy merch{" "}
-              <strong>before the match ends</strong>.
+              <strong>free tickets to some of the lucky winners </strong> who
+              buy merch <strong>before the match ends</strong>.
             </p>
             <Link
               href="/merch"

@@ -44,7 +44,7 @@ export default async function DashboardTicketPage() {
         >
           <h1 className="text-2xl font-bold uppercase">Ticket Activation</h1>
           <p className="mt-3 text-sm" style={{ color: "rgba(245, 230, 211, 0.82)" }}>
-            Redeem your activation code to create your personal fest ticket.
+            Redeem your activation code to get your fest ticket.
           </p>
           {pendingCode && (
             <div
@@ -52,11 +52,13 @@ export default async function DashboardTicketPage() {
               style={{ borderColor: "rgba(212, 165, 116, 0.3)", background: "rgba(10, 4, 8, 0.25)" }}
             >
               <p className="text-xs uppercase tracking-[0.18em]" style={{ color: "rgba(245, 230, 211, 0.6)" }}>
-                Assigned Activation Code
+                Your Activation Code
               </p>
               <p className="mt-1 text-xl font-bold tracking-[0.08em]">{pendingCode.code}</p>
               <p className="mt-1 text-xs" style={{ color: "rgba(245, 230, 211, 0.72)" }}>
                 {pendingCode.redeemedCount}/{pendingCode.ticketQuota} redeemed · {pendingCode.remaining} remaining
+                <br />
+                You can share this code with your friends to redeem.
               </p>
             </div>
           )}
