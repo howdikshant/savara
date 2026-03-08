@@ -302,7 +302,11 @@ export function PerkCheckInForms({ perks }: { perks: PerkOption[] }) {
             <p style={{ color: "rgba(245, 230, 211, 0.76)" }}>{participant.email}</p>
             <p className="text-xs" style={{ color: "rgba(245, 230, 211, 0.65)" }}>
               {participant.participantType}
-              {participant.alreadyAttended ? " · already attended this perk" : ""}
+              {participant.alreadyAttended ? (
+                <span style={{ color: "#ff6b6b" }}> · already attended this perk</span>
+              ) : (
+                ""
+              )}
             </p>
 
             <div className="mt-3">
