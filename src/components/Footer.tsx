@@ -108,7 +108,7 @@ export default function Footer() {
                   className="relative text-sm font-medium"
                   style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}
                 >
-                  +91 70753 62164
+                  +91 93911 31165
                   <span
                     className="absolute bottom-0 left-0 w-0 h-px transition-all duration-300 group-hover:w-full"
                     style={{ background: "var(--savara-gold)" }}
