@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Analytics } from "@vercel/analytics/next"
 import GlobalNav from "@/components/GlobalNav";
+import ProgressBarProvider from "@/components/ProgressBarProvider";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -47,10 +48,12 @@ export default function RootLayout({
         className={`${cinzel.variable} ${rajdhani.variable} antialiased`}
       >
         <Analytics />
-        <SmoothScroll>
-          <GlobalNav />
-          {children}
-        </SmoothScroll>
+        <ProgressBarProvider>
+          <SmoothScroll>
+            <GlobalNav />
+            {children}
+          </SmoothScroll>
+        </ProgressBarProvider>
         <ScrollToTop />
       </body>
     </html>
