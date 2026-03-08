@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+const merchItems = [
+  { src: "/merch/green_shirt.webp", title: "Savara Black Tee" },
+  { src: "/merch/maroon_shirt.webp", title: "Savara Maroon Tee" },
+  { src: "/merch/hoodie.webp", title: "Savara Hoodie" },
+];
+
 export default function MerchPage() {
   return (
     <main className="relative min-h-screen px-6 pb-20 pt-28 sm:px-10">
@@ -12,7 +18,10 @@ export default function MerchPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0" style={{ background: "rgba(0, 0, 0, 0.55)" }} />
+        <div
+          className="absolute inset-0"
+          style={{ background: "rgba(0, 0, 0, 0.55)" }}
+        />
         <div
           className="absolute inset-0"
           style={{
@@ -53,7 +62,7 @@ export default function MerchPage() {
               backgroundClip: "text",
             }}
           >
-            Coming Soon
+            Merch
           </span>
         </h1>
         <p
@@ -63,8 +72,79 @@ export default function MerchPage() {
             color: "rgba(245, 230, 211, 0.75)",
           }}
         >
-          Limited-edition Savara merch and drops will appear here soon.
+          Limited-edition Savara drops are live. Grab yours before stocks run
+          out.
         </p>
+
+        <section className="mt-8 grid w-full max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {merchItems.map((item) => (
+            <article
+              key={item.title}
+              className="rounded-xl border"
+              style={{
+                borderColor: "rgba(212, 165, 116, 0.25)",
+                background: "rgba(42, 31, 26, 0.58)",
+              }}
+            >
+              <div className="relative w-full p-3">
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  width={1200}
+                  height={900}
+                  className="h-auto w-full object-contain"
+                  sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 30vw"
+                />
+              </div>
+              <p
+                className="px-3 py-3 text-sm font-semibold uppercase tracking-[0.08em]"
+                style={{
+                  fontFamily: "var(--font-rajdhani), sans-serif",
+                  color: "rgba(245, 230, 211, 0.9)",
+                }}
+              >
+                {item.title}
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section
+          className="mt-8 w-full max-w-xl rounded-xl border px-5 py-6 sm:px-6"
+          style={{
+            borderColor: "rgba(212, 165, 116, 0.25)",
+            background: "rgba(42, 31, 26, 0.5)",
+          }}
+        >
+          <h2
+            className="text-xl font-bold uppercase"
+            style={{ fontFamily: "var(--font-cinzel), serif" }}
+          >
+            Purchase Merch
+          </h2>
+          <p
+            className="mt-2 text-sm sm:text-base"
+            style={{
+              fontFamily: "var(--font-rajdhani), sans-serif",
+              color: "rgba(245, 230, 211, 0.78)",
+            }}
+          >
+            Open the form to place your order.
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfhOG8Di5-M9E6sTfN-8ROlYUEhwJIFiFb4W6881jfIm3UP6w/viewform"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-flex items-center rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
+            style={{
+              background: "var(--savara-gold)",
+              color: "#0a0408",
+              fontFamily: "var(--font-rajdhani), sans-serif",
+            }}
+          >
+            Order Now
+          </a>
+        </section>
       </div>
     </main>
   );

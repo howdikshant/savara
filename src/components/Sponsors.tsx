@@ -109,44 +109,6 @@ export default function Sponsors() {
           ))}
         </div>
 
-        {/* Call to action */}
-        <div
-          className={`mt-16 text-center transition-all duration-1000 delay-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-        >
-          <p
-            className="mb-4 text-sm font-medium"
-            style={{
-              fontFamily: "var(--font-rajdhani), sans-serif",
-              color: "rgba(245, 230, 211, 0.9)",
-            }}
-          >
-            Interested in sponsoring SAVĀRA?
-          </p>
-          <div
-            className="group relative inline-flex overflow-hidden rounded-full p-0.5"
-            style={{
-              background: "linear-gradient(135deg, #e65100, #c62828, #4a148c)",
-            }}
-          >
-            <div
-              className="rounded-full px-6 py-3 transition-all duration-300 group-hover:bg-transparent"
-              style={{ background: "var(--savara-warm-black)" }}
-            >
-              <span
-                className="text-sm font-bold uppercase tracking-widest group-hover:text-white"
-                style={{
-                  background: "linear-gradient(135deg, #e65100, #d4a574, #4a148c)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                Become a Sponsor
-              </span>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Top decorative line */}

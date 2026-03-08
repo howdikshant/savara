@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomeHeroStatic() {
+export default function HomeHeroStatic({ onOpenOfferDialog }: { onOpenOfferDialog?: () => void }) {
   return (
     <section
       data-hero-container
@@ -11,6 +11,20 @@ export default function HomeHeroStatic() {
         data-hero-title
         className="relative z-10 flex flex-col items-center justify-center px-4 text-center"
       >
+        <button
+          type="button"
+          onClick={onOpenOfferDialog}
+          className="mb-3 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] sm:text-xs"
+          style={{
+            fontFamily: "var(--font-rajdhani), sans-serif",
+            borderColor: "rgba(212, 165, 116, 0.45)",
+            background: "rgba(42, 31, 26, 0.72)",
+            color: "rgba(245, 230, 211, 0.95)",
+          }}
+        >
+          ONLY FOR TODAY: WORLD CUP OFFER
+        </button>
+
         <Link
           href="/tickets"
           className="mb-5 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] sm:text-xs"
