@@ -3,10 +3,10 @@
 import HomeHeroStatic from "@/components/HomeHeroStatic";
 import HomeHeroAnimations from "@/components/HomeHeroAnimations";
 
-export default function Logo3D({ onOpenOfferDialog }: { onOpenOfferDialog?: () => void }) {
+export default function Logo3D() {
   return (
     <>
-      <HomeHeroStatic onOpenOfferDialog={onOpenOfferDialog} />
+      <HomeHeroStatic />
       <HomeHeroAnimations />
     </>
   );

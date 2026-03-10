@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const merchItems = [
-  { src: "/merch/green_shirt.webp", title: "Savara Black Tee" },
-  { src: "/merch/maroon_shirt.webp", title: "Savara Maroon Tee" },
-  { src: "/merch/hoodie.webp", title: "Savara Hoodie" },
+  { src: "/merch/green_shirt.webp", title: "Savara Black Tee", price: "Rs 350" },
+  { src: "/merch/maroon_shirt.webp", title: "Savara Maroon Tee", price: "Rs 350" },
+  { src: "/merch/hoodie.webp", title: "Savara Hoodie", price: "Rs 600" },
 ];
 
 export default function MerchPage() {
@@ -96,18 +96,41 @@ export default function MerchPage() {
                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 30vw"
                 />
               </div>
-              <p
-                className="px-3 py-3 text-sm font-semibold uppercase tracking-[0.08em]"
-                style={{
-                  fontFamily: "var(--font-rajdhani), sans-serif",
-                  color: "rgba(245, 230, 211, 0.9)",
-                }}
-              >
-                {item.title}
-              </p>
+              <div className="flex items-center justify-between gap-3 px-3 py-3">
+                <p
+                  className="text-sm font-semibold uppercase tracking-[0.08em]"
+                  style={{
+                    fontFamily: "var(--font-rajdhani), sans-serif",
+                    color: "rgba(245, 230, 211, 0.9)",
+                  }}
+                >
+                  {item.title}
+                </p>
+                <span
+                  className="text-sm font-bold uppercase tracking-[0.08em]"
+                  style={{
+                    fontFamily: "var(--font-rajdhani), sans-serif",
+                    color: "var(--savara-gold)",
+                  }}
+                >
+                  {item.price}
+                </span>
+              </div>
             </article>
           ))}
         </section>
+
+        <p
+          className="mt-4 inline-flex items-center rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em]"
+          style={{
+            fontFamily: "var(--font-rajdhani), sans-serif",
+            borderColor: "rgba(212, 165, 116, 0.45)",
+            background: "rgba(42, 31, 26, 0.72)",
+            color: "rgba(245, 230, 211, 0.92)",
+          }}
+        >
+          Combo offers available!
+        </p>
 
         <section
           className="mt-8 w-full max-w-xl rounded-xl border px-5 py-6 sm:px-6"

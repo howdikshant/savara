@@ -37,6 +37,7 @@ export default async function DashboardHomePage() {
         displayName={displayName}
         participantType={ticket?.participant_type === "internal" ? "internal" : "external"}
         qrDataUrl={qrDataUrl}
+        ticketSerial={ticket?.id.slice(0, 8).toUpperCase() ?? ""}
         perks={(perks ?? []).map((perk) => ({
           perk_id: perk.perk_id,
           perk_name: perk.perk_name,

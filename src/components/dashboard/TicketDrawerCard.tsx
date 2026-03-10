@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { PointerEvent as ReactPointerEvent } from "react";
 import Image from "next/image";
+import { toPng } from "html-to-image";
 
 type PerkItem = {
   perk_id: string;
@@ -15,6 +16,7 @@ type TicketDrawerCardProps = {
   displayName: string;
   participantType: "internal" | "external";
   qrDataUrl: string;
+  ticketSerial: string;
   perks: PerkItem[];
   onRequestHide?: () => void;
 };
@@ -22,6 +24,7 @@ type TicketDrawerCardProps = {
 const PEEK_HEIGHT = 86;
 const VERTICAL_THRESHOLD = 0.25;
 const FLIP_THRESHOLD = 0.3;
+const ART_ASPECT = 708 / 1372;
 
 function easeOutCubic(t: number) {
   return 1 - Math.pow(1 - t, 3);
@@ -65,7 +68,7 @@ function animateTo({
   window.requestAnimationFrame(tick);
 }
 
-export function TicketDrawerCard({ visible, displayName, participantType, qrDataUrl, perks, onRequestHide }: TicketDrawerCardProps) {
+export function TicketDrawerCard({ visible, displayName, participantType, qrDataUrl, ticketSerial, perks, onRequestHide }: TicketDrawerCardProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const dragAxisRef = useRef<"none" | "vertical" | "horizontal">("none");
   const pointerStartRef = useRef({ x: 0, y: 0 });
@@ -73,15 +76,19 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
   const drawerStartRef = useRef(0);
   const flipStartRef = useRef(0);
   const pointerIdRef = useRef<number | null>(null);
+  const exportCardRef = useRef<HTMLDivElement | null>(null);
   const hasInitializedRef = useRef(false);
   const movedRef = useRef(false);
 
   const [cardHeight, setCardHeight] = useState(620);
+  const [cardWidth, setCardWidth] = useState(320);
   const [drawerY, setDrawerY] = useState(0);
   const [flipProgress, setFlipProgress] = useState(0);
   const [isAnimatingDrawer, setIsAnimatingDrawer] = useState(false);
   const [isAnimatingFlip, setIsAnimatingFlip] = useState(false);
   const [isInteracting, setIsInteracting] = useState(false);
+  const [copiedSerial, setCopiedSerial] = useState(false);
+  const [downloadPending, setDownloadPending] = useState(false);
 
   const hiddenHeight = Math.max(0, cardHeight - PEEK_HEIGHT);
   const isOpen = drawerY <= 1;
@@ -89,8 +96,12 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
 
   useEffect(() => {
     const recalc = () => {
-      const nextHeight = Math.round(Math.min(window.innerHeight * 0.82, 700));
+      const maxHeight = Math.min(window.innerHeight * 0.82, 700);
+      const maxWidth = Math.min(window.innerWidth * 0.94, 430);
+      const nextWidth = Math.round(Math.min(maxWidth, maxHeight * ART_ASPECT));
+      const nextHeight = Math.round(nextWidth / ART_ASPECT);
       const nextHidden = Math.max(0, nextHeight - PEEK_HEIGHT);
+      setCardWidth(nextWidth);
       setCardHeight(nextHeight);
       setDrawerY((current) => {
         if (!hasInitializedRef.current) {
@@ -128,6 +139,38 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
   const ticketTypeLabel = participantType.toUpperCase();
   const showPerks = participantType === "internal";
   const visiblePerks = useMemo(() => (showPerks ? perks : []), [perks, showPerks]);
+
+  async function downloadPassImage() {
+    if (!exportCardRef.current || downloadPending) {
+      return;
+    }
+
+    setDownloadPending(true);
+    try {
+      const dataUrl = await toPng(exportCardRef.current, {
+        cacheBust: true,
+        pixelRatio: 3,
+        backgroundColor: "#f2a043",
+      });
+
+      const link = document.createElement("a");
+      const isIOS = /iPad|iPhone|iPod/.test(window.navigator.userAgent);
+
+      if (typeof link.download === "string" && !isIOS) {
+        link.href = dataUrl;
+        link.download = `SAVARA_PASS_${ticketSerial}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } else {
+        window.open(dataUrl, "_blank", "noopener,noreferrer");
+      }
+    } catch {
+      window.alert("Unable to generate pass image right now. Please try again.");
+    } finally {
+      setDownloadPending(false);
+    }
+  }
 
   const snapDrawer = (targetOpen: boolean) => {
     setIsAnimatingDrawer(true);
@@ -272,10 +315,11 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
 
       <div
         ref={containerRef}
-        className="pointer-events-auto absolute inset-x-3 bottom-0 mx-auto w-[min(94vw,430px)]"
+        className="pointer-events-auto absolute bottom-0 left-1/2"
         style={{
+          width: `${cardWidth}px`,
           height: `${cardHeight}px`,
-          transform: `translateY(${drawerY}px)`,
+          transform: `translate(-50%, ${drawerY}px)`,
           transition: isInteracting || isAnimatingDrawer ? "none" : "transform 360ms cubic-bezier(0.22, 1, 0.36, 1)",
           touchAction: "none",
           userSelect: "none",
@@ -323,17 +367,15 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
               <div className="absolute inset-0 bg-[#1a0f15]">
                 <div className="absolute inset-0">
                   <Image
-                    src="/ticket_cropped.png"
+                    src="/ticket_cropped_vertical.webp"
                     alt="Savara ticket artwork"
                     fill
-                    sizes="(max-width: 768px) 92vw, 420px"
-                    className="object-contain"
-                    style={{ transform: "rotate(-90deg)", transformOrigin: "center" }}
+                    sizes="(max-width: 768px) 90vw, 320px"
+                    className="object-cover"
                     priority
                     draggable={false}
                   />
                 </div>
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,4,8,0.18)_0%,rgba(10,4,8,0.5)_60%,rgba(10,4,8,0.72)_100%)]" />
               </div>
 
               <div className="absolute inset-x-0 bottom-0 border-t border-[rgba(212,165,116,0.45)] bg-[linear-gradient(90deg,#e37f1e_0%,#f09431_55%,#d17118_100%)] px-5 py-4 text-[#2f180a]">
@@ -375,6 +417,42 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
                   />
                 </div>
 
+                <div className="mt-3 flex items-center justify-between gap-3 rounded-md border border-[rgba(47,24,10,0.18)] bg-[rgba(255,255,255,0.45)] px-3 py-2">
+                  <div>
+                    <p className="text-[10px] uppercase tracking-[0.16em] text-[rgba(47,24,10,0.72)]">Ticket Serial</p>
+                    <p className="font-mono text-sm font-bold tracking-[0.18em]">{ticketSerial}</p>
+                  </div>
+                  <button
+                    type="button"
+                    className="rounded-md border border-[rgba(47,24,10,0.28)] bg-[rgba(255,255,255,0.45)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em]"
+                    onPointerDown={(event) => {
+                      event.stopPropagation();
+                    }}
+                    onClick={async (event) => {
+                      event.stopPropagation();
+                      await navigator.clipboard.writeText(ticketSerial);
+                      setCopiedSerial(true);
+                      window.setTimeout(() => setCopiedSerial(false), 1200);
+                    }}
+                  >
+                    {copiedSerial ? "Copied" : "Copy"}
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  className="mt-3 inline-flex items-center justify-center rounded-md border border-[rgba(47,24,10,0.25)] bg-[rgba(255,255,255,0.36)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em]"
+                  onPointerDown={(event) => {
+                    event.stopPropagation();
+                  }}
+                  onClick={async (event) => {
+                    event.stopPropagation();
+                    await downloadPassImage();
+                  }}
+                >
+                  {downloadPending ? "Preparing..." : "Download Pass PNG"}
+                </button>
+
                 {showPerks && (
                   <div className="mt-5 min-h-0 flex-1">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[rgba(47,24,10,0.78)]">Perks</p>
@@ -393,6 +471,29 @@ export function TicketDrawerCard({ visible, displayName, participantType, qrData
                 )}
               </div>
             </article>
+          </div>
+        </div>
+      </div>
+
+      <div className="pointer-events-none fixed -left-[9999px] top-0 z-[-1] opacity-0">
+        <div
+          ref={exportCardRef}
+          className="w-[520px] border border-[rgba(47,24,10,0.2)] bg-[linear-gradient(180deg,#f2a043_0%,#ea8b2a_44%,#df7a1c_100%)] px-8 py-8 text-[#2f180a]"
+          style={{ fontFamily: "var(--font-rajdhani), sans-serif" }}
+        >
+          <p className="text-[13px] font-semibold uppercase tracking-[0.24em] text-[rgba(47,24,10,0.8)]">Savara 2026 Pass</p>
+          <p className="mt-2 text-[34px] font-bold uppercase leading-tight">{displayName}</p>
+          <span className="mt-2 inline-flex rounded-full border border-[rgba(47,24,10,0.26)] bg-[rgba(255,255,255,0.32)] px-3 py-1 text-[13px] font-bold tracking-[0.12em]">
+            {ticketTypeLabel}
+          </span>
+
+          <div className="mt-6 rounded-2xl border border-[rgba(47,24,10,0.18)] bg-white/92 p-4">
+            <img src={qrDataUrl} alt="Ticket QR export" width={420} height={420} className="mx-auto h-auto w-full max-w-[420px]" draggable={false} />
+          </div>
+
+          <div className="mt-5 rounded-md border border-[rgba(47,24,10,0.18)] bg-[rgba(255,255,255,0.44)] px-4 py-3">
+            <p className="text-[11px] uppercase tracking-[0.16em] text-[rgba(47,24,10,0.72)]">Ticket Serial</p>
+            <p className="font-mono text-[22px] font-bold tracking-[0.18em]">{ticketSerial}</p>
           </div>
         </div>
       </div>

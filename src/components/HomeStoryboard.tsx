@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Logo3D from "@/components/Logo3D";
@@ -18,7 +17,6 @@ type BackgroundMode = "hero" | "video" | "gradient";
 
 export default function HomeStoryboard() {
   const [backgroundMode, setBackgroundMode] = useState<BackgroundMode>("hero");
-  const [showOfferDialog, setShowOfferDialog] = useState(true);
   const footerOverlayRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const isHeroBannerMode = backgroundMode !== "video";
@@ -81,58 +79,6 @@ export default function HomeStoryboard() {
 
   return (
     <>
-      {/* {showOfferDialog && (
-        <div
-          className="fixed inset-0 z-[80] flex items-center justify-center bg-black/60 px-4"
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="home-offer-title"
-          onClick={() => setShowOfferDialog(false)}
-        >
-          <div
-            className="relative w-full max-w-md rounded-2xl border bg-[rgba(42,31,26,1)] px-5 pb-5 pt-4"
-            style={{ borderColor: "rgba(212, 165, 116, 0.35)" }}
-            onClick={(event) => event.stopPropagation()}
-          >
-            <button
-              type="button"
-              className="absolute right-3 top-3 h-8 w-8 text-lg font-bold"
-              style={{ color: "rgba(245, 230, 211, 0.9)" }}
-              aria-label="Close offer dialog"
-              onClick={() => setShowOfferDialog(false)}
-            >
-              ×
-            </button>
-            <p
-              id="home-offer-title"
-              className="pr-8 text-2xl font-black uppercase"
-              style={{ fontFamily: "var(--font-cinzel), serif" }}
-            >
-              World Cup Final Offer!
-            </p>
-            <p
-              className="mt-3 text-sm leading-relaxed sm:text-base"
-              style={{
-                fontFamily: "var(--font-rajdhani), sans-serif",
-                color: "rgba(245, 230, 211, 0.86)",
-              }}
-            >
-              We&apos;re giving away{" "}
-              <strong>free tickets to some of the lucky winners </strong> who
-              buy merch <strong>before the match ends</strong>.
-            </p>
-            <Link
-              href="/merch"
-              className="mt-5 inline-flex rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
-              style={{ background: "var(--savara-gold)", color: "#0a0408" }}
-              onClick={() => setShowOfferDialog(false)}
-            >
-              Shop Merch
-            </Link>
-          </div>
-        </div>
-      )} */}
-
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <Image
           src="/media/hero-2560.webp"
@@ -281,7 +227,7 @@ export default function HomeStoryboard() {
         </div>
       </div>
 
-      <Logo3D onOpenOfferDialog={() => setShowOfferDialog(true)} />
+      <Logo3D />
       <HomeHeroCountdown />
       <WhatIsSavara />
       <AboutSection />

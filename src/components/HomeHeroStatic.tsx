@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomeHeroStatic({ onOpenOfferDialog }: { onOpenOfferDialog?: () => void }) {
+export default function HomeHeroStatic() {
   return (
     <section
       data-hero-container

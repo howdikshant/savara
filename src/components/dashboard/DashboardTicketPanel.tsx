@@ -16,6 +16,7 @@ type DashboardTicketPanelProps = {
   displayName: string;
   participantType: "internal" | "external";
   qrDataUrl: string | null;
+  ticketSerial: string;
   perks: PerkItem[];
   pendingCode: {
     code: string;
@@ -30,6 +31,7 @@ export function DashboardTicketPanel({
   displayName,
   participantType,
   qrDataUrl,
+  ticketSerial,
   perks,
   pendingCode,
 }: DashboardTicketPanelProps) {
@@ -102,6 +104,7 @@ export function DashboardTicketPanel({
           displayName={displayName}
           participantType={participantType}
           qrDataUrl={qrDataUrl}
+          ticketSerial={ticketSerial}
           perks={perks}
         />
       )}
