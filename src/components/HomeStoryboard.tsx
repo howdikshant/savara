@@ -81,7 +81,7 @@ export default function HomeStoryboard() {
 
   return (
     <>
-      {showOfferDialog && (
+      {/* {showOfferDialog && (
         <div
           className="fixed inset-0 z-[80] flex items-center justify-center bg-black/60 px-4"
           role="dialog"
@@ -131,7 +131,7 @@ export default function HomeStoryboard() {
             </Link>
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <Image
