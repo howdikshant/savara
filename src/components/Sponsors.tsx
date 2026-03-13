@@ -3,7 +3,42 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-const sponsors = [
+const featuredSponsors = {
+  title: {
+    id: 1,
+    name: "Rikun",
+    role: "Title Sponsor",
+    logo: "/sponsors/rikun.jpg",
+  },
+  partners: [
+    {
+      id: 2,
+      name: "Zebronics",
+      role: "Sound Partner",
+      logo: "/sponsors/zebronics.webp",
+    },
+    {
+      id: 3,
+      name: "Lightcast",
+      role: "Events Partner",
+      logo: "/sponsors/lightcast.png",
+    },
+    {
+      id: 4,
+      name: "Unstop",
+      role: "Platform Partner",
+      logo: "/sponsors/unstop.jpg",
+    },
+    {
+      id: 5,
+      name: "PNB",
+      role: "Banking Partner",
+      logo: "/sponsors/pnb.png",
+    },
+  ],
+};
+
+const previousSponsors = [
   { id: 1, name: "A2B", logo: "/sponsors/a2b.png" },
   { id: 2, name: "Bank of Baroda", logo: "/sponsors/bob.png" },
   { id: 3, name: "Canara Bank", logo: "/sponsors/canara_bank.png" },
@@ -17,16 +52,12 @@ const sponsors = [
   { id: 11, name: "HDFC Bank", logo: "/sponsors/hdfc.png" },
   { id: 12, name: "Indian Bank", logo: "/sponsors/indian_bank.jpg" },
   { id: 13, name: "IOB", logo: "/sponsors/iob.jpg" },
-  { id: 14, name: "Lightcast", logo: "/sponsors/lightcast.png" },
   { id: 15, name: "MTV", logo: "/sponsors/mtv.webp" },
   { id: 16, name: "Panasonic", logo: "/sponsors/panasonic.png" },
-  { id: 17, name: "PNB", logo: "/sponsors/pnb.png" },
   { id: 18, name: "SBI", logo: "/sponsors/sbi.png" },
   { id: 19, name: "The Souled Store", logo: "/sponsors/souled_store.png" },
   { id: 20, name: "TNPL", logo: "/sponsors/tnpl.jpg" },
-  { id: 21, name: "Unstop", logo: "/sponsors/unstop.jpg" },
   { id: 22, name: "VH1", logo: "/sponsors/vh1.png" },
-  { id: 23, name: "Zebronics", logo: "/sponsors/zebronics.webp" },
 ];
 
 export default function Sponsors() {
@@ -97,16 +128,47 @@ export default function Sponsors() {
           </p>
         </div>
 
-        {/* Sponsors Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
-          {sponsors.map((sponsor, index) => (
-            <SponsorCard
-              key={sponsor.id}
-              sponsor={sponsor}
-              index={index}
-              isVisible={isVisible}
-            />
-          ))}
+        <div className="mx-auto mb-14 max-w-5xl">
+          <FeaturedSponsorCard
+            sponsor={featuredSponsors.title}
+            isVisible={isVisible}
+          />
+
+          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5">
+            {featuredSponsors.partners.map((sponsor, index) => (
+              <FeaturedPartnerCard
+                key={sponsor.id}
+                sponsor={sponsor}
+                index={index}
+                isVisible={isVisible}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-5xl">
+          <p
+            className={`mb-5 text-center text-xs uppercase tracking-[0.22em] transition-all duration-700 ${
+              isVisible ? "opacity-75" : "opacity-0"
+            }`}
+            style={{
+              fontFamily: "var(--font-rajdhani), sans-serif",
+              color: "rgba(245, 230, 211, 0.75)",
+            }}
+          >
+            Previously Sponsored By
+          </p>
+
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+            {previousSponsors.map((sponsor, index) => (
+              <LegacySponsorCard
+                key={sponsor.id}
+                sponsor={sponsor}
+                index={index}
+                isVisible={isVisible}
+              />
+            ))}
+          </div>
         </div>
 
       </div>
@@ -122,7 +184,112 @@ export default function Sponsors() {
   );
 }
 
-function SponsorCard({
+function FeaturedSponsorCard({
+  sponsor,
+  isVisible,
+}: {
+  sponsor: { id: number; name: string; role: string; logo: string };
+  isVisible: boolean;
+}) {
+  return (
+    <div
+      className={`group relative overflow-hidden rounded-2xl backdrop-blur-sm transition-all duration-700 ease-out hover:scale-[1.01] ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+      style={{
+        border: "1px solid rgba(230, 81, 0, 0.35)",
+        background:
+          "linear-gradient(160deg, rgba(230, 81, 0, 0.15), rgba(74, 20, 140, 0.12), rgba(42, 31, 26, 0.45))",
+        boxShadow: "0 0 40px rgba(230, 81, 0, 0.18)",
+      }}
+    >
+      <div
+        className="absolute left-1/2 top-4 -translate-x-1/2 text-center text-xs uppercase tracking-[0.2em]"
+        style={{
+          fontFamily: "var(--font-rajdhani), sans-serif",
+          color: "rgba(245, 230, 211, 0.88)",
+        }}
+      >
+        {sponsor.role}
+      </div>
+
+      <div className="flex h-full w-full items-center justify-center px-6 pb-8 pt-12 sm:px-10 sm:pb-10 sm:pt-14">
+        <div className="relative h-24 w-full sm:h-28 md:h-32">
+          <Image
+            src={sponsor.logo}
+            alt={`${sponsor.name} logo`}
+            fill
+            className="object-contain transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 640px) 90vw, (max-width: 1024px) 80vw, 60vw"
+          />
+        </div>
+      </div>
+
+      <div
+        className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        style={{
+          background:
+            "radial-gradient(circle at center, rgba(245, 230, 211, 0.08), transparent 65%)",
+        }}
+      />
+    </div>
+  );
+}
+
+function FeaturedPartnerCard({
+  sponsor,
+  index,
+  isVisible,
+}: {
+  sponsor: { id: number; name: string; role: string; logo: string };
+  index: number;
+  isVisible: boolean;
+}) {
+  const delay = 200 + index * 80;
+
+  return (
+    <div
+      className={`group relative aspect-[16/10] overflow-hidden rounded-xl transition-all duration-700 ease-out hover:scale-[1.02] ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+      }`}
+      style={{
+        transitionDelay: `${delay}ms`,
+        border: "1px solid rgba(212, 165, 116, 0.2)",
+        background: "rgba(42, 31, 26, 0.55)",
+      }}
+    >
+      <div
+        className="absolute left-1/2 top-2 z-10 -translate-x-1/2 text-center text-[10px] uppercase tracking-[0.17em] sm:text-[11px]"
+        style={{
+          fontFamily: "var(--font-rajdhani), sans-serif",
+          color: "rgba(245, 230, 211, 0.85)",
+        }}
+      >
+        {sponsor.role}
+      </div>
+
+      <div className="relative h-full w-full p-4 pt-8 sm:p-5 sm:pt-9">
+        <Image
+          src={sponsor.logo}
+          alt={`${sponsor.name} logo`}
+          fill
+          className="object-contain p-3 transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
+        />
+      </div>
+
+      <div
+        className="absolute inset-0 -translate-x-full skew-x-12 transition-transform duration-700 group-hover:translate-x-full"
+        style={{
+          background:
+            "linear-gradient(to right, transparent, rgba(212, 165, 116, 0.06), transparent)",
+        }}
+      />
+    </div>
+  );
+}
+
+function LegacySponsorCard({
   sponsor,
   index,
   isVisible,
@@ -131,47 +298,28 @@ function SponsorCard({
   index: number;
   isVisible: boolean;
 }) {
-  const delay = 300 + index * 50;
+  const delay = 450 + index * 25;
 
   return (
     <div
-      className={`group relative aspect-4/3 cursor-pointer overflow-hidden rounded-xl backdrop-blur-sm transition-all duration-500 ease-out hover:scale-105 hover:shadow-lg ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+      className={`relative aspect-[4/3] overflow-hidden rounded-lg transition-all duration-700 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+      }`}
       style={{
         transitionDelay: `${delay}ms`,
-        border: "1px solid rgba(212, 165, 116, 0.1)",
-        background: "rgba(42, 31, 26, 0.3)",
-        boxShadow: "none",
-      }}
-      onMouseEnter={(e) => {
-        (e.currentTarget as HTMLElement).style.borderColor = "rgba(230, 81, 0, 0.3)";
-        (e.currentTarget as HTMLElement).style.boxShadow = "0 0 20px rgba(230, 81, 0, 0.1)";
-      }}
-      onMouseLeave={(e) => {
-        (e.currentTarget as HTMLElement).style.borderColor = "rgba(212, 165, 116, 0.1)";
-        (e.currentTarget as HTMLElement).style.boxShadow = "none";
+        border: "1px solid rgba(212, 165, 116, 0.08)",
+        background: "rgba(42, 31, 26, 0.25)",
       }}
     >
-      {/* Logo area */}
-      <div className="flex h-full w-full flex-col items-center justify-center p-4">
-        <div className="relative h-48 w-full mb-2 flex items-center justify-center">
-          <Image
-            src={sponsor.logo}
-            alt={`${sponsor.name} logo`}
-            fill
-            className="object-contain p-2 transition-transform duration-300 group-hover:scale-110"
-            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
-          />
-        </div>
+      <div className="relative h-full w-full p-2.5 sm:p-3">
+        <Image
+          src={sponsor.logo}
+          alt={`${sponsor.name} logo`}
+          fill
+          className="object-contain p-2 opacity-80"
+          sizes="(max-width: 640px) 33vw, (max-width: 1024px) 20vw, 16vw"
+        />
       </div>
-
-      {/* Hover shine effect */}
-      <div
-        className="absolute inset-0 -translate-x-full skew-x-12 transition-transform duration-700 group-hover:translate-x-full"
-        style={{
-          background: "linear-gradient(to right, transparent, rgba(212, 165, 116, 0.05), transparent)",
-        }}
-      />
     </div>
   );
 }
