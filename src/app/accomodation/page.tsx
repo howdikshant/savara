@@ -171,22 +171,25 @@ export default function AccomodationPage() {
               color: "rgba(245, 230, 211, 0.78)",
             }}
           >
-            The accommodation form is currently unavailable. It will be enabled soon.
+            Fill out the form below to book your accommodation.
           </p>
           <div className="mt-4 flex w-full flex-col gap-3 sm:flex-row">
-            <button
-              type="button"
-              disabled
+            <a
+              href="https://forms.gle/D9RPUYKbrES74x8H7"
+              target="_blank"
+              rel="noopener noreferrer"
+              role="button"
+              aria-label="Book Accommodation (opens external form in new tab)"
               className="inline-flex flex-1 items-center justify-center rounded-md px-4 py-2 text-sm font-semibold uppercase tracking-[0.12em]"
               style={{
-                background: "rgba(212, 165, 116, 0.35)",
+                background: "rgba(212, 165, 116, 0.85)",
                 color: "rgba(10, 4, 8, 0.9)",
                 fontFamily: "var(--font-rajdhani), sans-serif",
-                cursor: "not-allowed",
+                cursor: "pointer",
               }}
             >
-              Form Coming Soon
-            </button>
+              Book Accommodation
+            </a>
           </div>
           <p
             className="mt-3 text-xs uppercase tracking-[0.12em]"
